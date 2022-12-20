@@ -39,6 +39,7 @@
     "react-locomotive-scroll": "0.2.0",
     "react-lottie": "^1.2.3",
     "react-player": "^2.9.0",
+    "react-spring": "^9.5.5",
     "react-text-fun": "^1.0.0",
     "swiper": "^8.4.5"
   },

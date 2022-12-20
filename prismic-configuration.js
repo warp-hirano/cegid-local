@@ -39,6 +39,9 @@ module.exports = {
     if (doc.type === 'blog_post') {
       return `/${doc.lang}/blog/${doc.uid}`;
     }
+    if (doc.type === 'viseo') {
+      return `/${doc.lang}/viseo`;
+    }
 
     return '/';
   },
@@ -72,6 +75,9 @@ module.exports = {
 
     if (doc.type === 'blog_post') {
       return `/${doc.lang}/blog/${doc.uid}`;
+    }
+    if (doc.type === 'viseo') {
+      return `/${doc.lang}/viseo`;
     }
     return '/';
   },
