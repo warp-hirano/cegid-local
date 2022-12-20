@@ -33,12 +33,6 @@ import Sec4LogoSet from '../components/viseo/Sec4LogoSet';
 //画像インポート
 import firstview_pc from '../public/images/viseo-fv.png';
 import firstview_sp from '../public/images/viseo-fv-sp.png';
-import card1 from '../public/images/card-1.png';
-import card2 from '../public/images/card-2.png';
-import card3 from '../public/images/card-3.png';
-import work_map from '../public/images/world-map.png';
-import world_office from '../public/images/world-office.png';
-import service_img_1 from '../public/images/service-pc.svg';
 import sp_service_01 from '../public/images/sp-service01.png';
 import sp_service_02 from '../public/images/sp-service02.png';
 import sp_service_03 from '../public/images/sp-service03.png';
@@ -52,18 +46,6 @@ import spcard_03 from '../public/images/spcard-group3.svg';
 import spcard_04 from '../public/images/spcard-group4.svg';
 import spcard_05 from '../public/images/spcard-group5.svg';
 import house_img from '../public/images/bottom_house.png';
-import sap_logo from '../public/images/sap-logo.svg';
-import microsoft from '../public/images/microsoft.svg';
-import amazon from '../public/images/amazon.svg';
-import azure from '../public/images/azure.svg';
-import shopify from '../public/images/shopify.svg';
-import google from '../public/images/google.svg';
-import fluent from '../public/images/fluent.svg';
-import cegid from '../public/images/cegid.svg';
-import boomi from '../public/images/boomi.svg';
-import naplan from '../public/images/naplan.svg';
-import mulesoft from '../public/images/mulesoft.svg';
-import sf from '../public/images/sf.svg';
 
 /* section1 */
 function Set1({ sec1Engtitle, sec1Jptitle, sec1Subtitle, sec1Desctext, sec1Cards, sec1Worlds, sec1WT }) {
@@ -128,65 +110,6 @@ function DescText1({ sec1Desctext }) {
   return (
     <div ref={ref}>
       <p className={'desc-text ' + (inView && 'fadeup')}>{sec1Desctext}</p>
-    </div>
-  )
-}
-function CardsArea({ sec1Cards }) {
-  const { ref, inView } = useInView({
-    // オプション
-    rootMargin: "0px 0px -20% 0px", // ref要素が現れてから20%過ぎたら
-    triggerOnce: true, // 最初の一度だけ実行
-  });
-  return (
-    <div className='card-area' ref={ref}>
-      {(inView &&
-        <div className='view-wrap'>
-          <div className='card-item fadeup'>
-            <div className='card-top'>
-              <img src={card1} alt="" />
-            </div>
-            <div className='card-bottom'>
-              <p>企業のデジタル化</p>
-            </div>
-          </div>
-          <div className='card-item fadeup card-delay-02'>
-            <div className='card-top'>
-              <img src={card2} alt="" />
-            </div>
-            <div className='card-bottom'>
-              <p>顧客をつなぐ</p>
-            </div>
-          </div>
-          <div className='card-item fadeup card-delay-04'>
-            <div className='card-top'>
-              <img src={card3} alt="" />
-            </div>
-            <div className='card-bottom'>
-              <p>革新を探求</p>
-            </div>
-          </div>
-          {sec1Cards}
-        </div>
-      )}
-    </div>
-  )
-}
-function WorldWork({ sec1Worlds }) {
-  const { ref, inView } = useInView({
-    // オプション
-    rootMargin: "0px 0px -20% 0px", // ref要素が現れてから20%過ぎたら
-    triggerOnce: true, // 最初の一度だけ実行
-  });
-  return (
-    <div ref={ref}>
-      <div className={'world-work ' + (inView && 'fadeup')}>
-        <div className='map'>
-          <img src={work_map} alt="" />
-        </div>
-        <div className='work-text'>
-          {sec1Worlds}
-        </div>
-      </div>
     </div>
   )
 }
@@ -470,34 +393,6 @@ function ServiceImg1({ sec3Serviceimg }) {
     </div>
   )
 }
-function ServiceImg2({ }) {
-  const { ref, inView } = useInView({
-    // オプション
-    rootMargin: "0px 0px -20% 0px", // ref要素が現れてから20%過ぎたら
-    triggerOnce: true, // 最初の一度だけ実行
-  });
-  return (
-    <div ref={ref}>
-      <div className={'support-area pc ' + (inView && 'fadeup')}>
-        <div className={'support-item ' + (inView && 'fadeup')}>
-          <div className='name'>構想</div>
-          <img src={support1} alt='' />
-          <p>アドバイザー<br />アイデア<br />構築</p>
-        </div>
-        <div className={'support-item ' + (inView && 'fadeup card-delay-02')}>
-          <div className='name'>創る</div>
-          <img src={support2} alt='' />
-          <p>デザイン<br />開発<br />実装<br />統合化</p>
-        </div>
-        <div className={'support-item ' + (inView && 'fadeup card-delay-04')}>
-          <div className='name'>実施</div>
-          <img src={support3} alt='' />
-          <p>デプロイメント<br />変更管理<br />保守・モニタリング</p>
-        </div>
-      </div>
-    </div>
-  )
-}
 function ServiceText({ sec3Servicetext }) {
   const { ref, inView } = useInView({
     // オプション
@@ -509,49 +404,6 @@ function ServiceText({ sec3Servicetext }) {
       <p className={'main-text ' + (inView && 'fadeup')}>
         {sec3Servicetext}
       </p>
-    </div>
-  )
-}
-function SupportCard() {
-  const { ref, inView } = useInView({
-    // オプション
-    rootMargin: "0px 0px -20% 0px", // ref要素が現れてから20%過ぎたら
-    triggerOnce: true, // 最初の一度だけ実行
-  });
-  return (
-    <div ref={ref}>
-      <div className={'support-card-area pc ' + (inView && 'fadeup')}>
-        <div className='support-card'>
-          <p className='card-title'>顧客体験</p>
-          <div className='img-box'>
-            <img src={spcard_01} alt='' />
-          </div>
-        </div>
-        <div className='support-card'>
-          <p className='card-title'>小売Eコマース</p>
-          <div className='img-box'>
-            <img src={spcard_02} alt='' />
-          </div>
-        </div>
-        <div className='support-card'>
-          <p className='card-title'>サプライチェーンDOM</p>
-          <div className='img-box'>
-            <img src={spcard_03} alt='' />
-          </div>
-        </div>
-        <div className='support-card'>
-          <p className='card-title'>IT・データ統合</p>
-          <div className='img-box'>
-            <img src={spcard_04} alt='' />
-          </div>
-        </div>
-        <div className='support-card'>
-          <p className='card-title'>ERP</p>
-          <div className='img-box'>
-            <img src={spcard_05} alt='' className='resize' />
-          </div>
-        </div>
-      </div>
     </div>
   )
 }
@@ -590,34 +442,6 @@ function Jptitle4({ sec4Jptitle }) {
     <div ref={ref}>
       <div className={'jp-title ' + (inView && 'fadeupJp')}>{sec4Jptitle}</div>
     </div>
-  )
-}
-function PartnerLogo() {
-  const { ref, inView } = useInView({
-    // オプション
-    rootMargin: "0px 0px -10% 0px", // ref要素が現れてから20%過ぎたら
-    triggerOnce: true, // 最初の一度だけ実行
-  });
-  return (
-    <div className='logo-wrap fadeup' ref={ref}>
-      {(inView &&
-        <ul className='logo-list'>
-          <li className='fadeup'><img src={sap_logo} alt="" /></li>
-          <li className='fadeup logo-delay-02'><img src={microsoft} alt="" /></li>
-          <li className='fadeup logo-delay-03'><img src={amazon} alt="" /></li>
-          <li className='fadeup logo-delay-04'><img src={azure} alt="" /></li>
-          <li className='fadeup logo-delay-05'><img src={shopify} alt="" /></li>
-          <li className='fadeup logo-delay-06'><img src={google} alt="" /></li>
-          <li className='fadeup logo-delay-07'><img src={fluent} alt="" /></li>
-          <li className='fadeup logo-delay-08'><img src={cegid} alt="" /></li>
-          <li className='fadeup logo-delay-09'><img src={boomi} alt="" /></li>
-          <li className='fadeup logo-delay-10'><img src={naplan} alt="" /></li>
-          <li className='fadeup logo-delay-11'><img src={mulesoft} alt="" /></li>
-          <li className='fadeup logo-delay-12'><img src={sf} alt="" /></li>
-        </ul>
-      )}
-    </div >
-
   )
 }
 /* /section4 */
