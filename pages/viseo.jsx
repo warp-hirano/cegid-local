@@ -8,29 +8,29 @@ import useUpdatePreviewRef from 'utils/hooks/useUpdatePreviewRef';
 import useUpdateToolbarDocs from 'utils/hooks/useUpdateToolbarDocs';
 import { Layout } from 'components';
 
-//swiper関連
+// swiper関連
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import 'swiper/css/effect-coverflow';
 import { EffectCoverflow, Pagination } from 'swiper';
 
-//スクロールアニメーション
+// スクロールアニメーション
 import { useInView } from 'react-intersection-observer';
 import { useEffect, useState } from 'react'
-//import { useSpring, animated } from 'react-spring'
+// import { useSpring, animated } from 'react-spring'
 
-//Cardエリアjs呼び出し
+// Cardエリアjs呼び出し
 import Sec1CardSet from '../components/viseo/Sec1CardSet';
-//sec1 worldwork js呼び出し
+// sec1 worldwork js呼び出し
 import Sec1WorldSet from '../components/viseo/Sec1WorldSet';
-//sec3 service2エリア呼び出し
+// sec3 service2エリア呼び出し
 import Sec3ServiceSet from '../components/viseo/Sec3ServiceSet';
-//sec3 パートナーカード呼び出し
+// sec3 パートナーカード呼び出し
 import Sec3LogoCardSet from '../components/viseo/Sec3LogoCardSet';
-//sec4 logoリスト呼び出し
+// sec4 logoリスト呼び出し
 import Sec4LogoSet from '../components/viseo/Sec4LogoSet';
 
-//画像インポート
+// 画像インポート
 import FirstViewPC from '../public/images/viseo-fv.png';
 import FirstViewSP from '../public/images/viseo-fv-sp.png';
 import card1 from '../public/images/card-1.png';
@@ -661,7 +661,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
         ? RichText.render(doc.data.fv_title)
         : '';
 
-    //sec1ここから
+    // sec1ここから
 
     /*----- 配列取り出し -----*/
     let result1 = doc.data.sec1_eng_title[0].text.split('');
@@ -689,7 +689,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
         ? RichText.render(doc.data.sec1_main_text)
         : '';
 
-    //sec2ここから
+    // sec2ここから
 
     /*----- 配列取り出し -----*/
     let result2 = doc.data.sec2_eng_title[0].text.split('');
@@ -717,7 +717,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
         ? RichText.render(doc.data.sec2_main_text)
         : '';
 
-    //sec3ここから
+    // sec3ここから
 
     /*----- 配列取り出し -----*/
     let result3 = doc.data.sec3_eng_title[0].text.split('');
@@ -755,7 +755,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
         ? RichText.render(doc.data.sec3_service3_text)
         : '';
 
-    //sec4ここから
+    // sec4ここから
     /*----- 配列取り出し -----*/
     let result4 = doc.data.sec4_eng_title[0].text.split('');
     let newText4 = '';
@@ -773,7 +773,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
         : '';
 
 
-    //画像関係
+    // 画像関係
 
     const sec2OfficeMap =
       doc && doc.data.sec2_office_map.url
@@ -844,7 +844,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
         formData.append(key, value);
       });
 
-      fetch(`https://getform.io/f/${token}`, {
+      fetch(`https:// getform.io/f/${token}`, {
         method: 'POST',
         body: formData,
       }).then(() => {
@@ -862,8 +862,8 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
         title='WarpJapan For Viseo'
         isPreview={preview.isActive}
       >
-        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css' />
-        <script src='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js'></script>
+        <link rel='stylesheet' href='https:// cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css' />
+        <script src='https:// cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js'></script>
         <div className='viseo-wrapper' data-scroll-section>
           <div className='fv-area'>
             <img src={FirstViewPC} alt='' className='pc' />
