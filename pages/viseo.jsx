@@ -11,8 +11,8 @@ import { Layout } from 'components';
 //swiper関連
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
-import "swiper/css/effect-coverflow";
-import { EffectCoverflow, Pagination } from "swiper";
+import 'swiper/css/effect-coverflow';
+import { EffectCoverflow, Pagination } from 'swiper';
 
 //スクロールアニメーション
 import { useInView } from 'react-intersection-observer';
@@ -36,7 +36,7 @@ import FirstViewSP from '../public/images/viseo-fv-sp.png';
 import card1 from '../public/images/card-1.png';
 import card2 from '../public/images/card-2.png';
 import card3 from '../public/images/card-3.png';
-import work_map from '../public/images/world-map.png';
+import WorkMap from '../public/images/world-map.png';
 import SpService01 from '../public/images/sp-service01.png';
 import SpService02 from '../public/images/sp-service02.png';
 import SpService03 from '../public/images/sp-service03.png';
@@ -50,7 +50,7 @@ import SpCard03 from '../public/images/spcard-group3.svg';
 import SpCard04 from '../public/images/spcard-group4.svg';
 import SpCard05 from '../public/images/spcard-group5.svg';
 import HouseImg from '../public/images/bottom_house.png';
-import sap_logo from '../public/images/sap-logo.svg';
+import SapLogo from '../public/images/sap-logo.svg';
 import microsoft from '../public/images/microsoft.svg';
 import amazon from '../public/images/amazon.svg';
 import azure from '../public/images/azure.svg';
@@ -67,12 +67,12 @@ import sf from '../public/images/sf.svg';
 function Set1({ sec1Engtitle, sec1Jptitle, sec1Subtitle, sec1Desctext, sec1Cards, sec1Worlds, sec1WT }) {
   const { ref, inView } = useInView({
     // オプション
-    rootMargin: "0px 0px -20% 0px", // ref要素が現れてから20%過ぎたら
+    rootMargin: '0px 0px -20% 0px', // ref要素が現れてから20%過ぎたら
     triggerOnce: true, // 最初の一度だけ実行
   });
 
   return (
-    <section id='sec01' className="sec-content">
+    <section id='sec01' className='sec-content'>
       <div className='sp-wrapper'>
         <div className='viseo-title'>
           <h2 className='eng-title' ref={ref} >
@@ -93,7 +93,7 @@ function Set1({ sec1Engtitle, sec1Jptitle, sec1Subtitle, sec1Desctext, sec1Cards
 function Jptitle1({ sec1Jptitle }) {
   const { ref, inView } = useInView({
     // オプション
-    rootMargin: "0px 0px -20% 0px", // ref要素が現れてから20%過ぎたら
+    rootMargin: '0px 0px -20% 0px', // ref要素が現れてから20%過ぎたら
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
@@ -105,7 +105,7 @@ function Jptitle1({ sec1Jptitle }) {
 function Subtitle1({ sec1Subtitle }) {
   const { ref, inView } = useInView({
     // オプション
-    rootMargin: "0px 0px -20% 0px", // ref要素が現れてから20%過ぎたら
+    rootMargin: '0px 0px -20% 0px', // ref要素が現れてから20%過ぎたら
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
@@ -120,7 +120,7 @@ function Subtitle1({ sec1Subtitle }) {
 function DescText1({ sec1Desctext }) {
   const { ref, inView } = useInView({
     // オプション
-    rootMargin: "0px 0px -20% 0px", // ref要素が現れてから20%過ぎたら
+    rootMargin: '0px 0px -20% 0px', // ref要素が現れてから20%過ぎたら
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
@@ -132,7 +132,7 @@ function DescText1({ sec1Desctext }) {
 function CardsArea({ sec1Cards }) {
   const { ref, inView } = useInView({
     // オプション
-    rootMargin: "0px 0px -20% 0px", // ref要素が現れてから20%過ぎたら
+    rootMargin: '0px 0px -20% 0px', // ref要素が現れてから20%過ぎたら
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
@@ -141,7 +141,7 @@ function CardsArea({ sec1Cards }) {
         <div className='view-wrap'>
           <div className='card-item fadeup'>
             <div className='card-top'>
-              <img src={card1} alt="" />
+              <img src={card1} alt='' />
             </div>
             <div className='card-bottom'>
               <p>企業のデジタル化</p>
@@ -149,7 +149,7 @@ function CardsArea({ sec1Cards }) {
           </div>
           <div className='card-item fadeup card-delay-02'>
             <div className='card-top'>
-              <img src={card2} alt="" />
+              <img src={card2} alt='' />
             </div>
             <div className='card-bottom'>
               <p>顧客をつなぐ</p>
@@ -157,7 +157,7 @@ function CardsArea({ sec1Cards }) {
           </div>
           <div className='card-item fadeup card-delay-04'>
             <div className='card-top'>
-              <img src={card3} alt="" />
+              <img src={card3} alt='' />
             </div>
             <div className='card-bottom'>
               <p>革新を探求</p>
@@ -172,14 +172,14 @@ function CardsArea({ sec1Cards }) {
 function WorldWork({ sec1Worlds }) {
   const { ref, inView } = useInView({
     // オプション
-    rootMargin: "0px 0px -20% 0px", // ref要素が現れてから20%過ぎたら
+    rootMargin: '0px 0px -20% 0px', // ref要素が現れてから20%過ぎたら
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
     <div ref={ref}>
       <div className={'world-work ' + (inView && 'fadeup')}>
         <div className='map'>
-          <img src={work_map} alt="" />
+          <img src={WorkMap} alt='' />
         </div>
         <div className='work-text'>
           {sec1Worlds}
@@ -194,11 +194,11 @@ function WorldWork({ sec1Worlds }) {
 function Set2({ sec2Engtitle, sec2Subtitle, sec2Leadtext, sec2Maintext, sec2OfficeMap }) {
   const { ref, inView } = useInView({
     // オプション
-    rootMargin: "0px 0px -20% 0px", // ref要素が現れてから20%過ぎたら
+    rootMargin: '0px 0px -20% 0px', // ref要素が現れてから20%過ぎたら
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
-    <section id='sec02' className="sec-content">
+    <section id='sec02' className='sec-content'>
       <div className='viseo-title'>
         <h2 className='eng-title' ref={ref} >
           {(inView &&
@@ -229,7 +229,7 @@ function Set2({ sec2Engtitle, sec2Subtitle, sec2Leadtext, sec2Maintext, sec2Offi
 function LeadText({ sec2Subtitle, sec2Leadtext }) {
   const { ref, inView } = useInView({
     // オプション
-    rootMargin: "0px 0px -20% 0px", // ref要素が現れてから20%過ぎたら
+    rootMargin: '0px 0px -20% 0px', // ref要素が現れてから20%過ぎたら
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
@@ -246,7 +246,7 @@ function LeadText({ sec2Subtitle, sec2Leadtext }) {
 function ViseoText({ sec2Maintext }) {
   const { ref, inView } = useInView({
     // オプション
-    rootMargin: "0px 0px -20% 0px", // ref要素が現れてから20%過ぎたら
+    rootMargin: '0px 0px -20% 0px', // ref要素が現れてから20%過ぎたら
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
@@ -263,12 +263,12 @@ function ViseoText({ sec2Maintext }) {
 function ViseoOffice({ sec2OfficeMap }) {
   const { ref, inView } = useInView({
     // オプション
-    rootMargin: "0px 0px -20% 0px", // ref要素が現れてから20%過ぎたら
+    rootMargin: '0px 0px -20% 0px', // ref要素が現れてから20%過ぎたら
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
     <div ref={ref}>
-      <img src={sec2OfficeMap} alt="" className={(inView && 'fadeup')} />
+      <img src={sec2OfficeMap} alt='' className={(inView && 'fadeup')} />
     </div>
   )
 }
@@ -278,11 +278,11 @@ function ViseoOffice({ sec2OfficeMap }) {
 function Set3({ sec3Engtitle, sec3Jptitle, sec3Bluetitle1, sec3Bluetitle2, sec3Bluetitle3, sec3Service2, sec3Serviceimg, sec3Servicetext, sec3LogoGroup }) {
   const { ref, inView } = useInView({
     // オプション
-    rootMargin: "0px 0px -20% 0px", // ref要素が現れてから20%過ぎたら
+    rootMargin: '0px 0px -20% 0px', // ref要素が現れてから20%過ぎたら
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
-    <section id='sec03' className="sec-content">
+    <section id='sec03' className='sec-content'>
       <div className='wrap'>
         <div className='sp-wrapper'>
           <div className='viseo-title'>
@@ -297,19 +297,19 @@ function Set3({ sec3Engtitle, sec3Jptitle, sec3Bluetitle1, sec3Bluetitle2, sec3B
           <ServiceImg1 sec3Serviceimg={sec3Serviceimg} />
           <div className='service-img sp'>
             <div className='service-container'>
-              <img src={SpService01} alt="" />
+              <img src={SpService01} alt='' />
               <p className='service-name'>ビジネス<br />アプリケーション</p>
             </div>
             <div className='service-container'>
-              <img src={SpService02} alt="" />
+              <img src={SpService02} alt='' />
               <p className='service-name'>インテリジェントERP &<br />コア・プラットフォーム</p>
             </div>
             <div className='service-container'>
-              <img src={SpService03} alt="" />
+              <img src={SpService03} alt='' />
               <p className='service-name'>データ &<br />アナリティクス</p>
             </div>
             <div className='service-container'>
-              <img src={SpService04} alt="" />
+              <img src={SpService04} alt='' />
               <p className='service-name'>デザイン & 開発</p>
             </div>
           </div>
@@ -317,21 +317,21 @@ function Set3({ sec3Engtitle, sec3Jptitle, sec3Bluetitle1, sec3Bluetitle2, sec3B
           <Sec3ServiceSet sec3Service2={sec3Service2} />
           <div className='support-img sp'>
             <div className='support-container'>
-              <img src={support1} alt="" />
+              <img src={support1} alt='' />
               <div className='support-text'>
                 <h3>構想</h3>
                 <p>アドバイザリー、アイデア、構築</p>
               </div>
             </div>
             <div className='support-container'>
-              <img src={support2} alt="" />
+              <img src={support2} alt='' />
               <div className='support-text'>
                 <h3>創る</h3>
                 <p>デザイン、開発、実装、統合化</p>
               </div>
             </div>
             <div className='support-container'>
-              <img src={support3} alt="" />
+              <img src={support3} alt='' />
               <div className='support-text'>
                 <h3>実施</h3>
                 <p>デプロイメント、変更管理、<br />保守・モニタリング</p>
@@ -344,7 +344,7 @@ function Set3({ sec3Engtitle, sec3Jptitle, sec3Bluetitle1, sec3Bluetitle2, sec3B
         <Sec3LogoCardSet sec3LogoGroup={sec3LogoGroup} />
         <div className='support-card-area sp'>
           <Swiper
-            effect={"coverflow"}
+            effect={'coverflow'}
             grabCursor={true}
             centeredSlides={true}
             loop={true}
@@ -359,8 +359,8 @@ function Set3({ sec3Engtitle, sec3Jptitle, sec3Bluetitle1, sec3Bluetitle2, sec3B
             }}
             pagination={false}
             modules={[EffectCoverflow, Pagination]}
-            className="mySwiper">
-            <SwiperSlide className="swiperslide">
+            className='mySwiper'>
+            <SwiperSlide className='swiperslide'>
               <div className='support-card'>
                 <p className='card-title'>顧客体験</p>
                 <div className='img-box'>
@@ -368,7 +368,7 @@ function Set3({ sec3Engtitle, sec3Jptitle, sec3Bluetitle1, sec3Bluetitle2, sec3B
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide className="swiperslide">
+            <SwiperSlide className='swiperslide'>
               <div className='support-card'>
                 <p className='card-title'>小売Eコマース</p>
                 <div className='img-box'>
@@ -376,7 +376,7 @@ function Set3({ sec3Engtitle, sec3Jptitle, sec3Bluetitle1, sec3Bluetitle2, sec3B
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide className="swiperslide">
+            <SwiperSlide className='swiperslide'>
               <div className='support-card'>
                 <p className='card-title'>サプライチェーンDOM</p>
                 <div className='img-box'>
@@ -384,7 +384,7 @@ function Set3({ sec3Engtitle, sec3Jptitle, sec3Bluetitle1, sec3Bluetitle2, sec3B
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide className="swiperslide">
+            <SwiperSlide className='swiperslide'>
               <div className='support-card'>
                 <p className='card-title'>IT・データ統合</p>
                 <div className='img-box'>
@@ -392,7 +392,7 @@ function Set3({ sec3Engtitle, sec3Jptitle, sec3Bluetitle1, sec3Bluetitle2, sec3B
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide className="swiperslide">
+            <SwiperSlide className='swiperslide'>
               <div className='support-card'>
                 <p className='card-title'>ERP</p>
                 <div className='img-box'>
@@ -409,7 +409,7 @@ function Set3({ sec3Engtitle, sec3Jptitle, sec3Bluetitle1, sec3Bluetitle2, sec3B
 function Jptitle3({ sec3Jptitle }) {
   const { ref, inView } = useInView({
     // オプション
-    rootMargin: "0px 0px -20% 0px", // ref要素が現れてから20%過ぎたら
+    rootMargin: '0px 0px -20% 0px', // ref要素が現れてから20%過ぎたら
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
@@ -421,7 +421,7 @@ function Jptitle3({ sec3Jptitle }) {
 function Bluetitle1({ sec3Bluetitle1 }) {
   const { ref, inView } = useInView({
     // オプション
-    rootMargin: "0px 0px -20% 0px", // ref要素が現れてから20%過ぎたら
+    rootMargin: '0px 0px -20% 0px', // ref要素が現れてから20%過ぎたら
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
@@ -433,7 +433,7 @@ function Bluetitle1({ sec3Bluetitle1 }) {
 function Bluetitle2({ sec3Bluetitle2 }) {
   const { ref, inView } = useInView({
     // オプション
-    rootMargin: "0px 0px -20% 0px", // ref要素が現れてから20%過ぎたら
+    rootMargin: '0px 0px -20% 0px', // ref要素が現れてから20%過ぎたら
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
@@ -445,7 +445,7 @@ function Bluetitle2({ sec3Bluetitle2 }) {
 function Bluetitle3({ sec3Bluetitle3 }) {
   const { ref, inView } = useInView({
     // オプション
-    rootMargin: "0px 0px -20% 0px", // ref要素が現れてから20%過ぎたら
+    rootMargin: '0px 0px -20% 0px', // ref要素が現れてから20%過ぎたら
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
@@ -457,13 +457,13 @@ function Bluetitle3({ sec3Bluetitle3 }) {
 function ServiceImg1({ sec3Serviceimg }) {
   const { ref, inView } = useInView({
     // オプション
-    rootMargin: "0px 0px -20% 0px", // ref要素が現れてから20%過ぎたら
+    rootMargin: '0px 0px -20% 0px', // ref要素が現れてから20%過ぎたら
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
     <div ref={ref}>
       <div className={'img-area pc ' + (inView && 'fadeup')}>
-        <img src={sec3Serviceimg} alt="" />
+        <img src={sec3Serviceimg} alt='' />
       </div>
     </div>
   )
@@ -471,7 +471,7 @@ function ServiceImg1({ sec3Serviceimg }) {
 function ServiceImg2({ }) {
   const { ref, inView } = useInView({
     // オプション
-    rootMargin: "0px 0px -20% 0px", // ref要素が現れてから20%過ぎたら
+    rootMargin: '0px 0px -20% 0px', // ref要素が現れてから20%過ぎたら
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
@@ -499,7 +499,7 @@ function ServiceImg2({ }) {
 function ServiceText({ sec3Servicetext }) {
   const { ref, inView } = useInView({
     // オプション
-    rootMargin: "0px 0px -20% 0px", // ref要素が現れてから20%過ぎたら
+    rootMargin: '0px 0px -20% 0px', // ref要素が現れてから20%過ぎたら
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
@@ -513,7 +513,7 @@ function ServiceText({ sec3Servicetext }) {
 function SupportCard() {
   const { ref, inView } = useInView({
     // オプション
-    rootMargin: "0px 0px -20% 0px", // ref要素が現れてから20%過ぎたら
+    rootMargin: '0px 0px -20% 0px', // ref要素が現れてから20%過ぎたら
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
@@ -559,11 +559,11 @@ function SupportCard() {
 function Set4({ sec4Engtitle, sec4Jptitle, sec4LogoGroup }) {
   const { ref, inView } = useInView({
     // オプション
-    rootMargin: "0px 0px -20% 0px", // ref要素が現れてから20%過ぎたら
+    rootMargin: '0px 0px -20% 0px', // ref要素が現れてから20%過ぎたら
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
-    <section id='sec04' className="sec-content">
+    <section id='sec04' className='sec-content'>
       <div className='sp-wrapper'>
         <div className='viseo-title'>
           <h2 className='eng-title' ref={ref} >
@@ -581,7 +581,7 @@ function Set4({ sec4Engtitle, sec4Jptitle, sec4LogoGroup }) {
 function Jptitle4({ sec4Jptitle }) {
   const { ref, inView } = useInView({
     // オプション
-    rootMargin: "0px 0px -20% 0px", // ref要素が現れてから20%過ぎたら
+    rootMargin: '0px 0px -20% 0px', // ref要素が現れてから20%過ぎたら
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
@@ -593,25 +593,25 @@ function Jptitle4({ sec4Jptitle }) {
 function PartnerLogo() {
   const { ref, inView } = useInView({
     // オプション
-    rootMargin: "0px 0px -10% 0px", // ref要素が現れてから20%過ぎたら
+    rootMargin: '0px 0px -10% 0px', // ref要素が現れてから20%過ぎたら
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
     <div className='logo-wrap fadeup' ref={ref}>
       {(inView &&
         <ul className='logo-list'>
-          <li className='fadeup'><img src={sap_logo} alt="" /></li>
-          <li className='fadeup logo-delay-02'><img src={microsoft} alt="" /></li>
-          <li className='fadeup logo-delay-03'><img src={amazon} alt="" /></li>
-          <li className='fadeup logo-delay-04'><img src={azure} alt="" /></li>
-          <li className='fadeup logo-delay-05'><img src={shopify} alt="" /></li>
-          <li className='fadeup logo-delay-06'><img src={google} alt="" /></li>
-          <li className='fadeup logo-delay-07'><img src={fluent} alt="" /></li>
-          <li className='fadeup logo-delay-08'><img src={cegid} alt="" /></li>
-          <li className='fadeup logo-delay-09'><img src={boomi} alt="" /></li>
-          <li className='fadeup logo-delay-10'><img src={naplan} alt="" /></li>
-          <li className='fadeup logo-delay-11'><img src={mulesoft} alt="" /></li>
-          <li className='fadeup logo-delay-12'><img src={sf} alt="" /></li>
+          <li className='fadeup'><img src={SapLogo} alt='' /></li>
+          <li className='fadeup logo-delay-02'><img src={microsoft} alt='' /></li>
+          <li className='fadeup logo-delay-03'><img src={amazon} alt='' /></li>
+          <li className='fadeup logo-delay-04'><img src={azure} alt='' /></li>
+          <li className='fadeup logo-delay-05'><img src={shopify} alt='' /></li>
+          <li className='fadeup logo-delay-06'><img src={google} alt='' /></li>
+          <li className='fadeup logo-delay-07'><img src={fluent} alt='' /></li>
+          <li className='fadeup logo-delay-08'><img src={cegid} alt='' /></li>
+          <li className='fadeup logo-delay-09'><img src={boomi} alt='' /></li>
+          <li className='fadeup logo-delay-10'><img src={naplan} alt='' /></li>
+          <li className='fadeup logo-delay-11'><img src={mulesoft} alt='' /></li>
+          <li className='fadeup logo-delay-12'><img src={sf} alt='' /></li>
         </ul>
       )}
     </div >
@@ -624,15 +624,15 @@ function PartnerLogo() {
 function Set5() {
   const { ref, inView } = useInView({
     // オプション
-    rootMargin: "0px 0px -20% 0px", // ref要素が現れてから20%過ぎたら
+    rootMargin: '0px 0px -20% 0px', // ref要素が現れてから20%過ぎたら
     triggerOnce: true, // 最初の一度だけ実行
   });
 
   return (
-    <section id='sec05' className="sec-content">
+    <section id='sec05' className='sec-content'>
       <div className='contact-content' ref={ref}>
         <div className='contact-area'>
-          <img src={HouseImg} alt="" />
+          <img src={HouseImg} alt='' />
           <div className='contact-text'>
             <h2>CONTACT US</h2>
             <a href=''>お問い合わせはこちら</a>
@@ -859,15 +859,15 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
         lang={lang}
         menu={menu}
         footer={footer}
-        title="WarpJapan For Viseo"
+        title='WarpJapan For Viseo'
         isPreview={preview.isActive}
       >
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-        <div className="viseo-wrapper" data-scroll-section>
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css' />
+        <script src='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js'></script>
+        <div className='viseo-wrapper' data-scroll-section>
           <div className='fv-area'>
-            <img src={FirstViewPC} alt="" className='pc' />
-            <img src={FirstViewSP} alt="" className='sp' />
+            <img src={FirstViewPC} alt='' className='pc' />
+            <img src={FirstViewSP} alt='' className='sp' />
             <p>{Fvtitle}</p>
           </div>
           <Set1
