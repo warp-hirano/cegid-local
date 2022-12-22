@@ -63,7 +63,7 @@ import naplan from '../public/images/naplan.svg';
 import mulesoft from '../public/images/mulesoft.svg';
 import sf from '../public/images/sf.svg';
 
-/* section1 */
+/*  section1  */
 function Set1({ sec1Engtitle, sec1Jptitle, sec1Subtitle, sec1Desctext, sec1Cards, sec1Worlds, sec1WT }) {
   const { ref, inView } = useInView({
     // オプション
@@ -112,7 +112,7 @@ function Subtitle1({ sec1Subtitle }) {
     <div className='sub-title' ref={ref}>
       <h3 className={(inView && 'fadeup')}>
         {sec1Subtitle}
-        {/*<span className=' big-subtitle'>VISEOは、</span><br />デジタル戦略の中核を担い、<br className='sp' />独立系で堅実な会社です。*/}
+        {/* <span className=' big-subtitle'>VISEOは、</span><br />デジタル戦略の中核を担い、<br className='sp' />独立系で堅実な会社です。 */}
       </h3>
     </div>
   )
@@ -188,9 +188,9 @@ function WorldWork({ sec1Worlds }) {
     </div>
   )
 }
-/* /section1 */
+/*  /section1  */
 
-/* section2 */
+/*  section2  */
 function Set2({ sec2Engtitle, sec2Subtitle, sec2Leadtext, sec2Maintext, sec2OfficeMap }) {
   const { ref, inView } = useInView({
     // オプション
@@ -235,8 +235,8 @@ function LeadText({ sec2Subtitle, sec2Leadtext }) {
   return (
     <div ref={ref}>
       <div className={'lead-text pc ' + (inView && 'fadeup')}>
-        {/*<h3>グローバルに展開し、<br className='sp' />最も意欲的な企業に貢献</h3>
-        <p>顧客のニーズに応え、グローバルな展開をサポートするワールドワイドな存在感</p>*/}
+        {/* <h3>グローバルに展開し、<br className='sp' />最も意欲的な企業に貢献</h3>
+        <p>顧客のニーズに応え、グローバルな展開をサポートするワールドワイドな存在感</p> */}
         <h3>{sec2Subtitle}</h3>
         <p>{sec2Leadtext}</p>
       </div>
@@ -251,11 +251,11 @@ function ViseoText({ sec2Maintext }) {
   });
   return (
     <div ref={ref}>
-      {/*<p className={'main-text pc ' + (inView && 'fadeup')}>
+      {/* <p className={'main-text pc ' + (inView && 'fadeup')}>
         シンガポール、マレーシア、セブ、シュラバヤ、香港、上海、深セン、東京、<br className='pc' />
         シドニー、メルボルン、ブリスベン、バンガロールに拠点を置き、<br />
         現在アジア太平洋地域は<span>9</span>カ国<span>12</span>拠点に及んでいます。
-  </p>*/}
+  </p> */}
       <p className={'main-text pc ' + (inView && 'fadeup')}>{sec2Maintext}</p>
     </div>
   )
@@ -272,9 +272,9 @@ function ViseoOffice({ sec2OfficeMap }) {
     </div>
   )
 }
-/* /section2 */
+/*  /section2  */
 
-/* section3 */
+/*  section3  */
 function Set3({ sec3Engtitle, sec3Jptitle, sec3Bluetitle1, sec3Bluetitle2, sec3Bluetitle3, sec3Service2, sec3Serviceimg, sec3Servicetext, sec3LogoGroup }) {
   const { ref, inView } = useInView({
     // オプション
@@ -553,9 +553,9 @@ function SupportCard() {
     </div>
   )
 }
-/* /section3 */
+/*  /section3  */
 
-/* section4 */
+/*  section4  */
 function Set4({ sec4Engtitle, sec4Jptitle, sec4LogoGroup }) {
   const { ref, inView } = useInView({
     // オプション
@@ -618,9 +618,9 @@ function PartnerLogo() {
 
   )
 }
-/* /section4 */
+/*  /section4  */
 
-/* section5 */
+/*  section5  */
 function Set5() {
   const { ref, inView } = useInView({
     // オプション
@@ -650,7 +650,7 @@ function Set5() {
     </section>
   )
 }
-/* /section5 */
+/*  /section5  */
 
 
 function ViseoPage({ doc, menu, footer, lang, preview }) {
@@ -663,7 +663,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
 
     // sec1ここから
 
-    /*----- 配列取り出し -----*/
+    /* ----- 配列取り出し ----- */
     let result1 = doc.data.sec1_eng_title[0].text.split('');
     let newText1 = '';
 
@@ -672,7 +672,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
     }
 
     const sec1Engtitle = newText1;
-    /*----------------------*/
+    /* ---------------------- */
 
     const sec1Jptitle =
       doc && RichText.render(doc.data.sec1_jp_title)
@@ -691,7 +691,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
 
     // sec2ここから
 
-    /*----- 配列取り出し -----*/
+    /* ----- 配列取り出し ----- */
     let result2 = doc.data.sec2_eng_title[0].text.split('');
     let newText2 = '';
 
@@ -700,7 +700,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
     }
 
     const sec2Engtitle = newText2;
-    /*----------------------*/
+    /* ---------------------- */
 
     const sec2Leadtext =
       doc && RichText.render(doc.data.sec2_lead_text)
@@ -719,7 +719,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
 
     // sec3ここから
 
-    /*----- 配列取り出し -----*/
+    /* ----- 配列取り出し ----- */
     let result3 = doc.data.sec3_eng_title[0].text.split('');
     let newText3 = '';
 
@@ -728,7 +728,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
     }
 
     const sec3Engtitle = newText3;
-    /*----------------------*/
+    /* ---------------------- */
 
     const sec3Jptitle =
       doc && RichText.render(doc.data.sec3_jp_title)
@@ -756,7 +756,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
         : '';
 
     // sec4ここから
-    /*----- 配列取り出し -----*/
+    /* ----- 配列取り出し ----- */
     let result4 = doc.data.sec4_eng_title[0].text.split('');
     let newText4 = '';
 
@@ -765,7 +765,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
     }
 
     const sec4Engtitle = newText4;
-    /*----------------------*/
+    /* ---------------------- */
 
     const sec4Jptitle =
       doc && RichText.render(doc.data.sec4_jp_title)
