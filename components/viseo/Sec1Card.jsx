@@ -9,7 +9,7 @@ const TeamCard = ({ sec1_card_text }) => {
 
   if (sec1_card_text) {
     return (
-      <div className="card-item fadeup">
+      <div className='card-item fadeup'>
         <div className='card-top'>
           <img src={sec1_card_text.sec1_card_img.url} />
         </div>

@@ -16,7 +16,7 @@ const Sec3Services = ({ sec3_service2_title }) => {
 
   if (sec3_service2_title) {
     return (
-      <div className="support-item">
+      <div className='support-item'>
         <div className='name'>
           <p>{title}</p>
         </div>
