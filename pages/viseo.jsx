@@ -72,10 +72,10 @@ function Set1({ sec1Engtitle, sec1Jptitle, sec1Subtitle, sec1Desctext, sec1Cards
   });
 
   return (
-    <section id='sec01' className='sec-content'>
-      <div className='sp-wrapper'>
-        <div className='viseo-title'>
-          <h2 className='eng-title' ref={ref} >
+    <section id="sec01" className="sec-content">
+      <div className="sp-wrapper">
+        <div className="viseo-title">
+          <h2 className="eng-title" ref={ref} >
             {(inView &&
               <div dangerouslySetInnerHTML={{ __html: sec1Engtitle }} />
             )}
@@ -109,8 +109,8 @@ function Subtitle1({ sec1Subtitle }) {
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
-    <div className='sub-title' ref={ref}>
-      <h3 className={(inView && 'fadeup')}>
+    <div className="sub-title" ref={ref}>
+      <h3 className={(inView && "fadeup")}>
         {sec1Subtitle}
         {/* <span className=' big-subtitle'>VISEOは、</span><br />デジタル戦略の中核を担い、<br className='sp' />独立系で堅実な会社です。 */}
       </h3>
@@ -125,7 +125,7 @@ function DescText1({ sec1Desctext }) {
   });
   return (
     <div ref={ref}>
-      <p className={'desc-text ' + (inView && 'fadeup')}>{sec1Desctext}</p>
+      <p className={"desc-text " + (inView && "fadeup")}>{sec1Desctext}</p>
     </div>
   );
 }
@@ -136,30 +136,30 @@ function CardsArea({ sec1Cards }) {
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
-    <div className='card-area' ref={ref}>
+    <div className="card-area" ref={ref}>
       {(inView &&
-        <div className='view-wrap'>
-          <div className='card-item fadeup'>
-            <div className='card-top'>
-              <img src={card1} alt='' />
+        <div className="view-wrap">
+          <div className="card-item fadeup">
+            <div className="card-top">
+              <img src={card1} alt="" />
             </div>
-            <div className='card-bottom'>
+            <div className="card-bottom">
               <p>企業のデジタル化</p>
             </div>
           </div>
-          <div className='card-item fadeup card-delay-02'>
-            <div className='card-top'>
-              <img src={card2} alt='' />
+          <div className="card-item fadeup card-delay-02">
+            <div className="card-top">
+              <img src={card2} alt="" />
             </div>
-            <div className='card-bottom'>
+            <div className="card-bottom">
               <p>顧客をつなぐ</p>
             </div>
           </div>
-          <div className='card-item fadeup card-delay-04'>
-            <div className='card-top'>
-              <img src={card3} alt='' />
+          <div className="card-item fadeup card-delay-04">
+            <div className="card-top">
+              <img src={card3} alt="" />
             </div>
-            <div className='card-bottom'>
+            <div className="card-bottom">
               <p>革新を探求</p>
             </div>
           </div>
@@ -177,11 +177,11 @@ function WorldWork({ sec1Worlds }) {
   });
   return (
     <div ref={ref}>
-      <div className={'world-work ' + (inView && 'fadeup')}>
-        <div className='map'>
-          <img src={WorkMap} alt='' />
+      <div className={"world-work " + (inView && "fadeup")}>
+        <div className="map">
+          <img src={WorkMap} alt="" />
         </div>
-        <div className='work-text'>
+        <div className="work-text">
           {sec1Worlds}
         </div>
       </div>
@@ -198,23 +198,23 @@ function Set2({ sec2Engtitle, sec2Subtitle, sec2Leadtext, sec2Maintext, sec2Offi
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
-    <section id='sec02' className='sec-content'>
-      <div className='viseo-title'>
-        <h2 className='eng-title' ref={ref} >
+    <section id="sec02" className="sec-content">
+      <div className="viseo-title">
+        <h2 className="eng-title" ref={ref} >
           {(inView &&
             <div dangerouslySetInnerHTML={{ __html: sec2Engtitle }} />
           )}
         </h2>
       </div>
-      <div className='green-back'>
+      <div className="green-back">
         <LeadText sec2Subtitle={sec2Subtitle} sec2Leadtext={sec2Leadtext} />
         <ViseoText sec2Maintext={sec2Maintext} />
-        <div className='green-wrap sp'>
-          <div className='lead-text'>
-            <h3>グローバルに展開し、<br className='sp' />最も意欲的な企業に貢献</h3>
+        <div className="green-wrap sp">
+          <div className="lead-text">
+            <h3>グローバルに展開し、<br className="sp" />最も意欲的な企業に貢献</h3>
             <p>顧客のニーズに応え、グローバルな展開をサポートするワールドワイドな存在感</p>
           </div>
-          <p className='main-text'>
+          <p className="main-text">
             シンガポール、マレーシア、セブ、シュラバヤ、<br />
             香港、上海、深セン、東京、シドニー、メルボルン、<br />
             ブリスベン、バンガロールに拠点を置き、<br />
@@ -234,8 +234,8 @@ function LeadText({ sec2Subtitle, sec2Leadtext }) {
   });
   return (
     <div ref={ref}>
-      <div className={'lead-text pc ' + (inView && 'fadeup')}>
-        {/* <h3>グローバルに展開し、<br className='sp' />最も意欲的な企業に貢献</h3>
+      <div className={"lead-text pc " + (inView && "fadeup")}>
+        {/* <h3>グローバルに展開し、<br className="sp" />最も意欲的な企業に貢献</h3>
         <p>顧客のニーズに応え、グローバルな展開をサポートするワールドワイドな存在感</p> */}
         <h3>{sec2Subtitle}</h3>
         <p>{sec2Leadtext}</p>
@@ -256,7 +256,7 @@ function ViseoText({ sec2Maintext }) {
         シドニー、メルボルン、ブリスベン、バンガロールに拠点を置き、<br />
         現在アジア太平洋地域は<span>9</span>カ国<span>12</span>拠点に及んでいます。
   </p> */}
-      <p className={'main-text pc ' + (inView && 'fadeup')}>{sec2Maintext}</p>
+      <p className={"main-text pc " + (inView && "fadeup")}>{sec2Maintext}</p>
     </div>
   );
 }
@@ -268,7 +268,7 @@ function ViseoOffice({ sec2OfficeMap }) {
   });
   return (
     <div ref={ref}>
-      <img src={sec2OfficeMap} alt='' className={(inView && 'fadeup')} />
+      <img src={sec2OfficeMap} alt="" className={(inView && "fadeup")} />
     </div>
   );
 }
@@ -282,11 +282,11 @@ function Set3({ sec3Engtitle, sec3Jptitle, sec3Bluetitle1, sec3Bluetitle2, sec3B
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
-    <section id='sec03' className='sec-content'>
-      <div className='wrap'>
-        <div className='sp-wrapper'>
-          <div className='viseo-title'>
-            <h2 className='eng-title' ref={ref} >
+    <section id="sec03" className="sec-content">
+      <div className="wrap">
+        <div className="sp-wrapper">
+          <div className="viseo-title">
+            <h2 className="eng-title" ref={ref} >
               {(inView &&
                 <div dangerouslySetInnerHTML={{ __html: sec3Engtitle }} />
               )}
@@ -295,44 +295,44 @@ function Set3({ sec3Engtitle, sec3Jptitle, sec3Bluetitle1, sec3Bluetitle2, sec3B
           </div>
           <Bluetitle1 sec3Bluetitle1={sec3Bluetitle1} />
           <ServiceImg1 sec3Serviceimg={sec3Serviceimg} />
-          <div className='service-img sp'>
-            <div className='service-container'>
-              <img src={SpService01} alt='' />
-              <p className='service-name'>ビジネス<br />アプリケーション</p>
+          <div className="service-img sp">
+            <div className="service-container">
+              <img src={SpService01} alt="" />
+              <p className="service-name">ビジネス<br />アプリケーション</p>
             </div>
-            <div className='service-container'>
-              <img src={SpService02} alt='' />
-              <p className='service-name'>インテリジェントERP &<br />コア・プラットフォーム</p>
+            <div className="service-container">
+              <img src={SpService02} alt="" />
+              <p className="service-name">インテリジェントERP &<br />コア・プラットフォーム</p>
             </div>
-            <div className='service-container'>
-              <img src={SpService03} alt='' />
-              <p className='service-name'>データ &<br />アナリティクス</p>
+            <div className="service-container">
+              <img src={SpService03} alt="" />
+              <p className="service-name">データ &<br />アナリティクス</p>
             </div>
-            <div className='service-container'>
-              <img src={SpService04} alt='' />
-              <p className='service-name'>デザイン & 開発</p>
+            <div className="service-container">
+              <img src={SpService04} alt="" />
+              <p className="service-name">デザイン & 開発</p>
             </div>
           </div>
           <Bluetitle2 sec3Bluetitle2={sec3Bluetitle2} />
           <Sec3ServiceSet sec3Service2={sec3Service2} />
-          <div className='support-img sp'>
-            <div className='support-container'>
-              <img src={support1} alt='' />
-              <div className='support-text'>
+          <div className="support-img sp">
+            <div className="support-container">
+              <img src={support1} alt="" />
+              <div className="support-text">
                 <h3>構想</h3>
                 <p>アドバイザリー、アイデア、構築</p>
               </div>
             </div>
-            <div className='support-container'>
-              <img src={support2} alt='' />
-              <div className='support-text'>
+            <div className="support-container">
+              <img src={support2} alt="" />
+              <div className="support-text">
                 <h3>創る</h3>
                 <p>デザイン、開発、実装、統合化</p>
               </div>
             </div>
-            <div className='support-container'>
-              <img src={support3} alt='' />
-              <div className='support-text'>
+            <div className="support-container">
+              <img src={support3} alt="" />
+              <div className="support-text">
                 <h3>実施</h3>
                 <p>デプロイメント、変更管理、<br />保守・モニタリング</p>
               </div>
@@ -342,7 +342,7 @@ function Set3({ sec3Engtitle, sec3Jptitle, sec3Bluetitle1, sec3Bluetitle2, sec3B
           <ServiceText sec3Servicetext={sec3Servicetext} />
         </div>
         <Sec3LogoCardSet sec3LogoGroup={sec3LogoGroup} />
-        <div className='support-card-area sp'>
+        <div className="support-card-area sp">
           <Swiper
             effect={'coverflow'}
             grabCursor={true}
@@ -359,44 +359,44 @@ function Set3({ sec3Engtitle, sec3Jptitle, sec3Bluetitle1, sec3Bluetitle2, sec3B
             }}
             pagination={false}
             modules={[EffectCoverflow, Pagination]}
-            className='mySwiper'>
-            <SwiperSlide className='swiperslide'>
-              <div className='support-card'>
-                <p className='card-title'>顧客体験</p>
-                <div className='img-box'>
-                  <img src={SpCard01} alt='' />
+            className="mySwiper">
+            <SwiperSlide className="swiperslide">
+              <div className="support-card">
+                <p className="card-title">顧客体験</p>
+                <div className="img-box">
+                  <img src={SpCard01} alt="" />
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide className='swiperslide'>
-              <div className='support-card'>
-                <p className='card-title'>小売Eコマース</p>
-                <div className='img-box'>
-                  <img src={SpCard02} alt='' />
+            <SwiperSlide className="swiperslide">
+              <div className="support-card">
+                <p className="card-title">小売Eコマース</p>
+                <div className="img-box">
+                  <img src={SpCard02} alt="" />
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide className='swiperslide'>
-              <div className='support-card'>
-                <p className='card-title'>サプライチェーンDOM</p>
-                <div className='img-box'>
-                  <img src={SpCard03} alt='' />
+            <SwiperSlide className="swiperslide">
+              <div className="support-card">
+                <p className="card-title">サプライチェーンDOM</p>
+                <div className="img-box">
+                  <img src={SpCard03} alt="" />
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide className='swiperslide'>
-              <div className='support-card'>
-                <p className='card-title'>IT・データ統合</p>
-                <div className='img-box'>
-                  <img src={SpCard04} alt='' />
+            <SwiperSlide className="swiperslide">
+              <div className="support-card">
+                <p className="card-title">IT・データ統合</p>
+                <div className="img-box">
+                  <img src={SpCard04} alt="" />
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide className='swiperslide'>
-              <div className='support-card'>
-                <p className='card-title'>ERP</p>
-                <div className='img-box'>
-                  <img src={SpCard05} alt='' className='resize' />
+            <SwiperSlide className="swiperslide">
+              <div className="support-card">
+                <p className="card-title">ERP</p>
+                <div className="img-box">
+                  <img src={SpCard05} alt="" className="resize" />
                 </div>
               </div>
             </SwiperSlide>
@@ -414,7 +414,7 @@ function Jptitle3({ sec3Jptitle }) {
   });
   return (
     <div ref={ref}>
-      <div className={'jp-title ' + (inView && 'fadeupJp')}>{sec3Jptitle}</div>
+      <div className={"jp-title " + (inView && "fadeupJp")}>{sec3Jptitle}</div>
     </div>
   );
 }
@@ -426,7 +426,7 @@ function Bluetitle1({ sec3Bluetitle1 }) {
   });
   return (
     <div ref={ref}>
-      <h3 className={'blue-title ' + (inView && 'fadeup')}>{sec3Bluetitle1}</h3>
+      <h3 className={"blue-title " + (inView && "fadeup")}>{sec3Bluetitle1}</h3>
     </div>
   );
 }
@@ -438,7 +438,7 @@ function Bluetitle2({ sec3Bluetitle2 }) {
   });
   return (
     <div ref={ref}>
-      <h3 className={'blue-title ' + (inView && 'fadeup')}>{sec3Bluetitle2}</h3>
+      <h3 className={"blue-title " + (inView && "fadeup")}>{sec3Bluetitle2}</h3>
     </div>
   );
 }
@@ -450,7 +450,7 @@ function Bluetitle3({ sec3Bluetitle3 }) {
   });
   return (
     <div ref={ref}>
-      <h3 className={'blue-title ' + (inView && 'fadeup')}>{sec3Bluetitle3}</h3>
+      <h3 className={"blue-title " + (inView && "fadeup")}>{sec3Bluetitle3}</h3>
     </div>
   );
 }
@@ -462,8 +462,8 @@ function ServiceImg1({ sec3Serviceimg }) {
   });
   return (
     <div ref={ref}>
-      <div className={'img-area pc ' + (inView && 'fadeup')}>
-        <img src={sec3Serviceimg} alt='' />
+      <div className={"img-area pc " + (inView && "fadeup")}>
+        <img src={sec3Serviceimg} alt="" />
       </div>
     </div>
   );
@@ -476,20 +476,20 @@ function ServiceImg2({ }) {
   });
   return (
     <div ref={ref}>
-      <div className={'support-area pc ' + (inView && 'fadeup')}>
-        <div className={'support-item ' + (inView && 'fadeup')}>
-          <div className='name'>構想</div>
-          <img src={support1} alt='' />
+      <div className={"support-area pc " + (inView && "fadeup")}>
+        <div className={"support-item " + (inView && "fadeup")}>
+          <div className="name">構想</div>
+          <img src={support1} alt="" />
           <p>アドバイザー<br />アイデア<br />構築</p>
         </div>
-        <div className={'support-item ' + (inView && 'fadeup card-delay-02')}>
-          <div className='name'>創る</div>
-          <img src={support2} alt='' />
+        <div className={"support-item " + (inView && "fadeup card-delay-02")}>
+          <div className="name">創る</div>
+          <img src={support2} alt="" />
           <p>デザイン<br />開発<br />実装<br />統合化</p>
         </div>
-        <div className={'support-item ' + (inView && 'fadeup card-delay-04')}>
-          <div className='name'>実施</div>
-          <img src={support3} alt='' />
+        <div className={"support-item " + (inView && "fadeup card-delay-04")}>
+          <div className="name">実施</div>
+          <img src={support3} alt="" />
           <p>デプロイメント<br />変更管理<br />保守・モニタリング</p>
         </div>
       </div>
@@ -504,7 +504,7 @@ function ServiceText({ sec3Servicetext }) {
   });
   return (
     <div ref={ref}>
-      <p className={'main-text ' + (inView && 'fadeup')}>
+      <p className={"main-text " + (inView && "fadeup")}>
         {sec3Servicetext}
       </p>
     </div>
@@ -518,35 +518,35 @@ function SupportCard() {
   });
   return (
     <div ref={ref}>
-      <div className={'support-card-area pc ' + (inView && 'fadeup')}>
-        <div className='support-card'>
-          <p className='card-title'>顧客体験</p>
-          <div className='img-box'>
-            <img src={SpCard01} alt='' />
+      <div className={"support-card-area pc " + (inView && "fadeup")}>
+        <div className="support-card">
+          <p className="card-title">顧客体験</p>
+          <div className="img-box">
+            <img src={SpCard01} alt="" />
           </div>
         </div>
-        <div className='support-card'>
-          <p className='card-title'>小売Eコマース</p>
-          <div className='img-box'>
-            <img src={SpCard02} alt='' />
+        <div className="support-card">
+          <p className="card-title">小売Eコマース</p>
+          <div className="img-box">
+            <img src={SpCard02} alt="" />
           </div>
         </div>
-        <div className='support-card'>
-          <p className='card-title'>サプライチェーンDOM</p>
-          <div className='img-box'>
-            <img src={SpCard03} alt='' />
+        <div className="support-card">
+          <p className="card-title">サプライチェーンDOM</p>
+          <div className="img-box">
+            <img src={SpCard03} alt="" />
           </div>
         </div>
-        <div className='support-card'>
-          <p className='card-title'>IT・データ統合</p>
-          <div className='img-box'>
-            <img src={SpCard04} alt='' />
+        <div className="support-card">
+          <p className="card-title">IT・データ統合</p>
+          <div className="img-box">
+            <img src={SpCard04} alt="" />
           </div>
         </div>
-        <div className='support-card'>
-          <p className='card-title'>ERP</p>
-          <div className='img-box'>
-            <img src={SpCard05} alt='' className='resize' />
+        <div className="support-card">
+          <p className="card-title">ERP</p>
+          <div className="img-box">
+            <img src={SpCard05} alt="" className="resize" />
           </div>
         </div>
       </div>
@@ -563,10 +563,10 @@ function Set4({ sec4Engtitle, sec4Jptitle, sec4LogoGroup }) {
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
-    <section id='sec04' className='sec-content'>
-      <div className='sp-wrapper'>
-        <div className='viseo-title'>
-          <h2 className='eng-title' ref={ref} >
+    <section id="sec04" className="sec-content">
+      <div className="sp-wrapper">
+        <div className="viseo-title">
+          <h2 className="eng-title" ref={ref} >
             {(inView &&
               <div dangerouslySetInnerHTML={{ __html: sec4Engtitle }} />
             )}
@@ -586,7 +586,7 @@ function Jptitle4({ sec4Jptitle }) {
   });
   return (
     <div ref={ref}>
-      <div className={'jp-title ' + (inView && 'fadeupJp')}>{sec4Jptitle}</div>
+      <div className={"jp-title " + (inView && "fadeupJp")}>{sec4Jptitle}</div>
     </div>
   );
 }
@@ -597,21 +597,21 @@ function PartnerLogo() {
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
-    <div className='logo-wrap fadeup' ref={ref}>
+    <div className="logo-wrap fadeup" ref={ref}>
       {(inView &&
-        <ul className='logo-list'>
-          <li className='fadeup'><img src={SapLogo} alt='' /></li>
-          <li className='fadeup logo-delay-02'><img src={microsoft} alt='' /></li>
-          <li className='fadeup logo-delay-03'><img src={amazon} alt='' /></li>
-          <li className='fadeup logo-delay-04'><img src={azure} alt='' /></li>
-          <li className='fadeup logo-delay-05'><img src={shopify} alt='' /></li>
-          <li className='fadeup logo-delay-06'><img src={google} alt='' /></li>
-          <li className='fadeup logo-delay-07'><img src={fluent} alt='' /></li>
-          <li className='fadeup logo-delay-08'><img src={cegid} alt='' /></li>
-          <li className='fadeup logo-delay-09'><img src={boomi} alt='' /></li>
-          <li className='fadeup logo-delay-10'><img src={naplan} alt='' /></li>
-          <li className='fadeup logo-delay-11'><img src={mulesoft} alt='' /></li>
-          <li className='fadeup logo-delay-12'><img src={sf} alt='' /></li>
+        <ul className="logo-list">
+          <li className="fadeup"><img src={SapLogo} alt="" /></li>
+          <li className="fadeup logo-delay-02"><img src={microsoft} alt="" /></li>
+          <li className="fadeup logo-delay-03"><img src={amazon} alt="" /></li>
+          <li className="fadeup logo-delay-04"><img src={azure} alt="" /></li>
+          <li className="fadeup logo-delay-05"><img src={shopify} alt="" /></li>
+          <li className="fadeup logo-delay-06"><img src={google} alt="" /></li>
+          <li className="fadeup logo-delay-07"><img src={fluent} alt="" /></li>
+          <li className="fadeup logo-delay-08"><img src={cegid} alt="" /></li>
+          <li className="fadeup logo-delay-09"><img src={boomi} alt="" /></li>
+          <li className="fadeup logo-delay-10"><img src={naplan} alt="" /></li>
+          <li className="fadeup logo-delay-11"><img src={mulesoft} alt="" /></li>
+          <li className="fadeup logo-delay-12"><img src={sf} alt="" /></li>
         </ul>
       )}
     </div >
@@ -629,21 +629,21 @@ function Set5() {
   });
 
   return (
-    <section id='sec05' className='sec-content'>
-      <div className='contact-content' ref={ref}>
-        <div className='contact-area'>
-          <img src={HouseImg} alt='' />
-          <div className='contact-text'>
+    <section id="sec05" className="sec-content">
+      <div className="contact-content" ref={ref}>
+        <div className="contact-area">
+          <img src={HouseImg} alt="" />
+          <div className="contact-text">
             <h2>CONTACT US</h2>
-            <a href=''>お問い合わせはこちら</a>
+            <a href="">お問い合わせはこちら</a>
           </div>
         </div>
-        <div className={'contact-btn-area ' + (inView && 'fadeup')}>
-          <div className='contact-btn'>
-            <a href=''>Warp Japan</a>
+        <div className={"contact-btn-area " + (inView && "fadeup")}>
+          <div className="contact-btn">
+            <a href="">Warp Japan</a>
           </div>
-          <div className='contact-btn'>
-            <a href=''>VISEO</a>
+          <div className="contact-btn">
+            <a href="">VISEO</a>
           </div>
         </div>
       </div>
@@ -864,10 +864,10 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
       >
         <link rel='stylesheet' href='https:// cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css' />
         <script src='https:// cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js'></script>
-        <div className='viseo-wrapper' data-scroll-section>
-          <div className='fv-area'>
-            <img src={FirstViewPC} alt='' className='pc' />
-            <img src={FirstViewSP} alt='' className='sp' />
+        <div className="viseo-wrapper" data-scroll-section>
+          <div className="fv-area">
+            <img src={FirstViewPC} alt="" className="pc" />
+            <img src={FirstViewSP} alt="" className="sp" />
             <p>{Fvtitle}</p>
           </div>
           <Set1
