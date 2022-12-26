@@ -14,7 +14,7 @@ const Sec1World = ({ world_text, sec1WT }) => {
       ? RichText.asText(world_text.world_text)
       : '';
 
-  const Worldstext = Worldtext.replace(/\n/g, '<br>')
+  const Worldstext = Worldtext.replace(/\n/g, '<br>');
 
   if (world_text, sec1WT) {
     return (

@@ -12,7 +12,7 @@ const Sec3Services = ({ sec3_service2_title }) => {
       ? RichText.asText(sec3_service2_title.sec3_service2_main)
       : '';
 
-  const mains = main.replace(/\n/g, '<br>')
+  const mains = main.replace(/\n/g, '<br>');
 
   if (sec3_service2_title) {
     return (

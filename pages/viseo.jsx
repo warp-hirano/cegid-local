@@ -16,7 +16,7 @@ import { EffectCoverflow, Pagination } from 'swiper';
 
 // スクロールアニメーション
 import { useInView } from 'react-intersection-observer';
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react';
 // import { useSpring, animated } from 'react-spring'
 
 // Cardエリアjs呼び出し
@@ -88,7 +88,7 @@ function Set1({ sec1Engtitle, sec1Jptitle, sec1Subtitle, sec1Desctext, sec1Cards
         <Sec1WorldSet sec1Worlds={sec1Worlds} sec1WT={sec1WT} />
       </div>
     </section >
-  )
+  );
 }
 function Jptitle1({ sec1Jptitle }) {
   const { ref, inView } = useInView({
@@ -100,7 +100,7 @@ function Jptitle1({ sec1Jptitle }) {
     <div ref={ref} className={'jp-title ' + (inView && 'fadeupJp')}>
       {sec1Jptitle}
     </div>
-  )
+  );
 }
 function Subtitle1({ sec1Subtitle }) {
   const { ref, inView } = useInView({
@@ -115,7 +115,7 @@ function Subtitle1({ sec1Subtitle }) {
         {/* <span className=' big-subtitle'>VISEOは、</span><br />デジタル戦略の中核を担い、<br className='sp' />独立系で堅実な会社です。 */}
       </h3>
     </div>
-  )
+  );
 }
 function DescText1({ sec1Desctext }) {
   const { ref, inView } = useInView({
@@ -127,7 +127,7 @@ function DescText1({ sec1Desctext }) {
     <div ref={ref}>
       <p className={'desc-text ' + (inView && 'fadeup')}>{sec1Desctext}</p>
     </div>
-  )
+  );
 }
 function CardsArea({ sec1Cards }) {
   const { ref, inView } = useInView({
@@ -167,7 +167,7 @@ function CardsArea({ sec1Cards }) {
         </div>
       )}
     </div>
-  )
+  );
 }
 function WorldWork({ sec1Worlds }) {
   const { ref, inView } = useInView({
@@ -186,7 +186,7 @@ function WorldWork({ sec1Worlds }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 /*  /section1  */
 
@@ -224,7 +224,7 @@ function Set2({ sec2Engtitle, sec2Subtitle, sec2Leadtext, sec2Maintext, sec2Offi
         <ViseoOffice sec2OfficeMap={sec2OfficeMap} />
       </div>
     </section>
-  )
+  );
 }
 function LeadText({ sec2Subtitle, sec2Leadtext }) {
   const { ref, inView } = useInView({
@@ -241,7 +241,7 @@ function LeadText({ sec2Subtitle, sec2Leadtext }) {
         <p>{sec2Leadtext}</p>
       </div>
     </div >
-  )
+  );
 }
 function ViseoText({ sec2Maintext }) {
   const { ref, inView } = useInView({
@@ -258,7 +258,7 @@ function ViseoText({ sec2Maintext }) {
   </p> */}
       <p className={'main-text pc ' + (inView && 'fadeup')}>{sec2Maintext}</p>
     </div>
-  )
+  );
 }
 function ViseoOffice({ sec2OfficeMap }) {
   const { ref, inView } = useInView({
@@ -270,7 +270,7 @@ function ViseoOffice({ sec2OfficeMap }) {
     <div ref={ref}>
       <img src={sec2OfficeMap} alt='' className={(inView && 'fadeup')} />
     </div>
-  )
+  );
 }
 /*  /section2  */
 
@@ -404,7 +404,7 @@ function Set3({ sec3Engtitle, sec3Jptitle, sec3Bluetitle1, sec3Bluetitle2, sec3B
         </div>
       </div>
     </section>
-  )
+  );
 }
 function Jptitle3({ sec3Jptitle }) {
   const { ref, inView } = useInView({
@@ -416,7 +416,7 @@ function Jptitle3({ sec3Jptitle }) {
     <div ref={ref}>
       <div className={'jp-title ' + (inView && 'fadeupJp')}>{sec3Jptitle}</div>
     </div>
-  )
+  );
 }
 function Bluetitle1({ sec3Bluetitle1 }) {
   const { ref, inView } = useInView({
@@ -428,7 +428,7 @@ function Bluetitle1({ sec3Bluetitle1 }) {
     <div ref={ref}>
       <h3 className={'blue-title ' + (inView && 'fadeup')}>{sec3Bluetitle1}</h3>
     </div>
-  )
+  );
 }
 function Bluetitle2({ sec3Bluetitle2 }) {
   const { ref, inView } = useInView({
@@ -440,7 +440,7 @@ function Bluetitle2({ sec3Bluetitle2 }) {
     <div ref={ref}>
       <h3 className={'blue-title ' + (inView && 'fadeup')}>{sec3Bluetitle2}</h3>
     </div>
-  )
+  );
 }
 function Bluetitle3({ sec3Bluetitle3 }) {
   const { ref, inView } = useInView({
@@ -452,7 +452,7 @@ function Bluetitle3({ sec3Bluetitle3 }) {
     <div ref={ref}>
       <h3 className={'blue-title ' + (inView && 'fadeup')}>{sec3Bluetitle3}</h3>
     </div>
-  )
+  );
 }
 function ServiceImg1({ sec3Serviceimg }) {
   const { ref, inView } = useInView({
@@ -466,7 +466,7 @@ function ServiceImg1({ sec3Serviceimg }) {
         <img src={sec3Serviceimg} alt='' />
       </div>
     </div>
-  )
+  );
 }
 function ServiceImg2({ }) {
   const { ref, inView } = useInView({
@@ -494,7 +494,7 @@ function ServiceImg2({ }) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 function ServiceText({ sec3Servicetext }) {
   const { ref, inView } = useInView({
@@ -508,7 +508,7 @@ function ServiceText({ sec3Servicetext }) {
         {sec3Servicetext}
       </p>
     </div>
-  )
+  );
 }
 function SupportCard() {
   const { ref, inView } = useInView({
@@ -551,7 +551,7 @@ function SupportCard() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 /*  /section3  */
 
@@ -576,7 +576,7 @@ function Set4({ sec4Engtitle, sec4Jptitle, sec4LogoGroup }) {
       </div>
       <Sec4LogoSet sec4LogoGroup={sec4LogoGroup} />
     </section>
-  )
+  );
 }
 function Jptitle4({ sec4Jptitle }) {
   const { ref, inView } = useInView({
@@ -588,7 +588,7 @@ function Jptitle4({ sec4Jptitle }) {
     <div ref={ref}>
       <div className={'jp-title ' + (inView && 'fadeupJp')}>{sec4Jptitle}</div>
     </div>
-  )
+  );
 }
 function PartnerLogo() {
   const { ref, inView } = useInView({
@@ -616,7 +616,7 @@ function PartnerLogo() {
       )}
     </div >
 
-  )
+  );
 }
 /*  /section4  */
 
@@ -648,7 +648,7 @@ function Set5() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 /*  /section5  */
 
@@ -892,20 +892,20 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
   const toggleVisibility = () => {
     window.scrollY > 500
       ? setIsVisible(true)
-      : setIsVisible(false)
-  }
+      : setIsVisible(false);
+  };
 
   useEffect(() => {
-    window.addEventListener('scroll', toggleVisibility)
-    return () => window.removeEventListener('scroll', toggleVisibility)
-  }, [])
+    window.addEventListener('scroll', toggleVisibility);
+    return () => window.removeEventListener('scroll', toggleVisibility);
+  }, []);
 
   if (doc && doc.data) {
     useUpdatePreviewRef(preview, doc.id);
     useUpdateToolbarDocs(homepageToolbarDocs(preview.activeRef, doc.lang), [
       doc,
     ]);
-  }
+  };
 
 }
 
