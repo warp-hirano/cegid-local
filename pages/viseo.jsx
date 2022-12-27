@@ -125,7 +125,7 @@ function DescText1({ sec1Desctext }) {
   });
   return (
     <div ref={ref}>
-      <p className={"desc-text " + (inView && "fadeup")}>{sec1Desctext}</p>
+      <p className={"desc-text " + (inView && 'fadeup')}>{sec1Desctext}</p>
     </div>
   );
 }
