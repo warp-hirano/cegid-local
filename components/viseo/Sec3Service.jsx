@@ -1,26 +1,26 @@
 import React from 'react';
 import { RichText } from 'prismic-reactjs';
 
-const Sec3Services = ({ sec3_service2_title }) => {
+const Sec3Services = ({ Sec3Service2Title }) => {
   const title =
-    sec3_service2_title && RichText.asText(sec3_service2_title.sec3_service2_title)
-      ? RichText.asText(sec3_service2_title.sec3_service2_title)
+    Sec3Service2Title && RichText.asText(Sec3Service2Title.sec3_service2_title)
+      ? RichText.asText(Sec3Service2Title.sec3_service2_title)
       : '';
 
   const main =
-    sec3_service2_title && RichText.asText(sec3_service2_title.sec3_service2_main)
-      ? RichText.asText(sec3_service2_title.sec3_service2_main)
+    Sec3Service2Title && RichText.asText(Sec3Service2Title.sec3_service2_main)
+      ? RichText.asText(Sec3Service2Title.sec3_service2_main)
       : '';
 
   const mains = main.replace(/\n/g, '<br>');
 
-  if (sec3_service2_title) {
+  if (Sec3Service2Title) {
     return (
-      <div className='support-item'>
-        <div className='name'>
+      <div className="support-item">
+        <div className="name">
           <p>{title}</p>
         </div>
-        <img src={sec3_service2_title.sec3_service2_img.url} />
+        <img src={Sec3Service2Title.sec3_service2_img.url} />
         <p dangerouslySetInnerHTML={{ __html: mains }} />
       </div>
     );

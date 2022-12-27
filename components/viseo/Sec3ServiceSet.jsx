@@ -1,5 +1,5 @@
-import Sec3Service from './Sec3Service';
 import { useInView } from 'react-intersection-observer';
+import Sec3Service from './Sec3Service';
 
 const Sec3ServiceSet = ({ sec3Service2 }) => {
   const { ref, inView } = useInView({
@@ -11,11 +11,11 @@ const Sec3ServiceSet = ({ sec3Service2 }) => {
   if (sec3Service2) {
     return (
       <div ref={ref}>
-        <div className='support-area pc'>
+        <div className="support-area pc">
           {(inView &&
-            <div className={'area-div ' + (inView && 'fadeup')}>
+            <div className={`area-div ${(inView && 'fadeup')}`}>
               {sec3Service2.map((sec3_service2_title) => (
-                <Sec3Service sec3_service2_title={sec3_service2_title} key={`sec3_service2_title-${sec3_service2_title.sec3_service2_title[0].text}`} />
+                <Sec3Service Sec3Service2Title={sec3_service2_title} key={`sec3_service2_title-${sec3_service2_title.sec3_service2_title[0].text}`} />
               ))}
             </div>
           )}
