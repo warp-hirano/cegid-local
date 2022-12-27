@@ -287,9 +287,6 @@ function Set3({ sec3Engtitle, sec3Jptitle, sec3Bluetitle1, sec3Bluetitle2, sec3B
         <div className="support-card-area sp">
           <Swiper
             effect={'coverflow'}
-            grabCursor={true}
-            centeredSlides={true}
-            loop={true}
             slidesPerView={1.5}
             initialSlide={1}
             coverflowEffect={{
