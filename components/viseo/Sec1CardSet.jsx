@@ -14,7 +14,7 @@ const Sec1CaerSet = ({ sec1Cards }) => {
         {(inView &&
           <div className='view-wrap'>
             {sec1Cards.map((sec1_card_text) => (
-              <Sec1Card sec1_card_text={sec1_card_text} key={`sec1_card_text-${sec1_card_text.sec1_card_text[0].text}`} />
+              <Sec1Card Sec1CardText={sec1_card_text} key={`sec1_card_text-${sec1_card_text.sec1_card_text[0].text}`} />
             ))}
           </div>
         )}

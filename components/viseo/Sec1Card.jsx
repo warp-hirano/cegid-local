@@ -1,17 +1,17 @@
 import React from 'react';
 import { RichText } from 'prismic-reactjs';
 
-const TeamCard = ({ sec1_card_text }) => {
+const TeamCard = ({ Sec1CardText }) => {
   const title =
-    sec1_card_text && RichText.asText(sec1_card_text.sec1_card_text)
-      ? RichText.asText(sec1_card_text.sec1_card_text)
+    Sec1CardText && RichText.asText(Sec1CardText.sec1_card_text)
+      ? RichText.asText(Sec1CardText.sec1_card_text)
       : '';
 
-  if (sec1_card_text) {
+  if (Sec1CardText) {
     return (
       <div className='card-item fadeup'>
         <div className='card-top'>
-          <img src={sec1_card_text.sec1_card_img.url} />
+          <img src={Sec1CardText.sec1_card_img.url} />
         </div>
         <div className='card-bottom'>
           <p>{title}</p>
