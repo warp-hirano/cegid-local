@@ -94,7 +94,6 @@ function Subtitle1({ sec1Subtitle }) {
     <div className="sub-title" ref={ref}>
       <h3 className={(inView && 'fadeup')}>
         {sec1Subtitle}
-        {/* <span className=' big-subtitle'>VISEOは、</span><br />デジタル戦略の中核を担い、<br className='sp' />独立系で堅実な会社です。 */}
       </h3>
     </div>
   );
@@ -169,8 +168,6 @@ function LeadText({ sec2Subtitle, sec2Leadtext }) {
   return (
     <div ref={ref}>
       <div className={'lead-text pc ' + (inView && 'fadeup')}>
-        {/* <h3>グローバルに展開し、<br className="sp" />最も意欲的な企業に貢献</h3>
-        <p>顧客のニーズに応え、グローバルな展開をサポートするワールドワイドな存在感</p> */}
         <h3>{sec2Subtitle}</h3>
         <p>{sec2Leadtext}</p>
       </div>
@@ -185,11 +182,6 @@ function ViseoText({ sec2Maintext }) {
   });
   return (
     <div ref={ref}>
-      {/* <p className={'main-text pc ' + (inView && 'fadeup')}>
-        シンガポール、マレーシア、セブ、シュラバヤ、香港、上海、深セン、東京、<br className='pc' />
-        シドニー、メルボルン、ブリスベン、バンガロールに拠点を置き、<br />
-        現在アジア太平洋地域は<span>9</span>カ国<span>12</span>拠点に及んでいます。
-  </p> */}
       <p className={'main-text pc ' + (inView && 'fadeup')}>{sec2Maintext}</p>
     </div>
   );
@@ -515,7 +507,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
     // sec1ここから
 
     /* ----- 配列取り出し ----- */
-    let result1 = doc.data.sec1_eng_title[0].text.split('');
+    const result1 = doc.data.sec1_eng_title[0].text.split('');
     let newText1 = '';
 
     for (let i = 0; i < result1.length; i = i + 1) {
@@ -543,7 +535,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
     // sec2ここから
 
     /* ----- 配列取り出し ----- */
-    let result2 = doc.data.sec2_eng_title[0].text.split('');
+    const result2 = doc.data.sec2_eng_title[0].text.split('');
     let newText2 = '';
 
     for (let i = 0; i < result2.length; i = i + 1) {
@@ -571,7 +563,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
     // sec3ここから
 
     /* ----- 配列取り出し ----- */
-    let result3 = doc.data.sec3_eng_title[0].text.split('');
+    const result3 = doc.data.sec3_eng_title[0].text.split('');
     let newText3 = '';
 
     for (let i = 0; i < result3.length; i = i + 1) {
@@ -608,7 +600,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
 
     // sec4ここから
     /* ----- 配列取り出し ----- */
-    let result4 = doc.data.sec4_eng_title[0].text.split('');
+    const result4 = doc.data.sec4_eng_title[0].text.split('');
     let newText4 = '';
 
     for (let i = 0; i < result4.length; i = i + 1) {
