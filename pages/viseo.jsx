@@ -414,7 +414,7 @@ function Jptitle3({ sec3Jptitle }) {
   });
   return (
     <div ref={ref}>
-      <div className={'jp-title ' + (inView && "fadeupJp")}>{sec3Jptitle}</div>
+      <div className={'jp-title ' + (inView && 'fadeupJp')}>{sec3Jptitle}</div>
     </div>
   );
 }
@@ -482,12 +482,12 @@ function ServiceImg2({ }) {
           <img src={support1} alt="" />
           <p>アドバイザー<br />アイデア<br />構築</p>
         </div>
-        <div className={'support-item ' + (inView && "fadeup card-delay-02")}>
+        <div className={'support-item ' + (inView && 'fadeup card-delay-02')}>
           <div className="name">創る</div>
           <img src={support2} alt="" />
           <p>デザイン<br />開発<br />実装<br />統合化</p>
         </div>
-        <div className={'support-item ' + (inView && "fadeup card-delay-04")}>
+        <div className={'support-item ' + (inView && 'fadeup card-delay-04')}>
           <div className="name">実施</div>
           <img src={support3} alt="" />
           <p>デプロイメント<br />変更管理<br />保守・モニタリング</p>
@@ -586,7 +586,7 @@ function Jptitle4({ sec4Jptitle }) {
   });
   return (
     <div ref={ref}>
-      <div className={'jp-title ' + (inView && "fadeupJp")}>{sec4Jptitle}</div>
+      <div className={'jp-title ' + (inView && 'fadeupJp')}>{sec4Jptitle}</div>
     </div>
   );
 }
@@ -600,7 +600,7 @@ function PartnerLogo() {
     <div className="logo-wrap fadeup" ref={ref}>
       {(inView &&
         <ul className="logo-list">
-          <li className='fadeup'><img src={SapLogo} alt="" /></li>
+          <li className="fadeup"><img src={SapLogo} alt="" /></li>
           <li className="fadeup logo-delay-02"><img src={microsoft} alt="" /></li>
           <li className="fadeup logo-delay-03"><img src={amazon} alt="" /></li>
           <li className="fadeup logo-delay-04"><img src={azure} alt="" /></li>
@@ -859,11 +859,11 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
         lang={lang}
         menu={menu}
         footer={footer}
-        title='WarpJapan For Viseo'
+        title="WarpJapan For Viseo"
         isPreview={preview.isActive}
       >
-        <link rel='stylesheet' href='https:// cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css' />
-        <script src='https:// cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js'></script>
+        <link rel="stylesheet" href='https:// cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css' />
+        <script src="https:// cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <div className="viseo-wrapper" data-scroll-section>
           <div className="fv-area">
             <img src={FirstViewPC} alt="" className="pc" />
