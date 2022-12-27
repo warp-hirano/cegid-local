@@ -11,9 +11,9 @@ const Sec1World = ({ WorldText, sec1WT }) => {
   if (WorldText, sec1WT) {
     return (
       <div ref={ref}>
-        <div className={'world-work ' + (inView && 'fadeup')}>
+        <div className={`world-work ${(inView && 'fadeup')}`}>
           <div className={(inView && 'map')}>
-            <img src={WorldText.world_map.url} alt='' />
+            <img src={WorldText.world_map.url} alt="" />
           </div>
           <div className={(inView && 'work-text')}>
             {sec1WT}
