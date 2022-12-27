@@ -1,18 +1,18 @@
 import React from 'react';
 import { RichText } from 'prismic-reactjs';
 
-const Sec3LogoCard = ({ service_card_title }) => {
+const Sec3LogoCard = ({ ServiceCardTitle }) => {
   const title =
-    service_card_title && RichText.asText(service_card_title.service_card_title)
-      ? RichText.asText(service_card_title.service_card_title)
+    ServiceCardTitle && RichText.asText(ServiceCardTitle.service_card_title)
+      ? RichText.asText(ServiceCardTitle.service_card_title)
       : '';
 
-  if (service_card_title) {
+  if (ServiceCardTitle) {
     return (
-      <div className='support-card'>
-        <p className='card-title'>{title}</p>
-        <div className='img-box'>
-          <img src={service_card_title.service_logo_group.url} alt='' />
+      <div className="support-card">
+        <p className="card-title">{title}</p>
+        <div className="img-box">
+          <img src={ServiceCardTitle.service_logo_group.url} alt="" />
         </div>
       </div>
     );

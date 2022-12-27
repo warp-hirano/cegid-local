@@ -1,5 +1,5 @@
-import Sec3LogoCard from './Sec3LogoCard';
 import { useInView } from 'react-intersection-observer';
+import Sec3LogoCard from './Sec3LogoCard';
 
 const Sec3LogoCardSet = ({ sec3LogoGroup }) => {
   const { ref, inView } = useInView({
@@ -11,9 +11,9 @@ const Sec3LogoCardSet = ({ sec3LogoGroup }) => {
   if (sec3LogoGroup) {
     return (
       <div ref={ref}>
-        <div className={'support-card-area pc ' + (inView && 'fadeup')}>
+        <div className={`support-card-area pc ${(inView && 'fadeup')}`}>
           {sec3LogoGroup.map((service_card_title) => (
-            <Sec3LogoCard service_card_title={service_card_title} key={`service_card_title-${service_card_title.service_card_title[0]}`} />
+            <Sec3LogoCard ServiceCardTitle={service_card_title} key={`service_card_title-${service_card_title.service_card_title[0]}`} />
           ))}
         </div>
       </div>
