@@ -286,7 +286,7 @@ function Set3({ sec3Engtitle, sec3Jptitle, sec3Bluetitle1, sec3Bluetitle2, sec3B
         <Sec3LogoCardSet sec3LogoGroup={sec3LogoGroup} />
         <div className="support-card-area sp">
           <Swiper
-            effect='coverflow'
+            effect="coverflow"
             slidesPerView={1.5}
             initialSlide={1}
             coverflowEffect={{
@@ -493,10 +493,8 @@ function Set5() {
 }
 /*  /section5  */
 
-
 function ViseoPage({ doc, menu, footer, lang, preview }) {
   if (doc && doc.data) {
-
     const Fvtitle =
       doc && RichText.render(doc.data.fv_title)
         ? RichText.render(doc.data.fv_title)
@@ -613,9 +611,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
         ? RichText.render(doc.data.sec4_jp_title)
         : '';
 
-
     // 画像関係
-
     const sec2OfficeMap =
       doc && doc.data.sec2_office_map.url
         ? doc.data.sec2_office_map.url
@@ -728,7 +724,6 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
       doc,
     ]);
   };
-
 }
 
 export async function getServerSideProps({
