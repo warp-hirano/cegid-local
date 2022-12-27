@@ -9,11 +9,11 @@ const TeamCard = ({ Sec1CardText }) => {
 
   if (Sec1CardText) {
     return (
-      <div className='card-item fadeup'>
-        <div className='card-top'>
-          <img src={Sec1CardText.sec1_card_img.url} />
+      <div className="card-item fadeup">
+        <div className="card-top">
+          <img src={Sec1CardText.sec1_card_img.url} alt="" />
         </div>
-        <div className='card-bottom'>
+        <div className="card-bottom">
           <p>{title}</p>
         </div>
       </div>
