@@ -668,44 +668,6 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
         ? doc.data.sec4_logo_area
         : '';
 
-    const currentLang = lang.currentLang.slice(0, 2);
-    const translations = i18n[currentLang];
-
-    const [query, setQuery] = useState({
-      name: '',
-      email: '',
-      company: '',
-      message: '',
-    });
-
-    const [thankYou, setThankYou] = useState(null);
-
-    // Update inputs value
-    const handleParam = () => (e) => {
-      const { name } = e.target;
-      const { value } = e.target;
-      setQuery((prevState) => ({
-        ...prevState,
-        [name]: value,
-      }));
-    };
-    // Form Submit function
-    const formSubmit = (e) => {
-      e.preventDefault();
-      const formData = new FormData();
-      Object.entries(query).forEach(([key, value]) => {
-        formData.append(key, value);
-      });
-
-      fetch(`https:// getform.io/f/${token}`, {
-        method: 'POST',
-        body: formData,
-      }).then(() => {
-        setQuery({ name: '', email: '', message: '', company: '' });
-        setThankYou(translations.thankyou);
-      });
-    };
-
     return (
       <Layout
         altLangs={doc.alternate_languages}
@@ -760,8 +722,6 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
       </Layout>
     );
   }
-
-  const [isVisible, setIsVisible] = useState(false)
 
   const toggleVisibility = () => {
     window.scrollY > 500
