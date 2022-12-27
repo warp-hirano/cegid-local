@@ -289,10 +289,17 @@ function Set3({ sec3Engtitle, sec3Jptitle, sec3Bluetitle1, sec3Bluetitle2, sec3B
             effect='coverflow'
             slidesPerView={1.5}
             initialSlide={1}
-            coverflowEffect={{ rotate: 0, stretch: 0, depth: 100, modifier: 1, slideShadows: false, }}
+            coverflowEffect={{
+              rotate: 0,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: false,
+            }}
             pagination={false}
             modules={[EffectCoverflow, Pagination]}
-            className="mySwiper">
+            className="mySwiper"
+          >
             <SwiperSlide className="swiperslide">
               <div className="support-card">
                 <p className="card-title">顧客体験</p>
