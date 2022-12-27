@@ -20,7 +20,7 @@ const Sec3Services = ({ Sec3Service2Title }) => {
         <div className="name">
           <p>{title}</p>
         </div>
-        <img src={Sec3Service2Title.sec3_service2_img.url} />
+        <img src={Sec3Service2Title.sec3_service2_img.url} alt="" />
         <p dangerouslySetInnerHTML={{ __html: mains }} />
       </div>
     );
