@@ -507,7 +507,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
     let newText1 = '';
 
     for (let i = 0; i < result1.length; i = i + 1) {
-      newText1 += '<span>' + result1[i] + '</span>';
+      newText1 += `<span> ${result1[i]} </span>`;
     }
 
     const sec1Engtitle = newText1;
@@ -535,7 +535,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
     let newText2 = '';
 
     for (let i = 0; i < result2.length; i = i + 1) {
-      newText2 += '<span>' + result2[i] + '</span>';
+      newText2 += `<span> ${result2[i]} </span>`;
     }
 
     const sec2Engtitle = newText2;
@@ -563,7 +563,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
     let newText3 = '';
 
     for (let i = 0; i < result3.length; i = i + 1) {
-      newText3 += '<span>' + result3[i] + '</span>';
+      newText3 += `<span> ${result3[i]} </span>`;
     }
 
     const sec3Engtitle = newText3;
@@ -600,7 +600,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
     let newText4 = '';
 
     for (let i = 0; i < result4.length; i = i + 1) {
-      newText4 += '<span>' + result4[i] + '</span>';
+      newText4 += `<span> ${result4[i]} </span>`;
     }
 
     const sec4Engtitle = newText4;
