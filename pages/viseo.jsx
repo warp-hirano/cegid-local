@@ -80,7 +80,7 @@ function Jptitle1({ sec1Jptitle }) {
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
-    <div ref={ref} className={'jp-title ' + (inView && 'fadeupJp')}>
+    <div ref={ref} className={`jp-title ${(inView && 'fadeupJp')}`}>
       {sec1Jptitle}
     </div>
   );
@@ -92,10 +92,8 @@ function Subtitle1({ sec1Subtitle }) {
     triggerOnce: true, // 最初の一度だけ実行
   });
   return (
-    <div className="sub-title" ref={ref}>
-      <h3 className={(inView && 'fadeup')}>
-        {sec1Subtitle}
-      </h3>
+    <div ref={ref} className={`sub-title ${(inView && 'fadeup')}`}>
+      {sec1Subtitle}
     </div>
   );
 }
@@ -107,7 +105,7 @@ function DescText1({ sec1Desctext }) {
   });
   return (
     <div ref={ref}>
-      <p className={'desc-text ' + (inView && 'fadeup')}>{sec1Desctext}</p>
+      <p className={`desc-text ${(inView && 'fadeup')}`}>{sec1Desctext}</p>
     </div>
   );
 }

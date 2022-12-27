@@ -132,8 +132,9 @@ strong {
   margin-top: 55px;
   margin-left: 105px;
   margin-bottom: 85px;
+  opacity: 0;
 
-  & h3 div h3 {
+  & div h3 {
     font-family: 'Roc Grotesk';
     font-size: 40px;
     font-weight: bold;
@@ -755,7 +756,7 @@ strong {
     margin-bottom: 50px;
   }
 
-  .sub-title h3 div h3 {
+  .sub-title div h3 {
     font-size: 20px;
     text-align: center;
     line-height: 2;
