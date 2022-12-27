@@ -862,7 +862,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
         title="WarpJapan For Viseo"
         isPreview={preview.isActive}
       >
-        <link rel="stylesheet" href='https:// cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css' />
+        <link rel="stylesheet" href="https:// cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
         <script src="https:// cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <div className="viseo-wrapper" data-scroll-section>
           <div className="fv-area">
