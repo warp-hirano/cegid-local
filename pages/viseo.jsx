@@ -1,7 +1,6 @@
 import React from 'react';
 import { Client, manageLocal } from 'utils/prismicHelpers';
 import { RichText } from 'prismic-reactjs';
-import i18n from 'utils/i18n';
 
 import { homepageToolbarDocs } from 'utils/prismicToolbarQueries';
 import useUpdatePreviewRef from 'utils/hooks/useUpdatePreviewRef';
@@ -16,8 +15,7 @@ import { EffectCoverflow, Pagination } from 'swiper';
 
 // スクロールアニメーション
 import { useInView } from 'react-intersection-observer';
-import { useEffect, useState } from 'react';
-// import { useSpring, animated } from 'react-spring'
+import { useEffect } from 'react';
 
 // Cardエリアjs呼び出し
 import Sec1CardSet from '../components/viseo/Sec1CardSet';
