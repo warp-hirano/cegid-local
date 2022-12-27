@@ -46,7 +46,8 @@ import SpCard05 from '../public/images/spcard-group5.svg';
 import HouseImg from '../public/images/bottom_house.png';
 
 /*  section1  */
-function Set1({ sec1Engtitle, sec1Jptitle, sec1Subtitle, sec1Desctext, sec1Cards, sec1Worlds, sec1WT }) {
+function Set1({ sec1Engtitle, sec1Jptitle, sec1Subtitle,
+  sec1Desctext, sec1Cards, sec1Worlds, sec1WT }) {
   const { ref, inView } = useInView({
     // オプション
     rootMargin: '0px 0px -20% 0px', // ref要素が現れてから20%過ぎたら
@@ -201,7 +202,8 @@ function ViseoOffice({ sec2OfficeMap }) {
 /*  /section2  */
 
 /*  section3  */
-function Set3({ sec3Engtitle, sec3Jptitle, sec3Bluetitle1, sec3Bluetitle2, sec3Bluetitle3, sec3Service2, sec3Serviceimg, sec3Servicetext, sec3LogoGroup }) {
+function Set3({ sec3Engtitle, sec3Jptitle, sec3Bluetitle1, sec3Bluetitle2,
+  sec3Bluetitle3, sec3Service2, sec3Serviceimg, sec3Servicetext, sec3LogoGroup }) {
   const { ref, inView } = useInView({
     // オプション
     rootMargin: '0px 0px -20% 0px', // ref要素が現れてから20%過ぎたら
@@ -662,7 +664,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
         isPreview={preview.isActive}
       >
         <link rel="stylesheet" href="https:// cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-        <script src="https:// cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="https:// cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" />
         <div className="viseo-wrapper" data-scroll-section>
           <div className="fv-area">
             <img src={FirstViewPC} alt="" className="pc" />
