@@ -110,7 +110,7 @@ function Subtitle1({ sec1Subtitle }) {
   });
   return (
     <div className="sub-title" ref={ref}>
-      <h3 className={(inView && "fadeup")}>
+      <h3 className={(inView && 'fadeup')}>
         {sec1Subtitle}
         {/* <span className=' big-subtitle'>VISEOは、</span><br />デジタル戦略の中核を担い、<br className='sp' />独立系で堅実な会社です。 */}
       </h3>
@@ -177,7 +177,7 @@ function WorldWork({ sec1Worlds }) {
   });
   return (
     <div ref={ref}>
-      <div className={"world-work " + (inView && "fadeup")}>
+      <div className={"world-work " + (inView && 'fadeup')}>
         <div className="map">
           <img src={WorkMap} alt="" />
         </div>
@@ -234,7 +234,7 @@ function LeadText({ sec2Subtitle, sec2Leadtext }) {
   });
   return (
     <div ref={ref}>
-      <div className={"lead-text pc " + (inView && "fadeup")}>
+      <div className={"lead-text pc " + (inView && 'fadeup')}>
         {/* <h3>グローバルに展開し、<br className="sp" />最も意欲的な企業に貢献</h3>
         <p>顧客のニーズに応え、グローバルな展開をサポートするワールドワイドな存在感</p> */}
         <h3>{sec2Subtitle}</h3>
@@ -256,7 +256,7 @@ function ViseoText({ sec2Maintext }) {
         シドニー、メルボルン、ブリスベン、バンガロールに拠点を置き、<br />
         現在アジア太平洋地域は<span>9</span>カ国<span>12</span>拠点に及んでいます。
   </p> */}
-      <p className={"main-text pc " + (inView && "fadeup")}>{sec2Maintext}</p>
+      <p className={"main-text pc " + (inView && 'fadeup')}>{sec2Maintext}</p>
     </div>
   );
 }
@@ -268,7 +268,7 @@ function ViseoOffice({ sec2OfficeMap }) {
   });
   return (
     <div ref={ref}>
-      <img src={sec2OfficeMap} alt="" className={(inView && "fadeup")} />
+      <img src={sec2OfficeMap} alt="" className={(inView && 'fadeup')} />
     </div>
   );
 }
@@ -426,7 +426,7 @@ function Bluetitle1({ sec3Bluetitle1 }) {
   });
   return (
     <div ref={ref}>
-      <h3 className={"blue-title " + (inView && "fadeup")}>{sec3Bluetitle1}</h3>
+      <h3 className={"blue-title " + (inView && 'fadeup')}>{sec3Bluetitle1}</h3>
     </div>
   );
 }
@@ -438,7 +438,7 @@ function Bluetitle2({ sec3Bluetitle2 }) {
   });
   return (
     <div ref={ref}>
-      <h3 className={"blue-title " + (inView && "fadeup")}>{sec3Bluetitle2}</h3>
+      <h3 className={"blue-title " + (inView && 'fadeup')}>{sec3Bluetitle2}</h3>
     </div>
   );
 }
@@ -450,7 +450,7 @@ function Bluetitle3({ sec3Bluetitle3 }) {
   });
   return (
     <div ref={ref}>
-      <h3 className={"blue-title " + (inView && "fadeup")}>{sec3Bluetitle3}</h3>
+      <h3 className={"blue-title " + (inView && 'fadeup')}>{sec3Bluetitle3}</h3>
     </div>
   );
 }
@@ -462,7 +462,7 @@ function ServiceImg1({ sec3Serviceimg }) {
   });
   return (
     <div ref={ref}>
-      <div className={"img-area pc " + (inView && "fadeup")}>
+      <div className={"img-area pc " + (inView && 'fadeup')}>
         <img src={sec3Serviceimg} alt="" />
       </div>
     </div>
@@ -476,8 +476,8 @@ function ServiceImg2({ }) {
   });
   return (
     <div ref={ref}>
-      <div className={"support-area pc " + (inView && "fadeup")}>
-        <div className={"support-item " + (inView && "fadeup")}>
+      <div className={"support-area pc " + (inView && 'fadeup')}>
+        <div className={"support-item " + (inView && 'fadeup')}>
           <div className="name">構想</div>
           <img src={support1} alt="" />
           <p>アドバイザー<br />アイデア<br />構築</p>
@@ -504,7 +504,7 @@ function ServiceText({ sec3Servicetext }) {
   });
   return (
     <div ref={ref}>
-      <p className={"main-text " + (inView && "fadeup")}>
+      <p className={"main-text " + (inView && 'fadeup')}>
         {sec3Servicetext}
       </p>
     </div>
@@ -518,7 +518,7 @@ function SupportCard() {
   });
   return (
     <div ref={ref}>
-      <div className={"support-card-area pc " + (inView && "fadeup")}>
+      <div className={"support-card-area pc " + (inView && 'fadeup')}>
         <div className="support-card">
           <p className="card-title">顧客体験</p>
           <div className="img-box">
@@ -600,7 +600,7 @@ function PartnerLogo() {
     <div className="logo-wrap fadeup" ref={ref}>
       {(inView &&
         <ul className="logo-list">
-          <li className="fadeup"><img src={SapLogo} alt="" /></li>
+          <li className='fadeup'><img src={SapLogo} alt="" /></li>
           <li className="fadeup logo-delay-02"><img src={microsoft} alt="" /></li>
           <li className="fadeup logo-delay-03"><img src={amazon} alt="" /></li>
           <li className="fadeup logo-delay-04"><img src={azure} alt="" /></li>
@@ -638,7 +638,7 @@ function Set5() {
             <a href="">お問い合わせはこちら</a>
           </div>
         </div>
-        <div className={"contact-btn-area " + (inView && "fadeup")}>
+        <div className={"contact-btn-area " + (inView && 'fadeup')}>
           <div className="contact-btn">
             <a href="">Warp Japan</a>
           </div>
