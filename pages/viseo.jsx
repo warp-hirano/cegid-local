@@ -75,7 +75,7 @@ function Set1({ sec1Engtitle, sec1Jptitle, sec1Subtitle, sec1Desctext, sec1Cards
     <section id="sec01" className="sec-content">
       <div className="sp-wrapper">
         <div className="viseo-title">
-          <h2 className="eng-title" ref={ref} >
+          <h2 className="eng-title" ref={ref}>
             {(inView &&
               <div dangerouslySetInnerHTML={{ __html: sec1Engtitle }} />
             )}
@@ -87,7 +87,7 @@ function Set1({ sec1Engtitle, sec1Jptitle, sec1Subtitle, sec1Desctext, sec1Cards
         <Sec1CardSet sec1Cards={sec1Cards} />
         <Sec1WorldSet sec1Worlds={sec1Worlds} sec1WT={sec1WT} />
       </div>
-    </section >
+    </section>
   );
 }
 function Jptitle1({ sec1Jptitle }) {
@@ -200,7 +200,7 @@ function Set2({ sec2Engtitle, sec2Subtitle, sec2Leadtext, sec2Maintext, sec2Offi
   return (
     <section id="sec02" className="sec-content">
       <div className="viseo-title">
-        <h2 className="eng-title" ref={ref} >
+        <h2 className="eng-title" ref={ref}>
           {(inView &&
             <div dangerouslySetInnerHTML={{ __html: sec2Engtitle }} />
           )}
@@ -240,7 +240,7 @@ function LeadText({ sec2Subtitle, sec2Leadtext }) {
         <h3>{sec2Subtitle}</h3>
         <p>{sec2Leadtext}</p>
       </div>
-    </div >
+    </div>
   );
 }
 function ViseoText({ sec2Maintext }) {
@@ -286,7 +286,7 @@ function Set3({ sec3Engtitle, sec3Jptitle, sec3Bluetitle1, sec3Bluetitle2, sec3B
       <div className="wrap">
         <div className="sp-wrapper">
           <div className="viseo-title">
-            <h2 className="eng-title" ref={ref} >
+            <h2 className="eng-title" ref={ref}>
               {(inView &&
                 <div dangerouslySetInnerHTML={{ __html: sec3Engtitle }} />
               )}
@@ -465,7 +465,7 @@ function ServiceImg1({ sec3Serviceimg }) {
       <div className={'img-area pc ' + (inView && 'fadeup')}>
         <img src={sec3Serviceimg} alt="" />
       </div>
-    </div >
+    </div>
   );
 }
 function ServiceImg2({ }) {
@@ -566,7 +566,7 @@ function Set4({ sec4Engtitle, sec4Jptitle, sec4LogoGroup }) {
     <section id="sec04" className="sec-content">
       <div className="sp-wrapper">
         <div className="viseo-title">
-          <h2 className="eng-title" ref={ref} >
+          <h2 className="eng-title" ref={ref}>
             {(inView &&
               <div dangerouslySetInnerHTML={{ __html: sec4Engtitle }} />
             )}
@@ -614,7 +614,7 @@ function PartnerLogo() {
           <li className="fadeup logo-delay-12"><img src={sf} alt="" /></li>
         </ul>
       )}
-    </div >
+    </div>
 
   );
 }
@@ -882,8 +882,8 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
             sec3Serviceimg={sec3Serviceimg} sec3Servicetext={sec3Servicetext} sec3LogoGroup={sec3LogoGroup} />
           <Set4 sec4Engtitle={sec4Engtitle} sec4Jptitle={sec4Jptitle} sec4LogoGroup={sec4LogoGroup} />
           <Set5 />
-        </div >
-      </Layout >
+        </div>
+      </Layout>
     );
   }
 
