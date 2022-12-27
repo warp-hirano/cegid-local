@@ -166,7 +166,7 @@ function LeadText({ sec2Subtitle, sec2Leadtext }) {
   });
   return (
     <div ref={ref}>
-      <div className={'lead-text pc ' + (inView && 'fadeup')}>
+      <div className={`lead-text pc ${(inView && 'fadeup')}`}>
         <h3>{sec2Subtitle}</h3>
         <p>{sec2Leadtext}</p>
       </div>
@@ -181,7 +181,7 @@ function ViseoText({ sec2Maintext }) {
   });
   return (
     <div ref={ref}>
-      <p className={'main-text pc ' + (inView && 'fadeup')}>{sec2Maintext}</p>
+      <p className={`main-text pc ${(inView && 'fadeup')}`}>{sec2Maintext}</p>
     </div>
   );
 }
@@ -354,7 +354,7 @@ function Jptitle3({ sec3Jptitle }) {
   });
   return (
     <div ref={ref}>
-      <div className={'jp-title ' + (inView && 'fadeupJp')}>{sec3Jptitle}</div>
+      <div className={`jp-title ${(inView && 'fadeupJp')}`}>{sec3Jptitle}</div>
     </div>
   );
 }
@@ -366,7 +366,7 @@ function Bluetitle1({ sec3Bluetitle1 }) {
   });
   return (
     <div ref={ref}>
-      <h3 className={'blue-title ' + (inView && 'fadeup')}>{sec3Bluetitle1}</h3>
+      <h3 className={`blue-title ${(inView && 'fadeup')}`}>{sec3Bluetitle1}</h3>
     </div>
   );
 }
@@ -378,7 +378,7 @@ function Bluetitle2({ sec3Bluetitle2 }) {
   });
   return (
     <div ref={ref}>
-      <h3 className={'blue-title ' + (inView && 'fadeup')}>{sec3Bluetitle2}</h3>
+      <h3 className={`blue-title ${(inView && 'fadeup')}`}>{sec3Bluetitle2}</h3>
     </div>
   );
 }
@@ -390,7 +390,7 @@ function Bluetitle3({ sec3Bluetitle3 }) {
   });
   return (
     <div ref={ref}>
-      <h3 className={'blue-title ' + (inView && 'fadeup')}>{sec3Bluetitle3}</h3>
+      <h3 className={`blue-title ${(inView && 'fadeup')}`}>{sec3Bluetitle3}</h3>
     </div>
   );
 }
@@ -402,7 +402,7 @@ function ServiceImg1({ sec3Serviceimg }) {
   });
   return (
     <div ref={ref}>
-      <div className={'img-area pc ' + (inView && 'fadeup')}>
+      <div className={`img-area pc ${(inView && 'fadeup')}`}>
         <img src={sec3Serviceimg} alt="" />
       </div>
     </div>
@@ -416,7 +416,7 @@ function ServiceText({ sec3Servicetext }) {
   });
   return (
     <div ref={ref}>
-      <p className={'main-text ' + (inView && 'fadeup')}>
+      <p className={`main-text ${(inView && 'fadeup')}`}>
         {sec3Servicetext}
       </p>
     </div>
@@ -455,7 +455,7 @@ function Jptitle4({ sec4Jptitle }) {
   });
   return (
     <div ref={ref}>
-      <div className={'jp-title ' + (inView && 'fadeupJp')}>{sec4Jptitle}</div>
+      <div className={`jp-title ${(inView && 'fadeupJp')}`}>{sec4Jptitle}</div>
     </div>
   );
 }
@@ -479,7 +479,7 @@ function Set5() {
             <a href="">お問い合わせはこちら</a>
           </div>
         </div>
-        <div className={'contact-btn-area ' + (inView && 'fadeup')}>
+        <div className={`contact-btn-area ${(inView && 'fadeup')}`}>
           <div className="contact-btn">
             <a href="">Warp Japan</a>
           </div>
