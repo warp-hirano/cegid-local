@@ -125,7 +125,7 @@ function DescText1({ sec1Desctext }) {
   });
   return (
     <div ref={ref}>
-      <p className={"desc-text " + (inView && 'fadeup')}>{sec1Desctext}</p>
+      <p className={'desc-text ' + (inView && 'fadeup')}>{sec1Desctext}</p>
     </div>
   );
 }
@@ -177,7 +177,7 @@ function WorldWork({ sec1Worlds }) {
   });
   return (
     <div ref={ref}>
-      <div className={"world-work " + (inView && 'fadeup')}>
+      <div className={'world-work ' + (inView && 'fadeup')}>
         <div className="map">
           <img src={WorkMap} alt="" />
         </div>
@@ -234,7 +234,7 @@ function LeadText({ sec2Subtitle, sec2Leadtext }) {
   });
   return (
     <div ref={ref}>
-      <div className={"lead-text pc " + (inView && 'fadeup')}>
+      <div className={'lead-text pc ' + (inView && 'fadeup')}>
         {/* <h3>グローバルに展開し、<br className="sp" />最も意欲的な企業に貢献</h3>
         <p>顧客のニーズに応え、グローバルな展開をサポートするワールドワイドな存在感</p> */}
         <h3>{sec2Subtitle}</h3>
@@ -256,7 +256,7 @@ function ViseoText({ sec2Maintext }) {
         シドニー、メルボルン、ブリスベン、バンガロールに拠点を置き、<br />
         現在アジア太平洋地域は<span>9</span>カ国<span>12</span>拠点に及んでいます。
   </p> */}
-      <p className={"main-text pc " + (inView && 'fadeup')}>{sec2Maintext}</p>
+      <p className={'main-text pc ' + (inView && 'fadeup')}>{sec2Maintext}</p>
     </div>
   );
 }
@@ -414,7 +414,7 @@ function Jptitle3({ sec3Jptitle }) {
   });
   return (
     <div ref={ref}>
-      <div className={"jp-title " + (inView && "fadeupJp")}>{sec3Jptitle}</div>
+      <div className={'jp-title ' + (inView && "fadeupJp")}>{sec3Jptitle}</div>
     </div>
   );
 }
@@ -426,7 +426,7 @@ function Bluetitle1({ sec3Bluetitle1 }) {
   });
   return (
     <div ref={ref}>
-      <h3 className={"blue-title " + (inView && 'fadeup')}>{sec3Bluetitle1}</h3>
+      <h3 className={'blue-title ' + (inView && 'fadeup')}>{sec3Bluetitle1}</h3>
     </div>
   );
 }
@@ -438,7 +438,7 @@ function Bluetitle2({ sec3Bluetitle2 }) {
   });
   return (
     <div ref={ref}>
-      <h3 className={"blue-title " + (inView && 'fadeup')}>{sec3Bluetitle2}</h3>
+      <h3 className={'blue-title ' + (inView && 'fadeup')}>{sec3Bluetitle2}</h3>
     </div>
   );
 }
@@ -450,7 +450,7 @@ function Bluetitle3({ sec3Bluetitle3 }) {
   });
   return (
     <div ref={ref}>
-      <h3 className={"blue-title " + (inView && 'fadeup')}>{sec3Bluetitle3}</h3>
+      <h3 className={'blue-title ' + (inView && 'fadeup')}>{sec3Bluetitle3}</h3>
     </div>
   );
 }
@@ -462,10 +462,10 @@ function ServiceImg1({ sec3Serviceimg }) {
   });
   return (
     <div ref={ref}>
-      <div className={"img-area pc " + (inView && 'fadeup')}>
+      <div className={'img-area pc ' + (inView && 'fadeup')}>
         <img src={sec3Serviceimg} alt="" />
       </div>
-    </div>
+    </div >
   );
 }
 function ServiceImg2({ }) {
@@ -476,18 +476,18 @@ function ServiceImg2({ }) {
   });
   return (
     <div ref={ref}>
-      <div className={"support-area pc " + (inView && 'fadeup')}>
-        <div className={"support-item " + (inView && 'fadeup')}>
+      <div className={'support-area pc ' + (inView && 'fadeup')}>
+        <div className={'support-item ' + (inView && 'fadeup')}>
           <div className="name">構想</div>
           <img src={support1} alt="" />
           <p>アドバイザー<br />アイデア<br />構築</p>
         </div>
-        <div className={"support-item " + (inView && "fadeup card-delay-02")}>
+        <div className={'support-item ' + (inView && "fadeup card-delay-02")}>
           <div className="name">創る</div>
           <img src={support2} alt="" />
           <p>デザイン<br />開発<br />実装<br />統合化</p>
         </div>
-        <div className={"support-item " + (inView && "fadeup card-delay-04")}>
+        <div className={'support-item ' + (inView && "fadeup card-delay-04")}>
           <div className="name">実施</div>
           <img src={support3} alt="" />
           <p>デプロイメント<br />変更管理<br />保守・モニタリング</p>
@@ -504,7 +504,7 @@ function ServiceText({ sec3Servicetext }) {
   });
   return (
     <div ref={ref}>
-      <p className={"main-text " + (inView && 'fadeup')}>
+      <p className={'main-text ' + (inView && 'fadeup')}>
         {sec3Servicetext}
       </p>
     </div>
@@ -518,7 +518,7 @@ function SupportCard() {
   });
   return (
     <div ref={ref}>
-      <div className={"support-card-area pc " + (inView && 'fadeup')}>
+      <div className={'support-card-area pc ' + (inView && 'fadeup')}>
         <div className="support-card">
           <p className="card-title">顧客体験</p>
           <div className="img-box">
@@ -586,7 +586,7 @@ function Jptitle4({ sec4Jptitle }) {
   });
   return (
     <div ref={ref}>
-      <div className={"jp-title " + (inView && "fadeupJp")}>{sec4Jptitle}</div>
+      <div className={'jp-title ' + (inView && "fadeupJp")}>{sec4Jptitle}</div>
     </div>
   );
 }
@@ -638,7 +638,7 @@ function Set5() {
             <a href="">お問い合わせはこちら</a>
           </div>
         </div>
-        <div className={"contact-btn-area " + (inView && 'fadeup')}>
+        <div className={'contact-btn-area ' + (inView && 'fadeup')}>
           <div className="contact-btn">
             <a href="">Warp Japan</a>
           </div>
