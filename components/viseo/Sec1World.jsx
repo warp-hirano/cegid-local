@@ -1,5 +1,5 @@
-import { useInView } from 'react-intersection-observer';
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 
 const Sec1World = ({ WorldText, sec1WT }) => {
   const { ref, inView } = useInView({
@@ -8,7 +8,7 @@ const Sec1World = ({ WorldText, sec1WT }) => {
     triggerOnce: true, // 最初の一度だけ実行
   });
 
-  if ('WorldText', 'sec1WT') {
+  if (WorldText, sec1WT) {
     return (
       <div ref={ref}>
         <div className={`world-work ${(inView && 'fadeup')}`}>

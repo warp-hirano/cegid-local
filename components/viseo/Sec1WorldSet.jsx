@@ -1,7 +1,6 @@
 import Sec1World from './Sec1World';
 
 const Sec1WorldSet = ({ sec1Worlds, sec1WT }) => {
-
   if (sec1Worlds, sec1WT) {
     return (
       <div>
@@ -14,4 +13,4 @@ const Sec1WorldSet = ({ sec1Worlds, sec1WT }) => {
   return '';
 };
 
-export default Sec1WorldSet; 
+export default Sec1WorldSet;
