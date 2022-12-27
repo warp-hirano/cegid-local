@@ -8,7 +8,7 @@ const Sec1World = ({ WorldText, sec1WT }) => {
     triggerOnce: true, // 最初の一度だけ実行
   });
 
-  if (WorldText, sec1WT) {
+  if ("WorldText", "sec1WT") {
     return (
       <div ref={ref}>
         <div className={`world-work ${(inView && 'fadeup')}`}>
