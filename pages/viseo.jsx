@@ -520,7 +520,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
     let result1 = doc.data.sec1_eng_title[0].text.split('');
     let newText1 = '';
 
-    for (let i = 0; i < result1.length; i++) {
+    for (let i = 0; i < result1.length; i = i + 1) {
       newText1 += '<span>' + result1[i] + '</span>';
     }
 
