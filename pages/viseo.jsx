@@ -33,10 +33,6 @@ import Sec4LogoSet from '../components/viseo/Sec4LogoSet';
 // 画像インポート
 import FirstViewPC from '../public/images/viseo-fv.png';
 import FirstViewSP from '../public/images/viseo-fv-sp.png';
-import card1 from '../public/images/card-1.png';
-import card2 from '../public/images/card-2.png';
-import card3 from '../public/images/card-3.png';
-import WorkMap from '../public/images/world-map.png';
 import SpService01 from '../public/images/sp-service01.png';
 import SpService02 from '../public/images/sp-service02.png';
 import SpService03 from '../public/images/sp-service03.png';
@@ -50,18 +46,6 @@ import SpCard03 from '../public/images/spcard-group3.svg';
 import SpCard04 from '../public/images/spcard-group4.svg';
 import SpCard05 from '../public/images/spcard-group5.svg';
 import HouseImg from '../public/images/bottom_house.png';
-import SapLogo from '../public/images/sap-logo.svg';
-import microsoft from '../public/images/microsoft.svg';
-import amazon from '../public/images/amazon.svg';
-import azure from '../public/images/azure.svg';
-import shopify from '../public/images/shopify.svg';
-import google from '../public/images/google.svg';
-import fluent from '../public/images/fluent.svg';
-import cegid from '../public/images/cegid.svg';
-import boomi from '../public/images/boomi.svg';
-import naplan from '../public/images/naplan.svg';
-import mulesoft from '../public/images/mulesoft.svg';
-import sf from '../public/images/sf.svg';
 
 /*  section1  */
 function Set1({ sec1Engtitle, sec1Jptitle, sec1Subtitle, sec1Desctext, sec1Cards, sec1Worlds, sec1WT }) {
@@ -298,7 +282,8 @@ function Set3({ sec3Engtitle, sec3Jptitle, sec3Bluetitle1, sec3Bluetitle2, sec3B
               <img src={support3} alt="" />
               <div className="support-text">
                 <h3>実施</h3>
-                <p>デプロイメント、変更管理、
+                <p>
+                  デプロイメント、変更管理、
                   <br />
                   保守・モニタリング
                 </p>
