@@ -724,16 +724,37 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
             <p>{Fvtitle}</p>
           </div>
           <Set1
-            sec1Engtitle={sec1Engtitle} sec1Jptitle={sec1Jptitle} sec1Subtitle={sec1Subtitle}
-            sec1Desctext={sec1Desctext} sec1Cards={sec1Cards} sec1Worlds={sec1Worlds} sec1WT={sec1WT} />
+            sec1Engtitle={sec1Engtitle}
+            sec1Jptitle={sec1Jptitle}
+            sec1Subtitle={sec1Subtitle}
+            sec1Desctext={sec1Desctext}
+            sec1Cards={sec1Cards}
+            sec1Worlds={sec1Worlds}
+            sec1WT={sec1WT}
+          />
           <Set2
-            sec2Engtitle={sec2Engtitle} sec2Subtitle={sec2Subtitle} sec2Leadtext={sec2Leadtext}
-            sec2Maintext={sec2Maintext} sec2OfficeMap={sec2OfficeMap} />
+            sec2Engtitle={sec2Engtitle}
+            sec2Subtitle={sec2Subtitle}
+            sec2Leadtext={sec2Leadtext}
+            sec2Maintext={sec2Maintext}
+            sec2OfficeMap={sec2OfficeMap}
+          />
           <Set3
-            sec3Engtitle={sec3Engtitle} sec3Jptitle={sec3Jptitle} sec3Bluetitle1={sec3Bluetitle1}
-            sec3Bluetitle2={sec3Bluetitle2} sec3Bluetitle3={sec3Bluetitle3} sec3Service2={sec3Service2}
-            sec3Serviceimg={sec3Serviceimg} sec3Servicetext={sec3Servicetext} sec3LogoGroup={sec3LogoGroup} />
-          <Set4 sec4Engtitle={sec4Engtitle} sec4Jptitle={sec4Jptitle} sec4LogoGroup={sec4LogoGroup} />
+            sec3Engtitle={sec3Engtitle}
+            sec3Jptitle={sec3Jptitle}
+            sec3Bluetitle1={sec3Bluetitle1}
+            sec3Bluetitle2={sec3Bluetitle2}
+            sec3Bluetitle3={sec3Bluetitle3}
+            sec3Service2={sec3Service2}
+            sec3Serviceimg={sec3Serviceimg}
+            sec3Servicetext={sec3Servicetext}
+            sec3LogoGroup={sec3LogoGroup}
+          />
+          <Set4
+            sec4Engtitle={sec4Engtitle}
+            sec4Jptitle={sec4Jptitle}
+            sec4LogoGroup={sec4LogoGroup}
+          />
           <Set5 />
         </div>
       </Layout>
