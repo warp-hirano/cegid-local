@@ -1,5 +1,5 @@
-import Sec1Card from './Sec1Card';
 import { useInView } from 'react-intersection-observer';
+import Sec1Card from './Sec1Card';
 
 const Sec1CaerSet = ({ sec1Cards }) => {
   const { ref, inView } = useInView({
@@ -10,9 +10,9 @@ const Sec1CaerSet = ({ sec1Cards }) => {
 
   if (sec1Cards) {
     return (
-      <div className='card-area' ref={ref}>
+      <div className="card-area" ref={ref}>
         {(inView &&
-          <div className='view-wrap'>
+          <div className="view-wrap">
             {sec1Cards.map((sec1_card_text) => (
               <Sec1Card Sec1CardText={sec1_card_text} key={`sec1_card_text-${sec1_card_text.sec1_card_text[0].text}`} />
             ))}
