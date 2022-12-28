@@ -9,7 +9,6 @@ import { Layout } from 'components';
 import ProjectListFlat from 'components/projects/list/ProjectListFlat';
 import BlogPostList from 'components/blogposts/BlogPostList';
 import BubbleWrapper from 'components/BubbleWrapper';
-import useShouldLoadDistortion from 'components/hooks/useShouldLoadDistortion';
 
 /**
  * Homepage component
