@@ -708,9 +708,11 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
   }
 
   const toggleVisibility = () => {
-    window.scrollY > 500
-      ? setIsVisible(true)
-      : setIsVisible(false);
+    return (
+      window.scrollY > 500
+        ? setIsVisible(true)
+        : setIsVisible(false)
+    );
   };
 
   useEffect(() => {
