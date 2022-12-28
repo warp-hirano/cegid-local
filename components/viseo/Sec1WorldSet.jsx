@@ -1,7 +1,7 @@
 import Sec1World from './Sec1World';
 
-const Sec1WorldSet = ({ sec1Worlds }) => {
-  if (sec1Worlds, sec1WT) {
+const Sec1WorldSet = ({ sec1Worlds, sec1WT }) => {
+  if (sec1Worlds) {
     return (
       <div>
         {sec1Worlds.map((MapWorldText) => (
