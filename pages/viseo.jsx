@@ -723,7 +723,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
     useUpdateToolbarDocs(homepageToolbarDocs(preview.activeRef, doc.lang), [
       doc,
     ]);
-  };
+  }
 }
 
 export async function getServerSideProps({
