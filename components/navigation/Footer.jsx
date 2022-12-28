@@ -55,7 +55,7 @@ const Footer = ({ footer }) => {
       </div>
       <div className="wrapper grid" id="copyright">
         <span id="warp">
-          <div className='logo'>
+          <div className="logo">
             <svg xmlns="http://www.w3.org/2000/svg" width="116" height="36.171" viewBox="0 0 116 36.171">
               <g transform="translate(-79 -201.758)">
                 <g transform="translate(79 201.758)">
@@ -79,8 +79,6 @@ const Footer = ({ footer }) => {
               </g>
             </svg>
           </div>
-
-
         </span>
         <span id="rights">{`©${new Date().getFullYear()}. All Rights Reserved.`}</span>
       </div>
