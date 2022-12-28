@@ -708,6 +708,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
   }
 
   const toggleVisibility = () => {
+    const setIsVisible = '';
     return (
       window.scrollY > 500
         ? setIsVisible(true)
