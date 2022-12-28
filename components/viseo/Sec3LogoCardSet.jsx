@@ -12,8 +12,8 @@ const Sec3LogoCardSet = ({ sec3LogoGroup }) => {
     return (
       <div ref={ref}>
         <div className={`support-card-area pc ${(inView && 'fadeup')}`}>
-          {sec3LogoGroup.map((service_card_title) => (
-            <Sec3LogoCard ServiceCardTitle={service_card_title} key={`service_card_title-${service_card_title.service_card_title[0]}`} />
+          {sec3LogoGroup.map((ServiceCardMapTitle) => (
+            <Sec3LogoCard ServiceCardTitle={ServiceCardMapTitle} key={`service_card_title-${ServiceCardMapTitle.service_card_title[0]}`} />
           ))}
         </div>
       </div>

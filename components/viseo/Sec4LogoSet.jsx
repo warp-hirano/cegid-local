@@ -14,8 +14,8 @@ const Sec4LogoSet = ({ sec4LogoGroup }) => {
         {(inView &&
           (
             <ul className="logo-list">
-              {sec4LogoGroup.map((img_number) => (
-                <Sec4Logo ImgNumber={img_number} key={`img_number-${img_number.img_number[0].text}`} />
+              {sec4LogoGroup.map((ImgMapNumber) => (
+                <Sec4Logo ImgNumber={ImgMapNumber} key={`img_number-${ImgMapNumber.img_number[0].text}`} />
               ))}
             </ul>
           )

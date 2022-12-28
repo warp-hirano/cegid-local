@@ -12,13 +12,11 @@ const Sec3ServiceSet = ({ sec3Service2 }) => {
     return (
       <div ref={ref}>
         <div className="support-area pc">
-          {(inView &&
-            <div className={`area-div ${(inView && 'fadeup')}`}>
-              {sec3Service2.map((sec3_service2_title) => (
-                <Sec3Service Sec3Service2Title={sec3_service2_title} key={`sec3_service2_title-${sec3_service2_title.sec3_service2_title[0].text}`} />
-              ))}
-            </div>
-          )}
+          <div className={`area-div ${(inView && 'fadeup')}`}>
+            {sec3Service2.map((Sec3Service2MapTitle) => (
+              <Sec3Service Sec3Service2Title={Sec3Service2MapTitle} key={`sec3_service2_title-${Sec3Service2MapTitle.sec3_service2_title[0].text}`} />
+            ))}
+          </div>
         </div>
       </div>
     );
