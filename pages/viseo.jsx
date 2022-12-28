@@ -1,4 +1,4 @@
-import React from 'react';
+import { React, useEffect } from 'react';
 import { Client, manageLocal } from 'utils/prismicHelpers';
 import { RichText } from 'prismic-reactjs';
 
@@ -15,7 +15,6 @@ import { EffectCoverflow, Pagination } from 'swiper';
 
 // スクロールアニメーション
 import { useInView } from 'react-intersection-observer';
-import { useEffect } from 'react';
 
 // Cardエリアjs呼び出し
 import Sec1CardSet from '../components/viseo/Sec1CardSet';
