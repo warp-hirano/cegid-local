@@ -12,11 +12,13 @@ const Sec4LogoSet = ({ sec4LogoGroup }) => {
     return (
       <div className="logo-wrap fadeup" ref={ref}>
         {(inView &&
-          <ul className="logo-list">
-            {sec4LogoGroup.map((img_number) => (
-              <Sec4Logo ImgNumber={img_number} key={`img_number-${img_number.img_number[0].text}`} />
-            ))}
-          </ul>
+          (
+            <ul className="logo-list">
+              {sec4LogoGroup.map((img_number) => (
+                <Sec4Logo ImgNumber={img_number} key={`img_number-${img_number.img_number[0].text}`} />
+              ))}
+            </ul>
+          )
         )}
       </div>
     );
