@@ -8,13 +8,9 @@ import useUpdateToolbarDocs from 'utils/hooks/useUpdateToolbarDocs';
 import { Layout } from 'components';
 import ProjectListFlat from 'components/projects/list/ProjectListFlat';
 import BlogPostList from 'components/blogposts/BlogPostList';
-import dynamic from 'next/dynamic';
 import BubbleWrapper from 'components/BubbleWrapper';
 import useShouldLoadDistortion from 'components/hooks/useShouldLoadDistortion';
 
-const Distortion = dynamic(() => import('components/Distortion'), {
-  ssr: false,
-});
 /**
  * Homepage component
  */
@@ -35,8 +31,6 @@ function Homepage({ doc, menu, footer, lang, preview, projects, posts }) {
         document.querySelector('body').classList.remove('home');
       };
     }, []);
-
-    const shouldLoadDistortion = useShouldLoadDistortion();
 
     return (
       <Layout
