@@ -2,6 +2,9 @@
   "name": "nextjs-multi-language-website",
   "description": "Multi-language website example with Next.js using Prismic headless CMS",
   "author": "Prismic",
+  "engines": {
+    "node": "16.14.2"
+  },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^3.6.0",
