@@ -169,7 +169,8 @@ export async function getStaticProps({
   locale,
   locales,
 }) {
-  const token = process.env.GETFORM_TOKEN;
+  var token = null;
+  var token = process.env.GETFORM_TOKEN;
 
   const ref = previewData ? previewData.ref : null;
   const isPreview = preview || false;
