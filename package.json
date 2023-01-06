@@ -49,7 +49,7 @@
   },
   "scripts": {
     "dev": "next",
-    "build": "react-scripts build",
+    "build": "next build",
     "start": "next start"
   },
   "repository": {
