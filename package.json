@@ -49,7 +49,7 @@
   },
   "scripts": {
     "dev": "next",
-    "build": "yarn build",
+    "build": "next build",
     "start": "next start"
   },
   "repository": {
