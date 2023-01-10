@@ -22,6 +22,7 @@ import Sec1CardSet from '../components/viseo/Sec1CardSet';
 import Sec1WorldSet from '../components/viseo/Sec1WorldSet';
 // sec3 service2エリア呼び出し
 import Sec3ServiceSet from '../components/viseo/Sec3ServiceSet';
+import Sec3ServiceSetSp from '../components/viseo/Sec3ServiceSetSp';
 // sec3 パートナーカード呼び出し
 import Sec3LogoCardSet from '../components/viseo/Sec3LogoCardSet';
 // sec4 logoリスト呼び出し
@@ -30,13 +31,6 @@ import Sec4LogoSet from '../components/viseo/Sec4LogoSet';
 // 画像インポート
 import FirstViewPC from '../public/images/viseo-fv.png';
 import FirstViewSP from '../public/images/viseo-fv-sp.png';
-import SpService01 from '../public/images/sp-service01.png';
-import SpService02 from '../public/images/sp-service02.png';
-import SpService03 from '../public/images/sp-service03.png';
-import SpService04 from '../public/images/sp-service04.png';
-import support1 from '../public/images/support-1.svg';
-import support2 from '../public/images/support-2.svg';
-import support3 from '../public/images/support-3.svg';
 import SpCard01 from '../public/images/spcard-group1.svg';
 import SpCard02 from '../public/images/spcard-group2.svg';
 import SpCard03 from '../public/images/spcard-group3.svg';
@@ -129,29 +123,7 @@ function Set2({ sec2Engtitle, sec2Subtitle, sec2Leadtext, sec2Maintext, sec2Offi
       <div className="green-back">
         <LeadText sec2Subtitle={sec2Subtitle} sec2Leadtext={sec2Leadtext} />
         <ViseoText sec2Maintext={sec2Maintext} />
-        <div className="green-wrap sp">
-          <div className="lead-text">
-            <h3>
-              グローバルに展開し、
-              <br className="sp" />
-              最も意欲的な企業に貢献
-            </h3>
-            <p>顧客のニーズに応え、グローバルな展開をサポートするワールドワイドな存在感</p>
-          </div>
-          <p className="main-text">
-            シンガポール、マレーシア、セブ、シュラバヤ、
-            <br />
-            香港、上海、深セン、東京、シドニー、メルボルン、
-            <br />
-            ブリスベン、バンガロールに拠点を置き、
-            <br />
-            現在アジア太平洋地域は
-            <span>9</span>
-            カ国
-            <span>12</span>
-            拠点に及んでいます。
-          </p>
-        </div>
+
         <ViseoOffice sec2OfficeMap={sec2OfficeMap} />
       </div>
     </section>
@@ -165,7 +137,7 @@ function LeadText({ sec2Subtitle, sec2Leadtext }) {
   });
   return (
     <div ref={ref}>
-      <div className={`lead-text pc ${(inView && 'fadeup')}`}>
+      <div className={`lead-text ${(inView && 'fadeup')}`}>
         <h3>{sec2Subtitle}</h3>
         <p>{sec2Leadtext}</p>
       </div>
@@ -180,7 +152,7 @@ function ViseoText({ sec2Maintext }) {
   });
   return (
     <div ref={ref}>
-      <p className={`main-text pc ${(inView && 'fadeup')}`}>{sec2Maintext}</p>
+      <p className={`main-text ${(inView && 'fadeup')}`}>{sec2Maintext}</p>
     </div>
   );
 }
@@ -200,7 +172,7 @@ function ViseoOffice({ sec2OfficeMap }) {
 
 /*  section3  */
 function Set3({ sec3Engtitle, sec3Jptitle, sec3Bluetitle1, sec3Bluetitle2,
-  sec3Bluetitle3, sec3Service2, sec3Serviceimg, sec3Servicetext, sec3LogoGroup }) {
+  sec3Bluetitle3, sec3Service2, sec3ServiceSp, sec3Serviceimg, sec3Servicetext, sec3LogoGroup }) {
   const { ref, inView } = useInView({
     // オプション
     rootMargin: '0px 0px -20% 0px', // ref要素が現れてから20%過ぎたら
@@ -220,65 +192,9 @@ function Set3({ sec3Engtitle, sec3Jptitle, sec3Bluetitle1, sec3Bluetitle2,
           </div>
           <Bluetitle1 sec3Bluetitle1={sec3Bluetitle1} />
           <ServiceImg1 sec3Serviceimg={sec3Serviceimg} />
-          <div className="service-img sp">
-            <div className="service-container">
-              <img src={SpService01} alt="" />
-              <p className="service-name">
-                ビジネス
-                <br />
-                アプリケーション
-              </p>
-            </div>
-            <div className="service-container">
-              <img src={SpService02} alt="" />
-              <p className="service-name">
-                インテリジェントERP &
-                <br />
-                コア・プラットフォーム
-              </p>
-            </div>
-            <div className="service-container">
-              <img src={SpService03} alt="" />
-              <p className="service-name">
-                データ &
-                <br />
-                アナリティクス
-              </p>
-            </div>
-            <div className="service-container">
-              <img src={SpService04} alt="" />
-              <p className="service-name">デザイン & 開発</p>
-            </div>
-          </div>
+          <Sec3ServiceSetSp sec3ServiceSp={sec3ServiceSp} />
           <Bluetitle2 sec3Bluetitle2={sec3Bluetitle2} />
           <Sec3ServiceSet sec3Service2={sec3Service2} />
-          <div className="support-img sp">
-            <div className="support-container">
-              <img src={support1} alt="" />
-              <div className="support-text">
-                <h3>構想</h3>
-                <p>アドバイザリー、アイデア、構築</p>
-              </div>
-            </div>
-            <div className="support-container">
-              <img src={support2} alt="" />
-              <div className="support-text">
-                <h3>創る</h3>
-                <p>デザイン、開発、実装、統合化</p>
-              </div>
-            </div>
-            <div className="support-container">
-              <img src={support3} alt="" />
-              <div className="support-text">
-                <h3>実施</h3>
-                <p>
-                  デプロイメント、変更管理、
-                  <br />
-                  保守・モニタリング
-                </p>
-              </div>
-            </div>
-          </div>
           <Bluetitle3 sec3Bluetitle3={sec3Bluetitle3} />
           <ServiceText sec3Servicetext={sec3Servicetext} />
         </div>
@@ -509,10 +425,11 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
     let newText1 = '';
 
     for (let i = 0; i < result1.length; i += 1) {
-      newText1 += `<span> ${result1[i]} </span>`;
+      newText1 += `<span>${result1[i]}</span>`;
     }
 
-    const sec1Engtitle = newText1;
+    let sec1Engtitle = newText1;
+    sec1Engtitle = sec1Engtitle.replace(/\s/g, '&nbsp;');
     /* ---------------------- */
 
     const sec1Jptitle =
@@ -537,10 +454,11 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
     let newText2 = '';
 
     for (let i = 0; i < result2.length; i += 1) {
-      newText2 += `<span> ${result2[i]} </span>`;
+      newText2 += `<span>${result2[i]}</span>`;
     }
 
-    const sec2Engtitle = newText2;
+    let sec2Engtitle = newText2;
+    sec2Engtitle = sec2Engtitle.replace(/\s/g, '&nbsp;');
     /* ---------------------- */
 
     const sec2Leadtext =
@@ -565,10 +483,11 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
     let newText3 = '';
 
     for (let i = 0; i < result3.length; i += 1) {
-      newText3 += `<span> ${result3[i]} </span>`;
+      newText3 += `<span>${result3[i]}</span>`;
     }
 
-    const sec3Engtitle = newText3;
+    let sec3Engtitle = newText3;
+    sec3Engtitle = sec3Engtitle.replace(/\s/g, '&nbsp;')
     /* ---------------------- */
 
     const sec3Jptitle =
@@ -602,10 +521,11 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
     let newText4 = '';
 
     for (let i = 0; i < result4.length; i += 1) {
-      newText4 += `<span> ${result4[i]} </span>`;
+      newText4 += `<span>${result4[i]}</span>`;
     }
 
-    const sec4Engtitle = newText4;
+    let sec4Engtitle = newText4;
+    sec4Engtitle = sec4Engtitle.replace(/\s/g, '&nbsp;')
     /* ---------------------- */
 
     const sec4Jptitle =
@@ -642,6 +562,11 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
     const sec3Service2 =
       doc && doc.data.sec3_service2_area
         ? doc.data.sec3_service2_area
+        : '';
+
+    const sec3ServiceSp =
+      doc && doc.data.sec3_service_sp
+        ? doc.data.sec3_service_sp
         : '';
 
     const sec3LogoGroup =
@@ -694,6 +619,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
             sec3Bluetitle2={sec3Bluetitle2}
             sec3Bluetitle3={sec3Bluetitle3}
             sec3Service2={sec3Service2}
+            sec3ServiceSp={sec3ServiceSp}
             sec3Serviceimg={sec3Serviceimg}
             sec3Servicetext={sec3Servicetext}
             sec3LogoGroup={sec3LogoGroup}

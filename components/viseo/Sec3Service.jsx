@@ -17,11 +17,22 @@ const Sec3Services = ({ Sec3Service2Title }) => {
   if (Sec3Service2Title) {
     return (
       <div className="support-item">
-        <div className="name">
-          <p>{title}</p>
+        <div className="pc-container pc">
+          <div className="name">
+            <p>{title}</p>
+          </div>
+          <img src={Sec3Service2Title.sec3_service2_img.url} alt="" />
+          <p dangerouslySetInnerHTML={{ __html: mains }} />
         </div>
-        <img src={Sec3Service2Title.sec3_service2_img.url} alt="" />
-        <p dangerouslySetInnerHTML={{ __html: mains }} />
+        <div className="sp-container sp">
+          <div className="img-container">
+            <img src={Sec3Service2Title.sec3_service2_img.url} alt="" />
+          </div>
+          <div className="text-container">
+            <p className="title">{title}</p>
+            <p className="sp">{main}</p>
+          </div>
+        </div>
       </div>
     );
   }

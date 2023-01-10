@@ -12,7 +12,7 @@ const Sec1World = ({ WorldText, sec1WT }) => {
     return (
       <div ref={ref}>
         <div className={`world-work ${(inView && 'fadeup')}`}>
-          <div className={(inView && 'map')}>
+          <div className="map">
             <img src={WorldText.world_map.url} alt="" />
           </div>
           <div className={(inView && 'work-text')}>

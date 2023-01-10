@@ -73,6 +73,7 @@ footer {
 @include respond-below(sm) {
   footer {
     padding-top: rem(96);
+    position: relative;
 
     #catch {
       grid-column: 1 / -1;
