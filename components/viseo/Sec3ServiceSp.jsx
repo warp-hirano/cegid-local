@@ -11,9 +11,9 @@ const Sec3ServicesSp = ({ Sec3Service1SpTitle }) => {
 
   if (Sec3Service1SpTitle) {
     return (
-      <div className='service-container'>
+      <div className="service-container">
         <img src={Sec3Service1SpTitle.sec3_service_sp_img.url} alt="" />
-        <p className='service-name' dangerouslySetInnerHTML={{ __html: titles }} />
+        <p className="service-name" dangerouslySetInnerHTML={{ __html: titles }} />
       </div>
     );
   }

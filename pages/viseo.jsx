@@ -487,7 +487,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
     }
 
     let sec3Engtitle = newText3;
-    sec3Engtitle = sec3Engtitle.replace(/\s/g, '&nbsp;')
+    sec3Engtitle = sec3Engtitle.replace(/\s/g, '&nbsp;');
     /* ---------------------- */
 
     const sec3Jptitle =
@@ -525,7 +525,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
     }
 
     let sec4Engtitle = newText4;
-    sec4Engtitle = sec4Engtitle.replace(/\s/g, '&nbsp;')
+    sec4Engtitle = sec4Engtitle.replace(/\s/g, '&nbsp;');
     /* ---------------------- */
 
     const sec4Jptitle =
