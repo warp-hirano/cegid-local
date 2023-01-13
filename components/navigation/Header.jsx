@@ -59,7 +59,7 @@ const Header = ({ menu, altLangs, currentLang }) => {
           </NextLink>
         </div>
         <div className="shopify-btn">
-          <a href='' alt="" >Shopifyで始めよう</a>
+          <a href="" alt="">Shopifyで始めよう</a>
         </div>
       </header>
       <Contact />
