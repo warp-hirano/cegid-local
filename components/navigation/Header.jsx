@@ -35,7 +35,14 @@ const Header = ({ menu, altLangs, currentLang }) => {
         isMenuDisplayed={isMenuDisplayed}
         setMenuDisplayed={setMenuDisplayed}
       />
-      <header className="wrapper grid">
+      <header className="wrapper grid sp-header-wrapper" style={{ paddingRight: '3rem' }}>
+        <ul className="languages">
+          <LanguageSwitcher
+            altLangs={altLangs}
+            currentLang={currentLang}
+            setMenuDisplayed={setMenuDisplayed}
+          />
+        </ul>
         <div className="home-menu">
           <NextLink href="/" passHref>
             <a>
@@ -51,13 +58,9 @@ const Header = ({ menu, altLangs, currentLang }) => {
             </a>
           </NextLink>
         </div>
-        <ul className="languages">
-          <LanguageSwitcher
-            altLangs={altLangs}
-            currentLang={currentLang}
-            setMenuDisplayed={setMenuDisplayed}
-          />
-        </ul>
+        <div className="shopify-btn">
+          <a href='' alt="" >Shopifyで始めよう</a>
+        </div>
       </header>
       <Contact />
     </>
