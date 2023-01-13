@@ -34,6 +34,7 @@ body {
         }
       }
     }
+
     .navigation .sns span {
       color: var(--warp-black);
     }
@@ -41,10 +42,13 @@ body {
 }
 
 ::selection {
-  background: #fff7c7; /* WebKit/Blink Browsers */
+  background: #fff7c7;
+  /* WebKit/Blink Browsers */
 }
+
 ::-moz-selection {
-  background: #fff7c7; /* Gecko Browsers */
+  background: #fff7c7;
+  /* Gecko Browsers */
 }
 
 button:focus {
@@ -58,6 +62,7 @@ a {
 }
 
 .underlined-links {
+
   a,
   button {
     overflow: hidden;
@@ -94,10 +99,8 @@ a {
 
 .auto-grid {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(var(--auto-grid-min-size), 1fr)
-  );
+  grid-template-columns: repeat(auto-fill,
+      minmax(var(--auto-grid-min-size), 1fr));
   grid-gap: 2rem;
   max-width: inherit;
 }
@@ -237,6 +240,7 @@ header,
 #contact {
   transition: opacity 0.5s ease-out;
 }
+
 .fade {
   opacity: 0 !important;
   pointer-events: none;
@@ -262,12 +266,13 @@ main {
   body {
     font-weight: 300;
   }
+
   .wrapper {
     padding: 0 rem(20);
   }
 
   main {
-    padding-top: rem(146);
+    padding-top: rem(206);
   }
 
   .introduction {
@@ -301,6 +306,7 @@ main {
       letter-spacing: -0.63px;
     }
   }
+
   .intro-content {
     font-size: rem(32);
     font-weight: 300;
@@ -312,12 +318,14 @@ main {
     grid-column-end: -1;
     justify-self: end;
   }
+
   .social-title {
     grid-column: 1 / span 1;
   }
 }
 
 @include respond-between(sm, xlg) {
+
   .introduction,
   .introduction.list-introduction {
     grid-column: 2 / -2;
@@ -332,6 +340,7 @@ main {
   .social-options {
     grid-column: 3 / -1;
   }
+
   .social-title {
     grid-column: 2 / span 1;
   }
@@ -346,6 +355,7 @@ main {
 @include respond-below(xs) {
   .introduction.list-introduction {
     margin-bottom: rem(30);
+
     h1 {
       font-size: rem(24);
     }

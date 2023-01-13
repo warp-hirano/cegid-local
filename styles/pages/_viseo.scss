@@ -2,10 +2,6 @@
   display: none !important;
 }
 
-main {
-  padding-top: 0;
-}
-
 strong {
   font-size: 28px;
   line-height: 1;
@@ -888,7 +884,7 @@ strong {
 
   .green-back .lead-text {
     padding: 100px 20px 0;
-    opacity: 1;
+    opacity: 0;
   }
 
   .green-back .lead-text h3 strong {
@@ -899,6 +895,10 @@ strong {
   .green-back .lead-text p {
     font-size: 18px;
     margin-top: 40px;
+  }
+
+  .green-back .main-text {
+    opacity: 0;
   }
 
   .green-back .main-text div p {

@@ -34,8 +34,9 @@ header {
 
   .languages {
     display: flex;
-    grid-column-end: -1;
+    grid-column-end: 3;
     justify-self: end;
+    margin-top: 0.2rem;
 
     li {
       margin-left: rem(20);
@@ -53,6 +54,66 @@ header {
           -webkit-text-stroke: 0.5px #b5b5b5;
           cursor: default;
         }
+      }
+    }
+  }
+
+  .shopify-btn {
+    grid-column: 12/span 10;
+
+    & a {
+      display: block;
+      position: relative;
+      color: #FFFFFF;
+      font-size: 14px;
+      font-family: 'Outfit';
+      width: 280px;
+      height: 50px;
+      border-radius: 25px;
+      background: #272727;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 0;
+      transition: .3s;
+
+      &:hover {
+        border: 1px solid #272727;
+        background: #faf6f0;
+        color: #272727;
+        transition: .3s;
+
+        &::before {
+          filter: invert(100%);
+        }
+
+        &::after {
+          filter: invert(100%);
+        }
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 28px;
+        width: 28px;
+        background-image: url(../../public/images/shopify-logo.svg);
+        background-repeat: no-repeat;
+        top: auto;
+        left: 12%;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 8px;
+        width: 34px;
+        background-image: url(../../public/images/shopify-arrow.svg);
+        background-repeat: no-repeat;
+        top: auto;
+        right: 8%;
       }
     }
   }
@@ -94,7 +155,7 @@ header {
 #menu-burger {
   position: fixed;
   left: rem(50);
-  top: rem(45);
+  top: rem(46);
   width: rem(50);
   height: rem(16);
   z-index: 7;
@@ -299,7 +360,18 @@ header {
 }
 
 @include respond-below(sm) {
+  .sp-header-wrapper {
+    padding: 0;
+  }
+
+  #menu-burger {
+    top: rem(100);
+  }
+
   header {
+    padding-top: 4.5rem !important;
+    margin-top: 4.5rem !important;
+
     &.wrapper {
       margin-top: rem(40);
     }
@@ -318,7 +390,7 @@ header {
 
         img {
           transform: translateX(-50%);
-          top: 3px;
+          top: 22px;
           width: auto;
           filter: invert(51%) sepia(63%) saturate(6598%) hue-rotate(163deg) brightness(100%) contrast(101%);
 
@@ -336,6 +408,26 @@ header {
       margin-top: 5px;
       right: 20px;
       opacity: 0;
+    }
+
+    .shopify-btn {
+      position: fixed;
+      transform: translateY(-144px);
+
+      & a {
+        width: 100vw;
+        border-radius: 0;
+
+        &::before {
+          top: auto;
+          left: 23%;
+        }
+
+        &::after {
+          top: auto;
+          right: 21%;
+        }
+      }
     }
   }
 

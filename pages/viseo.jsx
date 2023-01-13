@@ -579,6 +579,8 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
         ? doc.data.sec4_logo_area
         : '';
 
+
+
     return (
       <Layout
         altLangs={doc.alternate_languages}
@@ -590,6 +592,7 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
       >
         <link rel="stylesheet" href="https:// cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
         <script src="https:// cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" />
+
         <div className="viseo-wrapper" data-scroll-section>
           <div className="fv-area">
             <img src={FirstViewPC} alt="" className="pc" />
