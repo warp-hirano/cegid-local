@@ -579,8 +579,6 @@ function ViseoPage({ doc, menu, footer, lang, preview }) {
         ? doc.data.sec4_logo_area
         : '';
 
-
-
     return (
       <Layout
         altLangs={doc.alternate_languages}
