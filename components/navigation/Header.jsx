@@ -1,11 +1,9 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable global-require */
-/* eslint import/no-cycle: [2, { ignoreExternal: true }] */
-/* eslint import/no-cycle: [2, { maxDepth: 1 }] */
 import React, { useState, useEffect } from 'react';
 import NextLink from 'next/link';
 import { Navigation, LanguageSwitcher } from '..';
-import Contact from '../Contact';
+// import Contact from '../Contact';
 import Menu from './Menu';
 
 const Header = ({ menu, altLangs, currentLang }) => {
@@ -61,10 +59,10 @@ const Header = ({ menu, altLangs, currentLang }) => {
           </NextLink>
         </div>
         <div className="shopify-btn">
-          <a href="" alt="">Shopifyで始めよう</a>
+          <NextLink href={{ pathname: '/shopify' }} alt="">Shopifyで始めよう</NextLink>
         </div>
       </header>
-      <Contact />
+      {/* <Contact /> */}
     </>
   );
 };
