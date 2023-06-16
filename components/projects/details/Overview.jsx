@@ -93,10 +93,7 @@ const Overview = ({ overviewTitle, overview, skills, awards, liveSite }) => {
         )}
       </div>
       {content && (
-        <div
-          className="overview"
-          initial="hidden"
-        >
+        <div className="overview" initial="hidden">
           <LazyMotion features={domAnimation}>
             <m.h3
               animate={inView ? 'visible' : 'hidden'}
@@ -121,10 +118,7 @@ const Overview = ({ overviewTitle, overview, skills, awards, liveSite }) => {
       )}
 
       {awards[0].award_name.length ? (
-        <div
-          className="awards" ref={refAwards}
-          initial="hidden"
-        >
+        <div className="awards" ref={refAwards} initial="hidden">
           <LazyMotion features={domAnimation}>
             <m.h3
               animate={inViewAwards ? 'visible' : 'hidden'}
