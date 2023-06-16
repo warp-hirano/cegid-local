@@ -19,14 +19,28 @@
     "react"
   ],
   "rules": {
-    "import/no-extraneous-dependencies": [ "error", { "packageDir": "./" } ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "packageDir": "./"
+      }
+    ],
     "react/react-in-jsx-scope": "off",
     "react/prop-types": 0,
     "import/no-unresolved": 0,
     "object-curly-newline": "off",
     "operator-linebreak": "off",
     "jsx-a11y/anchor-is-valid": 0,
-    "import/no-named-default": "off"
+    "import/no-named-default": "off",
+    "import/no-cycle": [
+      "error",
+      {
+        "maxDepth": 10,
+        "ignoreExternal": true
+      }
+    ]
   },
-  "globals": {    "React": "writable"  }
+  "globals": {
+    "React": "writable"
+  }
 }
