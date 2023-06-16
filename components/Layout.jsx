@@ -1,4 +1,5 @@
 /* eslint-disable react/jsx-one-expression-per-line */
+/* eslint import/no-cycle: [2, { maxDepth: 1 }] */
 import React, { useRef } from 'react';
 import Head from 'next/head';
 import { prismicRepoName } from 'utils/prismicHelpers';
