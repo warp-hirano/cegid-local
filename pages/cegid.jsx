@@ -244,7 +244,7 @@ function CegidPage({ userID, serviceID, templateID }) {
             </p>
             <p className="cegid__section__head__p anim_obj03">
               Warp Japan VISEOは、Platinum Cegidパートナーとして、
-              <br className='pc' />
+              <br className="pc" />
               あなたのビジネスを支援します
             </p>
             <p className="anim_obj03">
@@ -284,11 +284,13 @@ function CegidPage({ userID, serviceID, templateID }) {
                   <p className="cegid__btxt">
                     CEGIDは、ファッション、ラグジュアリー、コスメなどの業界に特化したリテールソリューションを提供しています。
                     <br />
-                    急速に変化する今日の世界において、CEGIDは、革新的で目的にかなったビジネスソリューションにより、お客様の潜在能力を引き出すお手伝いをすることで、より多くのことを可能にします。
+                    急速に変化する今日の世界において、CEGIDは、革新的で目的にかなったビジネスソリューションにより、
+                    お客様の潜在能力を引き出すお手伝いをすることで、より多くのことを可能にします。
                   </p>
                   <div className="cegid__stxt">
                     <p>
-                      私たちは、Cegid Retail Y2ソリューションのパートナーとして、小売業者にモビリティソリューションのサービスを提供しています。これにより、店舗内やオンラインで、いつでもどこでもショッピングを楽しめるようになります。
+                      私たちは、Cegid Retail Y2ソリューションのパートナーとして、小売業者にモビリティソリューションのサービスを提供しています。
+                      これにより、店舗内やオンラインで、いつでもどこでもショッピングを楽しめるようになります。
                     </p>
                   </div>
                 </div>
@@ -298,7 +300,7 @@ function CegidPage({ userID, serviceID, templateID }) {
                   <div className="rimg"><img src="/images/cegid/cegid_store.png" alt="" /></div>
                 </div>
                 <div className="txt anim_obj02">
-                  <h3 className='txt_position'>
+                  <h3 className="txt_position">
                     Why choose CEGID?
                   </h3>
                   <div className="cegid__stxt">
@@ -377,17 +379,19 @@ function CegidPage({ userID, serviceID, templateID }) {
                         <span className="main anim_obj01">Our Retail practice with CEGID</span>
                       </h2>
                       <div>
-                        <p className='sub'>
-                          私たちは、2015年からCEGIDのパートナーとして、プロジェクトの構築と展開においては<br />
+                        <p className="sub">
+                          私たちは、2015年からCEGIDのパートナーとして、プロジェクトの構築と展開においては
+                          <br />
                           「ワンチーム」で行動し、Y2ソリューションの世界的な展開において大きな成功を収めています。
                         </p>
                       </div>
-                      <div className='world-wrap'>
-                        <img className='world-map pc' src='/images/cegid/world-map.png' alt='cegid world map' />
-                        <img className='world-map sp' src='/images/cegid/world-map-JP.svg' alt='cegid world map' />
+                      <div className="world-wrap">
+                        <img className="world-map pc" src="/images/cegid/world-map.png" alt="cegid world map" />
+                        <img className="world-map sp" src="/images/cegid/world-map-JP.svg" alt="cegid world map" />
                       </div>
                     </div>
-                  </div></span>
+                  </div>
+                </span>
               </h2>
             </div>
           </section>
@@ -406,8 +410,10 @@ function CegidPage({ userID, serviceID, templateID }) {
                   </h3>
                   <div className="cegid__stxt">
                     <p>
-                      VISEOは、世界中でCegid Retail Y2ソリューションを導入した経験があり、海外のお客様がNAM、LA、EMEA、APAC、アフリカなどの異なる地域で、
-                      現地の法律や財政規制への適応、現地のビジネスプロセスに基づくローカライズ作業を行い、コアモードの設計とコアモデルの展開を支援します。
+                      VISEOは、世界中でCegid Retail Y2ソリューションを導入した経験があり、
+                      海外のお客様がNAM、LA、EMEA、APAC、アフリカなどの異なる地域で、
+                      現地の法律や財政規制への適応、現地のビジネスプロセスに基づくローカライズ作業を行い、
+                      コアモードの設計とコアモデルの展開を支援します。
                     </p>
                   </div>
                 </div>
@@ -442,7 +448,8 @@ function CegidPage({ userID, serviceID, templateID }) {
                   </h3>
                   <div className="cegid__stxt">
                     <p>
-                      私たちのモビリティソリューションは、Cegid Retail Y2ソリューションと完全に統合されており、販売店やモバイル端末、在庫管理、CRMなどの機能を活用できます。
+                      私たちのモビリティソリューションは、Cegid Retail Y2ソリューションと完全に統合されており、
+                      販売店やモバイル端末、在庫管理、CRMなどの機能を活用できます。
                       VISEOは、小売業者のニーズに応じて、最適なモビリティソリューションを提案し、導入からサポートまで一貫して行います。
                     </p>
                   </div>
@@ -479,7 +486,8 @@ function CegidPage({ userID, serviceID, templateID }) {
                   <div className="cegid__stxt">
                     <p>
                       私は、Cegid Retail Y2とERP、WMS、OMS、e-Com、CRM、PIMなどの他のシステムとの間の統合サービスを提供しています。
-                      統合方法は、バッチファイル、API、Webhookなど様々なものがあります。お客様の業務に合わせて、最適な統合方法を選択し、効率的で安全なデータ連携を実現します。
+                      統合方法は、バッチファイル、API、Webhookなど様々なものがあります。お客様の業務に合わせて、
+                      最適な統合方法を選択し、効率的で安全なデータ連携を実現します。
                     </p>
                   </div>
                 </div>
@@ -874,9 +882,9 @@ export async function getServerSideProps({
 
   const { currentLang, isMyMainLanguage } = manageLocal(locales, locale);
 
-  /*const userID = process.env.REACT_APP_USER_ID;
+  /* const userID = process.env.REACT_APP_USER_ID;
   const serviceID = process.env.REACT_APP_SERVICE_ID;
-  const templateID = process.env.REACT_APP_TEMPLATE_ID;*//* 一時的/0531 */
+  const templateID = process.env.REACT_APP_TEMPLATE_ID; *//*  一時的/0531 */
   return {
     props: {
       menu,
