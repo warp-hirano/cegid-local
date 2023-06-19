@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable global-require */
-/*eslint import/no-cycle: [2, { maxDepth: 1 }]*/
+/* eslint import/no-cycle: [2, { maxDepth: 1 }] */
 /* eslint import/no-cycle: [2, { ignoreExternal: true }] */
 import React, { useState, useEffect } from 'react';
 import NextLink from 'next/link';
@@ -64,7 +64,7 @@ const Header = ({ menu, altLangs, currentLang }) => {
           <NextLink href={{ pathname: '/shopify' }} alt="">Shopifyで始めよう</NextLink>
         </div>
       </header>
-      {<Contact />}
+      <Contact />
     </>
   );
 };
