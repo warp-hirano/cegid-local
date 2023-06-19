@@ -4,7 +4,7 @@
 /* eslint import/no-cycle: [2, { ignoreExternal: true }] */
 import React, { useState, useEffect } from 'react';
 import NextLink from 'next/link';
-import { Navigation, LanguageSwitcher } from '..';
+import { Navigation, LanguageSwitcher } from '.';
 import Contact from '../Contact';
 import Menu from './Menu';
 
