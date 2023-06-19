@@ -444,7 +444,9 @@ function CegidPage({ userID, serviceID, templateID }) {
                 </div>
                 <div className="txt anim_obj02">
                   <h3>
-                    店舗のデジタル化 / <br className='sp' />モビリティ
+                    店舗のデジタル化 /
+                    <br className="sp" />
+                    モビリティ
                   </h3>
                   <div className="cegid__stxt">
                     <p>
