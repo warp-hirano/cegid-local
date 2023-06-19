@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable global-require */
+/*eslint import/no-cycle: [2, { maxDepth: 1 }]*/
 import React, { useState, useEffect } from 'react';
 import NextLink from 'next/link';
 import { Navigation, LanguageSwitcher } from '..';
