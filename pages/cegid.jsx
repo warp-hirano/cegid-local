@@ -386,7 +386,7 @@ function CegidPage({ userID, serviceID, templateID }) {
                         </p>
                       </div>
                       <div className="world-wrap">
-                        <img className="world-map pc" src="/images/cegid/world-map.png" alt="cegid world map" />
+                        <img className="world-map pc" src="/images/cegid/world-map.svg" alt="cegid world map" />
                         <img className="world-map sp" src="/images/cegid/world-map-JP.svg" alt="cegid world map" />
                       </div>
                     </div>
