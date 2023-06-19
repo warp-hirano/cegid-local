@@ -851,7 +851,7 @@ function CegidPage({ userID, serviceID, templateID }) {
             </div>
           </footer>
         </main>
-      </div >
+      </div>
     </>
   );
 }
