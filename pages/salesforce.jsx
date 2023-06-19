@@ -504,7 +504,7 @@ function SfccPage({ userID, serviceID, templateID }) {
                 <path id="svgline_mask" className="st1" d="M248.3,0.1c0,0-51,72.7-132.1,96.2C32.7,120.5,6,61.5,43.3,29.5c26.8-23,95,11.2,97,63.4 c1.4,36.2-25.5,135.8-140.3,145.1" />
               </g>
             </svg>
-            <div class="scrl_anim">
+            <div className="scrl_anim">
               <h2 className="font_outfit  anim_obj02">
                 <span className="main font_outfit">More with us and Salesforce Commerce Cloud</span>
                 <span className="main font_outfit">More with us and Salesforce Commerce Cloud</span>

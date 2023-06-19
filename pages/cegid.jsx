@@ -898,9 +898,9 @@ export async function getServerSideProps({
         currentLang,
         isMyMainLanguage,
       },
-      /*userID,
+      /* userID,
       serviceID,
-      templateID,*//* 一時的/0531 */
+      templateID, *//* 一時的/0531 */
     },
   };
 }
