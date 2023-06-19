@@ -235,7 +235,7 @@ function CegidPage({ userID, serviceID, templateID }) {
         <main className="cegid__main">
           <section className="cegid__section cegid__section__head scrl_anim">
             <div className="cegid__section__logo-wrap">
-              <img src="/images/cegid/cegid_logo.jpg" alt='cegid_logo' />
+              <img src="/images/cegid/cegid_logo.jpg" alt="" />
             </div>
             <p className="cegid__section__head__p anim_obj03 sp-text">
               ファッション、
