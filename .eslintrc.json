@@ -38,6 +38,14 @@
         "maxDepth": 10,
         "ignoreExternal": true
       }
+    ],
+    "react/no-unknown-property": [
+      "error",
+      {
+        "ignore": [
+          "initial"
+        ]
+      }
     ]
   },
   "globals": {
