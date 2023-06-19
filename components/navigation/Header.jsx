@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import NextLink from 'next/link';
 import { Navigation, LanguageSwitcher } from '..';
-// import Contact from '../Contact';
+import Contact from '../Contact';
 import Menu from './Menu';
 
 const Header = ({ menu, altLangs, currentLang }) => {
@@ -62,7 +62,7 @@ const Header = ({ menu, altLangs, currentLang }) => {
           <NextLink href={{ pathname: '/shopify' }} alt="">Shopifyで始めよう</NextLink>
         </div>
       </header>
-      {/* <Contact /> */}
+      {<Contact />}
     </>
   );
 };
