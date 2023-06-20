@@ -212,7 +212,7 @@ function CegidPage({ userID, serviceID, templateID }) {
           <div className="cegid__wrapper">
             <h1 className="cegid__header__h1">
               <NextLink href="/">
-                <img src="/images/shopify/logo.svg" alt="warpjapan viseo" />
+                <img src="/images/cegid/logo.svg" alt="warpjapan viseo" />
               </NextLink>
             </h1>
             <ul className="cegid__header__ul">
