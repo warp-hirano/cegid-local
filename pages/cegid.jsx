@@ -16,7 +16,7 @@ import { Client, manageLocal } from 'utils/prismicHelpers';
 import { init, send } from 'emailjs-com';
 
 /**
- * Shopify Page component
+ * cegid Page component
  */
 
 function CegidPage({ userID, serviceID, templateID }) {
