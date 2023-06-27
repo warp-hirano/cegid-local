@@ -200,6 +200,12 @@ function CegidPage({ userID, serviceID, templateID }) {
         <meta name="twitter:title" content="Shopify | Warp Japan VISEO" />
         <link rel="preconnect" href="https://p.typekit.net" />
         <link rel="preconnect" href="https://warp-kakigori.prismic.io" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500&display=swap"
+          rel="stylesheet"
+        />
         <link
           rel="preload"
           href="https://use.typekit.net/cqb8zcm.css"
@@ -235,7 +241,7 @@ function CegidPage({ userID, serviceID, templateID }) {
         <main className="cegid__main">
           <section className="cegid__section cegid__section__head scrl_anim">
             <div className="cegid__section__logo-wrap">
-              <img src="/images/cegid/cegid_logo.jpg" alt="" />
+              <img src="/images/cegid/cegid_logo.jpg" alt="Cegid" />
             </div>
             <p className="cegid__section__head__p anim_obj03 sp-text">
               ファッション、
@@ -261,12 +267,9 @@ function CegidPage({ userID, serviceID, templateID }) {
                     <path id="svgline_mask" className="st1" d="M248.3,0.1c0,0-51,72.7-132.1,96.2C32.7,120.5,6,61.5,43.3,29.5c26.8-23,95,11.2,97,63.4 c1.4,36.2-25.5,135.8-140.3,145.1" />
                   </g>
                 </svg>
-                <img src="/images/cegid/rotate-text.svg" width="160" className="cegid__section__head__img__circle" alt="" />
-                <div className="cegid__section__head__img__main">
-                  <img src="/images/cdgid/fv_img.png" alt="" />
-                </div>
-                <img src="/images/cegid/fv_img.png" className="cegid__section__head__img__phone pc" alt="" />
-                <img src="/images/cegid/fv_img-sp.png" className="cegid__section__head__img__phone sp" alt="" />
+                <img src="/images/cegid/rotate-text.svg" width="160" className="cegid__section__head__img__circle" alt="ビジネスを成長させる - GROW UP YPUR BUSINESS" />
+                <img src="/images/cegid/fv_img.png" className="cegid__section__head__img__phone pc" alt="first view" />
+                <img src="/images/cegid/fv_img-sp.png" className="cegid__section__head__img__phone sp" alt="first view" />
               </div>
             </div>
           </section>
@@ -275,7 +278,7 @@ function CegidPage({ userID, serviceID, templateID }) {
             <div className="cegid__wrapper">
               <div id="aboutShopify" className="cegid__col2 rev scrl_anim">
                 <div className="img anim_obj01">
-                  <div className="rimg service_img"><img src="/images/cegid/cegid_partner.png" alt="" /></div>
+                  <div className="rimg service_img"><img src="/images/cegid/cegid_partner.png" alt="cegid partner logo" /></div>
                 </div>
                 <div className="txt anim_obj02">
                   <h3>
@@ -297,7 +300,7 @@ function CegidPage({ userID, serviceID, templateID }) {
               </div>
               <div className="cegid__col2 scrl_anim about02">
                 <div className="img anim_obj01">
-                  <div className="rimg"><img src="/images/cegid/cegid_store.png" alt="" /></div>
+                  <div className="rimg"><img src="/images/cegid/cegid_store.png" alt="cegid store image" /></div>
                 </div>
                 <div className="txt anim_obj02">
                   <h3 className="txt_position">
@@ -360,11 +363,11 @@ function CegidPage({ userID, serviceID, templateID }) {
               <p className="cegid__section__about__p anim_obj02">世界中のブランドから信頼されています</p>
               <div className="cegid__section__about__top scrl_anim">
                 <ul className="cegid__section__about__logos anim_obj03">
-                  <li className="cegid__section__about__logo"><img src="/images/cegid/logo_dior.png" alt="" /></li>
-                  <li className="cegid__section__about__logo"><img src="/images/cegid/logo_berluti.png" alt="" /></li>
-                  <li className="cegid__section__about__logo"><img src="/images/cegid/logo_devialet.png" alt="" /></li>
-                  <li className="cegid__section__about__logo"><img src="/images/cegid/logo_fhifeido.png" alt="" /></li>
-                  <li className="cegid__section__about__logo"><img src="/images/cegid/logo_loreal.png" alt="" /></li>
+                  <li className="cegid__section__about__logo"><img src="/images/cegid/logo_dior.png" alt="Dior" /></li>
+                  <li className="cegid__section__about__logo"><img src="/images/cegid/logo_berluti.png" alt="BERLUTI" /></li>
+                  <li className="cegid__section__about__logo"><img src="/images/cegid/logo_devialet.png" alt="DEVIALET" /></li>
+                  <li className="cegid__section__about__logo"><img src="/images/cegid/logo_fhifeido.png" alt="SHISEIDO" /></li>
+                  <li className="cegid__section__about__logo"><img src="/images/cegid/logo_loreal.png" alt="LOREAL" /></li>
                 </ul>
               </div>
             </div>
@@ -402,7 +405,7 @@ function CegidPage({ userID, serviceID, templateID }) {
               </h2>
               <div className="cegid__col2 align-items rev scrl_anim">
                 <div className="img anim_obj01">
-                  <div className="rimg"><img src="/images/cegid/service-01.png" alt="" /></div>
+                  <div className="rimg"><img src="/images/cegid/service-01.jpg" alt="service imame 01" /></div>
                 </div>
                 <div className="txt anim_obj02">
                   <h3>
@@ -420,7 +423,7 @@ function CegidPage({ userID, serviceID, templateID }) {
               </div>
               <div className="cegid__col2 align-items scrl_anim">
                 <div className="img anim_obj01">
-                  <div className="rimg"><img src="/images/cegid/service-02.png" alt="" /></div>
+                  <div className="rimg"><img src="/images/cegid/service-02.jpg" alt="service imame 02" /></div>
                 </div>
                 <div className="txt anim_obj02">
                   <h3>
@@ -440,7 +443,7 @@ function CegidPage({ userID, serviceID, templateID }) {
               </div>
               <div className="cegid__col2 align-items rev scrl_anim">
                 <div className="img anim_obj01">
-                  <div className="rimg"><img src="/images/cegid/service-03.png" alt="" /></div>
+                  <div className="rimg"><img src="/images/cegid/service-03.jpg" alt="service imame 03" /></div>
                 </div>
                 <div className="txt anim_obj02">
                   <h3>
@@ -459,7 +462,7 @@ function CegidPage({ userID, serviceID, templateID }) {
               </div>
               <div className="cegid__col2 align-items scrl_anim">
                 <div className="img anim_obj01">
-                  <div className="rimg"><img src="/images/cegid/service-04.png" alt="" /></div>
+                  <div className="rimg"><img src="/images/cegid/service-04.jpg" alt="service imame 04" /></div>
                 </div>
                 <div className="txt anim_obj02">
                   <h3>
@@ -479,7 +482,7 @@ function CegidPage({ userID, serviceID, templateID }) {
               </div>
               <div className="cegid__col2 align-items rev scrl_anim">
                 <div className="img anim_obj01">
-                  <div className="rimg"><img src="/images/cegid/service-05.png" alt="" /></div>
+                  <div className="rimg"><img src="/images/cegid/service-05.jpg" alt="service imame 05" /></div>
                 </div>
                 <div className="txt anim_obj02">
                   <h3>
@@ -496,7 +499,7 @@ function CegidPage({ userID, serviceID, templateID }) {
               </div>
               <div className="cegid__col2 align-items scrl_anim">
                 <div className="img anim_obj01">
-                  <div className="rimg"><img src="/images/cegid/service-06.png" alt="" /></div>
+                  <div className="rimg"><img src="/images/cegid/service-06.jpg" alt="service imame 06" /></div>
                 </div>
                 <div className="txt anim_obj02">
                   <h3>
@@ -530,7 +533,7 @@ function CegidPage({ userID, serviceID, templateID }) {
               </h2>
               <div className="cegid__col2 align-items rev scrl_anim">
                 <div className="img anim_obj01">
-                  <div className="rimg"><img src="/images/cegid/support-01.png" alt="" /></div>
+                  <div className="rimg"><img src="/images/cegid/support-01.jpg" alt="support image 01" /></div>
                 </div>
                 <div className="txt anim_obj02">
                   <h3>
@@ -571,7 +574,7 @@ function CegidPage({ userID, serviceID, templateID }) {
               </div>
               <div className="cegid__col2 align-items scrl_anim">
                 <div className="img anim_obj01">
-                  <div className="rimg"><img src="/images/cegid/support-02.png" alt="" /></div>
+                  <div className="rimg"><img src="/images/cegid/support-02.jpg" alt="support image 02" /></div>
                 </div>
                 <div className="txt anim_obj02">
                   <h3>
@@ -609,7 +612,7 @@ function CegidPage({ userID, serviceID, templateID }) {
               </div>
               <div className="cegid__col2 align-items rev scrl_anim">
                 <div className="img anim_obj01">
-                  <div className="rimg plsarw"><img src="/images/cegid/support-03.png" alt="" /></div>
+                  <div className="rimg plsarw"><img src="/images/cegid/support-03.jpg" alt="support image 03" /></div>
                 </div>
                 <div className="txt anim_obj02">
                   <h3>
@@ -652,7 +655,7 @@ function CegidPage({ userID, serviceID, templateID }) {
               </div>
               <div className="cegid__col2 align-items scrl_anim last_col">
                 <div className="img anim_obj01">
-                  <div className="rimg"><img src="/images/cegid/support-04.png" alt="" /></div>
+                  <div className="rimg"><img src="/images/cegid/support-04.jpg" alt="support image 04" /></div>
                 </div>
                 <div className="txt anim_obj02">
                   <h3>
@@ -705,18 +708,22 @@ function CegidPage({ userID, serviceID, templateID }) {
               <div className="cegid__section__form__head anim_obj01">
                 <h2 className="font_outfit">Let’s work together</h2>
                 <p>
-                  Cegid導入・保守管理などに
-                  <br />
-                  関するご相談
+                  Cegid導入・保守管理などに関するご相談
                 </p>
               </div>
-              <div className="adress_area">
-                <div className="phone">
-                  <p>03-6441-2450</p>
-                </div>
-                <div className="mail">
-                  <p>info@warpjapan.com</p>
-                </div>
+              <div className="cegid__section__form__btns anim_obj02">
+                <a href="tel:03-6441-2450" className="cegid__section__form__btn cegid__section__form__btn--tel">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="27.804" height="27.811" viewBox="0 0 27.804 27.811">
+                    <path id="phone" d="M18.042,18.043c-2.752,2.75-5.94,5.382-7.2,4.122-1.8-1.8-2.915-3.374-6.892-.177s-.921,5.326.826,7.071c2.016,2.016,9.533.108,16.962-7.32S31.069,6.792,29.051,4.776c-1.747-1.749-3.868-4.8-7.063-.826s-1.627,5.088.179,6.892C23.423,12.1,20.792,15.291,18.042,18.043Z" transform="translate(-2.001 -2)" fill="#fff" />
+                  </svg>
+                  <span className="font_outfit">03-6441-2450</span>
+                </a>
+                <a href="mailto:info@warpjapan.com" className="cegid__section__form__btn cegid__section__form__btn--mail">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="31.29" height="20.859" viewBox="0 0 31.29 20.859">
+                    <path id="mail" d="M2,6.235l13.037,7a3.758,3.758,0,0,0,3.15,0l13.037-7C32.072,5.778,32.875,4,31.316,4H1.906C.346,4,1.149,5.778,2,6.235Zm29.619,3.83c-.965.5-12.841,6.691-13.432,7a2.962,2.962,0,0,1-1.575.346,2.962,2.962,0,0,1-1.575-.346c-.591-.309-12.4-6.5-13.364-7C.993,9.709,1,10.124,1,10.444V23.121A2.116,2.116,0,0,0,2.738,24.86H30.551a2.116,2.116,0,0,0,1.738-1.738V10.446C32.29,10.126,32.3,9.71,31.617,10.065Z" transform="translate(-1 -4)" fill="#fff" />
+                  </svg>
+                  <span className="font_outfit">info@warpjapan.com</span>
+                </a>
               </div>
               <form className="contactForm" name="contactForm">
                 <div className="cegid__section__form__row">
@@ -827,7 +834,7 @@ function CegidPage({ userID, serviceID, templateID }) {
           <footer className="cegid__footer">
             <div className="cegid__wrapper">
               <div className="cegid__footer__left">
-                <h3><img src="/images/shopify/ttl_footer.svg" alt="" /></h3>
+                <h3><img src="/images/shopify/ttl_footer.svg" alt="warpjapan viseo" /></h3>
                 <p>私たちは、デジタル領域を中心としたプランニング、デザイン、テクノロジーによって、ビジネスの成長に貢献することをミッションとするデジタルエージェンシーです。</p>
               </div>
               <div className="cegid__footer__right">
@@ -846,7 +853,7 @@ function CegidPage({ userID, serviceID, templateID }) {
                 </p>
               </div>
               <p className="cegid__footer__copy font_outfit">
-                &copy;2022 Warp japan Viseo
+                &copy;2023 Warp japan Viseo
               </p>
             </div>
           </footer>
