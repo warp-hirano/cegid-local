@@ -200,12 +200,6 @@ function CegidPage({ userID, serviceID, templateID }) {
         <meta name="twitter:title" content="Shopify | Warp Japan VISEO" />
         <link rel="preconnect" href="https://p.typekit.net" />
         <link rel="preconnect" href="https://warp-kakigori.prismic.io" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500&display=swap"
-          rel="stylesheet"
-        />
         <link
           rel="preload"
           href="https://use.typekit.net/cqb8zcm.css"
