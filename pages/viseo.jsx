@@ -332,7 +332,7 @@ function ViseoPage({ userID, serviceID, templateID }) {
               <div className="expertise__wrap scrl_anim">
                 <div className="expertise_card anim_obj02">
                   <div className="expertise__card__top__img">
-                    <img src="/images/viseo/Icon_SAP.svg" />
+                    <img src="/images/viseo/Icon_SAP.svg" alt="SAP logo" />
                   </div>
                   <div className="expertise__card__title">
                     <h2>SAPソリューションズ</h2>
@@ -349,7 +349,7 @@ function ViseoPage({ userID, serviceID, templateID }) {
                 </div>
                 <div className="expertise_card anim_obj02">
                   <div className="expertise__card__top__img">
-                    <img src="/images/viseo/Icon_e-commerce.svg" />
+                    <img src="/images/viseo/Icon_e-commerce.svg" alt="e-commerce logo" />
                   </div>
                   <div className="expertise__card__title">
                     <h2>Eコマース</h2>
@@ -369,7 +369,7 @@ function ViseoPage({ userID, serviceID, templateID }) {
                 </div>
                 <div className="expertise_card anim_obj02">
                   <div className="expertise__card__top__img">
-                    <img src="/images/viseo/Icon_Retail.svg" />
+                    <img src="/images/viseo/Icon_Retail.svg" alt="Retail logo" />
                   </div>
                   <div className="expertise__card__title">
                     <h2>
@@ -393,7 +393,7 @@ function ViseoPage({ userID, serviceID, templateID }) {
                 </div>
                 <div className="expertise_card anim_obj02">
                   <div className="expertise__card__top__img">
-                    <img src="/images/viseo/Icon_Digital.svg" />
+                    <img src="/images/viseo/Icon_Digital.svg" alt="Digital" />
                   </div>
                   <div className="expertise__card__title">
                     <h2>DevOpsの取組み</h2>
