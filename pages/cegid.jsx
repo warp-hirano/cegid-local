@@ -294,7 +294,7 @@ function CegidPage({ userID, serviceID, templateID }) {
               </div>
               <div className="cegid__col2 scrl_anim about02">
                 <div className="img anim_obj01">
-                  <div className="rimg"><img src="/images/cegid/cegid_store.png" alt="cegid store image" /></div>
+                  <div className="rimg"><img src="/images/cegid/cegid_store.png" alt="cegid store" /></div>
                 </div>
                 <div className="txt anim_obj02">
                   <h3 className="txt_position">
@@ -527,7 +527,7 @@ function CegidPage({ userID, serviceID, templateID }) {
               </h2>
               <div className="cegid__col2 align-items rev scrl_anim">
                 <div className="img anim_obj01">
-                  <div className="rimg"><img src="/images/cegid/support-01.jpg" alt="support image 01" /></div>
+                  <div className="rimg"><img src="/images/cegid/support-01.jpg" alt="support 01" /></div>
                 </div>
                 <div className="txt anim_obj02">
                   <h3>
@@ -568,7 +568,7 @@ function CegidPage({ userID, serviceID, templateID }) {
               </div>
               <div className="cegid__col2 align-items scrl_anim">
                 <div className="img anim_obj01">
-                  <div className="rimg"><img src="/images/cegid/support-02.jpg" alt="support image 02" /></div>
+                  <div className="rimg"><img src="/images/cegid/support-02.jpg" alt="support 02" /></div>
                 </div>
                 <div className="txt anim_obj02">
                   <h3>
@@ -606,7 +606,7 @@ function CegidPage({ userID, serviceID, templateID }) {
               </div>
               <div className="cegid__col2 align-items rev scrl_anim">
                 <div className="img anim_obj01">
-                  <div className="rimg plsarw"><img src="/images/cegid/support-03.jpg" alt="support image 03" /></div>
+                  <div className="rimg plsarw"><img src="/images/cegid/support-03.jpg" alt="support 03" /></div>
                 </div>
                 <div className="txt anim_obj02">
                   <h3>
@@ -649,7 +649,7 @@ function CegidPage({ userID, serviceID, templateID }) {
               </div>
               <div className="cegid__col2 align-items scrl_anim last_col">
                 <div className="img anim_obj01">
-                  <div className="rimg"><img src="/images/cegid/support-04.jpg" alt="support image 04" /></div>
+                  <div className="rimg"><img src="/images/cegid/support-04.jpg" alt="support 04" /></div>
                 </div>
                 <div className="txt anim_obj02">
                   <h3>
