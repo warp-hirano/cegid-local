@@ -23,6 +23,14 @@
     overflow: hidden;
   }
 
+  & .font_roc {
+    font-family: "Roc Grotesk";
+  }
+
+  & .font_mont {
+    font-family: "Montserrat" !important;
+  }
+
   .sp_show {
     display: none;
 
@@ -108,15 +116,23 @@
 
   .pc {
     display: block;
+
+    @media only screen and (max-width: 820px) {
+      display: none !important;
+    }
   }
 
   .sp {
     display: none !important;
+
+    @media only screen and (max-width: 820px) {
+      display: block !important;
+    }
   }
 
   .sec03 {
     background-color: #F8F9FC;
-    padding-bottom: 83px;
+    padding-bottom: 110px;
 
     & .main {
       font-size: 52px;
@@ -287,6 +303,10 @@
     width: 100%;
     padding: 0 20px;
     margin: auto;
+
+    @media only screen and(max-width:820px) {
+      padding: 0 20px;
+    }
   }
 
   .viseo__wrapper .world-wrap {
@@ -300,6 +320,11 @@
   .viseo__wrapper .world-map {
     width: 100%;
     margin-bottom: 70px;
+
+    @media only screen and (max-width:820px) {
+      width: 80%;
+      margin: 0 auto 70px;
+    }
   }
 
   .anim_svg_line {
@@ -652,10 +677,11 @@
 
     &__logo-wrap {
       width: 409px;
-      margin: 0 auto;
+      margin: 0 auto -60px;
 
       @media only screen and (max-width: 428px) {
         width: 100%;
+        margin-bottom: 0;
       }
 
       & img {
@@ -667,6 +693,12 @@
     &__head {
       padding-top: 117px;
 
+      & .viseo__section__title__p {
+        color: #0099FF;
+        font-size: 30px;
+        text-align: center;
+      }
+
       &__business {
         padding-top: 190px;
         margin-top: -128px;
@@ -676,6 +708,11 @@
 
         & .viseo__section__head__p {
           color: #FFFFFF;
+          font-size: 38px;
+
+          @media only screen and(max-width: 820px) {
+            font-size: 24px;
+          }
         }
 
         & .business__wrap {
@@ -686,13 +723,23 @@
           margin: 90px auto 0;
           padding-bottom: 110px;
 
+          @media only screen and(max-width: 820px) {
+            flex-direction: column;
+            row-gap: 80px;
+          }
+
           & .business__item {
             width: 33%;
             max-width: 332px;
             margin: 0 auto;
 
+            @media only screen and(max-width: 820px) {
+              width: 90%;
+            }
+
             & h2 {
               font-size: 30px;
+              line-height: 1;
               color: #FFFFFF;
               position: relative;
               width: fit-content;
@@ -710,13 +757,14 @@
             & p {
               font-size: 18px;
               color: #FFFFFF;
+              line-height: 2;
             }
           }
         }
       }
 
       @media only screen and (max-width: 820px) {
-        padding-top: 150px;
+        padding-top: 130px;
       }
 
       &__expert {
@@ -755,7 +803,7 @@
       }
 
       &__img {
-        margin-top: 60px;
+        margin-top: 30px;
         position: relative;
         z-index: 1;
 
@@ -776,6 +824,7 @@
           margin: auto;
           position: relative;
           z-index: 1;
+          text-align: center;
 
           .anim_svg_line {
             position: absolute;
@@ -809,7 +858,8 @@
         }
 
         &__phone {
-          width: 53%;
+          width: 100%;
+          max-width: 738px;
           margin: 0 auto;
           z-index: 6;
 
@@ -824,9 +874,9 @@
           @media only screen and (max-width: 428px) {
             position: relative;
             right: auto;
-            width: 100%;
+            width: 90%;
             top: auto;
-            margin-top: 70px;
+            margin: 0 auto;
             z-index: 2;
 
             &.pc {
@@ -1043,12 +1093,12 @@
 
         & .viseo__wrapper {
           @media only screen and (max-width: 820px) {
-            margin-bottom: 150px;
+            /* margin-bottom: 150px; */
           }
         }
       }
 
-      padding-top: 128px;
+      padding-top: 110px;
 
       @media only screen and (max-width: 820px) {
         padding-top: 90px;
@@ -1056,7 +1106,7 @@
       }
 
       @media only screen and (max-width: 428px) {
-        padding-bottom: 200px;
+        padding-bottom: 140px;
 
         &__01 {
           padding-bottom: 0 !important;
@@ -1065,16 +1115,32 @@
 
       h2 {
         text-align: center;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
+
+        & span {
+          font-size: 52px !important;
+          font-weight: bold;
+          color: #003A70 !important;
+        }
 
         @media only screen and (max-width: 428px) {
           & span {
-            font-size: 30px !important;
+            font-size: 34px !important;
           }
         }
 
         @media only screen and (max-width: 820px) {
-          margin-bottom: 90px;
+          margin-bottom: 50px;
+        }
+
+        .bold {
+          font-size: 18px;
+          color: #003A70;
+          margin-bottom: 30px;
+
+          @media only screen and (max-width: 820px) {
+            font-weight: 500;
+          }
         }
 
         .main {
@@ -1087,11 +1153,16 @@
         }
 
         .sub {
-          font-size: 18px;
+          font-size: 16px;
+          font-weight: 300;
           color: #001A5F;
           display: block;
           text-align: center;
           line-height: 2;
+
+          @media only screen and (max-width: 820px) {
+            margin-bottom: 50px;
+          }
         }
       }
 
@@ -1113,14 +1184,14 @@
     }
 
     &__more {
-      padding-top: 190px;
-      padding-bottom: 140px;
+      padding-top: 110px;
+      padding-bottom: 110px;
       background-color: #FFFFFF;
       position: relative;
 
       & .viseo__wrapper {
         @media only screen and (max-width: 820px) {
-          margin-bottom: 180px;
+          /* margin-bottom: 180px; */
         }
       }
 
@@ -1170,13 +1241,14 @@
       }
 
       h2 {
-        font-size: 53px;
-        color: #0046FE;
+        font-size: 52px;
+        color: #003A70;
+        font-weight: bold;
         text-align: center;
-        margin-bottom: 70px;
+        margin-bottom: 40px;
 
         @media only screen and (max-width: 428px) {
-          font-size: 30px;
+          font-size: 52px;
           margin-bottom: 40px;
         }
 
@@ -1185,6 +1257,12 @@
             margin-bottom: 10px;
           }
         }
+      }
+
+      p {
+        font-size: 18px;
+        text-align: center;
+        color: #003A70;
       }
 
       .viseo__col2 {
@@ -1254,6 +1332,100 @@
       @media only screen and (max-width: 820px) {
         .gr_btn {
           margin-top: 50px;
+        }
+      }
+    }
+
+    &__see {
+      max-width: 1270px;
+      margin: 0 auto;
+      padding: 110px 0;
+      text-align: center;
+
+      @media only screen and(max-width: 820px) {
+        padding-top: 100px;
+      }
+
+      h2 {
+        font-size: 52px;
+        font-weight: bold;
+        color: #003A70;
+        margin-bottom: 95px;
+      }
+
+      .more__btn__wrap {
+        display: flex;
+        column-gap: 32px;
+        justify-content: center;
+
+        @media only screen and(max-width:820px) {
+          flex-direction: column;
+          row-gap: 60px;
+        }
+
+        .more_btn {
+          background: #0099FF;
+          border: 1px solid #0099FF;
+          font-size: 27px;
+          font-weight: bold;
+          width: 50%;
+          max-width: 497px;
+          border-radius: 15px;
+          transition: .3s;
+
+          @media only screen and(max-width:820px) {
+            width: 90%;
+            margin: 0 auto;
+            align-items: center;
+          }
+
+          & a {
+            color: #FFFFFF;
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 35px;
+
+            @media only screen and(max-width:820px) {
+              padding-left: 0;
+            }
+
+
+            &::after {
+              content: url(../public/images/viseo/btn_arrow.svg);
+              display: block;
+              height: 16px;
+              width: 16px;
+              position: absolute;
+              right: 75px;
+              top: 30%;
+            }
+          }
+
+          @media only screen and(max-width:820px) {
+            &:nth-of-type(2) {
+              & a {
+                &::after {
+                  right: 105px;
+                }
+              }
+            }
+          }
+
+          &:hover {
+            background: #FFFFFF;
+            border: 1px solid #0099FF;
+            transition: .3s;
+
+            & a {
+              color: #0099FF;
+
+              &::after {
+                filter: invert(57%) sepia(49%) saturate(6823%) hue-rotate(181deg) brightness(100%) contrast(105%);
+              }
+            }
+          }
         }
       }
     }
@@ -1423,16 +1595,69 @@
     }
 
     &__form {
-      padding: 140px 0 160px;
+      padding: 110px 0 110px;
       position: relative;
       background-color: #F8F9FC;
+
+      &__btns {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        column-gap: 30px;
+        margin-bottom: 60px;
+
+        @media only screen and (max-width: 820px) {
+          flex-wrap: wrap;
+          row-gap: 20px;
+        }
+      }
+
+      &__btn {
+        background-color: #003A70;
+        border: 1px solid #003A70;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+        color: #fff;
+        border-radius: 7px;
+        line-height: 62px;
+        height: 62px;
+        padding: 0 44px;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        width: 395px;
+        font-size: 26px;
+
+        svg,
+        svg path {
+          transition: fill .4s ease;
+        }
+
+        &:hover {
+          color: #003A70;
+          background-color: #fff;
+
+          svg,
+          svg path {
+            fill: #003A70
+          }
+        }
+
+        @media only screen and (max-width: 820px) {
+          width: 100%;
+          padding: 0 20px;
+          justify-content: left;
+        }
+      }
 
       .viseo__wrapper {
         position: relative;
       }
 
       @media only screen and (max-width: 428px) {
-        padding: 150px 0 75px;
+        padding: 110px 0 75px;
       }
 
       .anim_svg_line {
@@ -1454,7 +1679,7 @@
 
       &__head {
         position: relative;
-        margin-bottom: 80px;
+        margin-bottom: 60px;
         flex-direction: column;
 
         @media only screen and (max-width: 428px) {
@@ -1472,13 +1697,15 @@
         }
 
         h2 {
-          color: #0046FE;
-          font-size: 53px;
+          color: #003A70;
+          font-size: 52px;
+          font-weight: bold;
           margin-bottom: 20px;
           text-align: center;
+          line-height: 1;
 
           @media only screen and (max-width: 820px) {
-            font-size: 36px;
+            font-size: 32px;
           }
 
           &+p {
@@ -1637,8 +1864,8 @@
       input[type='submit'],
       .submitBtn {
         margin: 15px auto 0;
-        background-color: #0046FE;
-        border: 1px solid #0046FE;
+        background-color: #003A70;
+        border: 1px solid #003A70;
         text-align: center;
         display: block;
         color: #fff;
@@ -1652,7 +1879,7 @@
         font-size: 16px;
 
         &:hover {
-          color: #008060;
+          color: #003A70;
           background-color: #fff;
         }
 
@@ -1790,7 +2017,7 @@
 
 
 .viseo__footer {
-  background-color: #001A5F;
+  background-color: #003A70;
   padding: 80px 0 60px;
 
   .viseo__wrapper {
@@ -1855,7 +2082,7 @@
 
 @media only screen and (max-width: 428px) {
   .viseo__section__head {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     background-color: #FFFFFF !important;
   }
@@ -1887,7 +2114,7 @@
   row-gap: 60px;
   column-gap: 60px;
   justify-content: center;
-  margin-bottom: 110px;
+  /* margin-bottom: 110px; */
 
   .expertise_card {
     width: calc(100% / 2 - 30px);
@@ -1897,6 +2124,11 @@
     background: #fff;
     border-radius: 25px;
     box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.15);
+
+    @media only screen and(max-width: 820px) {
+      width: 100%;
+      padding: 70px 35px;
+    }
 
     &:nth-of-type(2) {
       @media only screen and (min-width: 821px) {
@@ -1938,6 +2170,42 @@
     .expertise__card__bottom__img {
       text-align: center;
       margin-top: 40px;
+    }
+  }
+}
+
+.logo__area {
+  .partners__logo__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 65px;
+    margin-top: 85px;
+
+    @media only screen and(max-width: 820px) {
+      column-gap: 30px;
+      row-gap: 25px;
+    }
+
+    .logo__item {
+      width: calc(100% / 6);
+      max-width: 163px;
+
+      @media only screen and(max-width: 820px) {
+        width: calc(100% / 3 - 20px);
+      }
+
+      & img {
+        width: 100%;
+      }
+
+      &:nth-of-type(10) {
+        text-align: center;
+
+        & img {
+          width: 50%;
+        }
+      }
     }
   }
 }
