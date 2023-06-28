@@ -208,6 +208,14 @@ function ViseoPage({ userID, serviceID, templateID }) {
         <link rel="stylesheet" href="https://use.typekit.net/zby4zve.css" />
       </Head>
       <div className="viseo__body">
+        <header className="viseo__header">
+          <div className="viseo__wrapper">
+            <Scroll to="contact" smooth className="viseo__header__btn font_outfit">
+              <span>Contact Us</span>
+              <svg width="33px" x="0px" y="0px" viewBox="0 0 33.8 8.7" xmlSpace="preserve"><polygon className="st0" points="29.4,0 28.7,0.7 31.8,3.9 0,3.9 0,4.9 31.8,4.9 28.7,8 29.4,8.7 33.8,4.4 " /></svg>
+            </Scroll>
+          </div>
+        </header>
         <main className="viseo__main">
           <section className="viseo__section viseo__section__head scrl_anim">
             <div className="viseo__section__logo-wrap">
