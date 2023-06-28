@@ -3,7 +3,7 @@
   "description": "Multi-language website example with Next.js using Prismic headless CMS",
   "author": "Prismic",
   "engines": {
-    "node": "18.15.0"
+    "node": "18.16.1"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
