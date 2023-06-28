@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Outfit&display=swap');
 
-
 /*html {
   font-size: 62.5%; // 10px
   scroll-behavior: smooth;
@@ -2171,6 +2170,15 @@
     .expertise__card__bottom__img {
       text-align: center;
       margin-top: 40px;
+
+      & img {
+        transition: .4s;
+      }
+
+      & img:hover {
+        opacity: .5;
+        transition: .4s;
+      }
     }
   }
 }

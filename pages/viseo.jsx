@@ -208,30 +208,6 @@ function ViseoPage({ userID, serviceID, templateID }) {
         <link rel="stylesheet" href="https://use.typekit.net/zby4zve.css" />
       </Head>
       <div className="viseo__body">
-        <header className="viseo__header">
-          <div className="viseo__wrapper">
-            <h1 className="viseo__header__h1">
-              <NextLink href="/">
-                <img src="/images/cegid/logo.svg" alt="warpjapan viseo" />
-              </NextLink>
-            </h1>
-            <ul className="viseo__header__ul">
-              <li className="viseo__header__li font_outfit">
-                <Scroll to="aboutShopify" smooth>About Viseo</Scroll>
-              </li>
-              <li className="viseo__header__li font_outfit">
-                <Scroll to="ourServices" smooth>Our Services</Scroll>
-              </li>
-              <li className="viseo__header__li font_outfit">
-                <Scroll to="ourWorks" smooth>Our Works</Scroll>
-              </li>
-            </ul>
-            <Scroll to="contact" smooth className="viseo__header__btn font_outfit">
-              <span>Get Started</span>
-              <svg width="33px" x="0px" y="0px" viewBox="0 0 33.8 8.7" xmlSpace="preserve"><polygon className="st0" points="29.4,0 28.7,0.7 31.8,3.9 0,3.9 0,4.9 31.8,4.9 28.7,8 29.4,8.7 33.8,4.4 " /></svg>
-            </Scroll>
-          </div>
-        </header>
         <main className="viseo__main">
           <section className="viseo__section viseo__section__head scrl_anim">
             <div className="viseo__section__logo-wrap">
@@ -257,18 +233,18 @@ function ViseoPage({ userID, serviceID, templateID }) {
               </p>
               <div className="business__wrap anim_obj03">
                 <div className="business__item">
-                  <h2 className="font_roc">Positive</h2>
+                  <h2 className="font_mont">Positive</h2>
                   <p>私たちは、環境、クライアント、従業員、経済、そして社会全体に前向きな影響を与えたいと考えています。</p>
                 </div>
                 <div className="business__item">
-                  <h2 className="font_roc">Digital</h2>
+                  <h2 className="font_mont">Digital</h2>
                   <p>
                     クラウドファーストの時代に、お客様にとってビジネス上重要なデジタル変革プロジェクトを提供することで、それを実現します。
                     デジタル領域にビジネスの変革をもたらしてテクノロジー変革やイノベーションを起こします。
                   </p>
                 </div>
                 <div className="business__item">
-                  <h2 className="font_roc">Makers</h2>
+                  <h2 className="font_mont">Makers</h2>
                   <p>
                     常に「クリエイター」として行動し、世界中で最高水準のデリバリーモデルに基づいて活動する
                     最高の才能を動員することを誇りに思っています。
@@ -356,8 +332,8 @@ function ViseoPage({ userID, serviceID, templateID }) {
                     </p>
                   </div>
                   <div className="expertise__card__bottom__img">
-                    <img src="/images/viseo/shopify_puls_logo.svg" alt="" />
-                    <img src="/images/viseo/sfcc_logo.svg" alt="" />
+                    <a href="https://www.warpjapan.com/ja-jp/shopify"><img src="/images/viseo/shopify_puls_logo.svg" alt="shopify puls" /></a>
+                    <a href="https://www.warpjapan.com/ja-jp/salesforce"><img src="/images/viseo/sfcc_logo.svg" alt="salesforce commerce cloud" /></a>
                   </div>
                 </div>
                 <div className="expertise_card anim_obj02">
@@ -381,7 +357,7 @@ function ViseoPage({ userID, serviceID, templateID }) {
                     </p>
                   </div>
                   <div className="expertise__card__bottom__img">
-                    <img src="/images/viseo/cegid_logo.svg" alt="" />
+                    <img src="/images/viseo/cegid_logo.svg" alt="cegid" />
                   </div>
                 </div>
                 <div className="expertise_card anim_obj02">
