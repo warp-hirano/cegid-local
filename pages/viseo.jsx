@@ -615,7 +615,7 @@ function ViseoPage({ userID, serviceID, templateID }) {
                 </p>
               </div>
               <p className="viseo__footer__copy font_outfit">
-                &copy;2022 Warp japan Viseo
+                &copy;2023 Warp japan Viseo
               </p>
             </div>
           </footer>
