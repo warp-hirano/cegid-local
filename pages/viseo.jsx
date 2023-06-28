@@ -453,7 +453,9 @@ function ViseoPage({ userID, serviceID, templateID }) {
               <div className="viseo__section__form__head anim_obj01">
                 <h2 className="font_mont">Let’s work together</h2>
                 <p>
-                  Cegid導入・保守管理などに関するご相談
+                  あなたのビジネス目標を教えてください。
+                  <br className="sp" />
+                  一緒に素晴らしいものを作る方法を見ていきます。
                 </p>
               </div>
               <div className="viseo__section__form__btns anim_obj02">
