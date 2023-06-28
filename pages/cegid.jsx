@@ -367,11 +367,11 @@ function CegidPage({ userID, serviceID, templateID }) {
             </div>
           </section>
           <section id="ourServices" className="cegid__section cegid__section__whatwedo cegid__section__whatwedo__01">
-            <div className="cegid__wrapper">
+            <div className="cegid__wrapper map-wrapper">
               <h2 className="font_outfit scrl_anim">
                 <span className="main anim_obj01">
                   <div id="ourServices" className="cegid__section">
-                    <div className="cegid__wrapper">
+                    <div className="cegid__wrapper map-in-wrapper">
                       <h2 className="font_outfit scrl_anim">
                         <span className="main anim_obj01">Our Retail practice with CEGID</span>
                       </h2>
@@ -384,7 +384,7 @@ function CegidPage({ userID, serviceID, templateID }) {
                       </div>
                       <div className="world-wrap">
                         <img className="world-map pc" src="/images/cegid/world-map.svg" alt="cegid world map" />
-                        <img className="world-map sp" src="/images/cegid/world-map-JP.svg" alt="cegid world map" />
+                        <img className="world-map sp" src="/images/cegid/world-map-sp.svg" alt="cegid world map" />
                       </div>
                     </div>
                   </div>
