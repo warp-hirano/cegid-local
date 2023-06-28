@@ -235,7 +235,7 @@ function ViseoPage({ userID, serviceID, templateID }) {
         <main className="viseo__main">
           <section className="viseo__section viseo__section__head scrl_anim">
             <div className="viseo__section__logo-wrap">
-              <img src="/images/viseo/viseo_logo.png" alt="" />
+              <img src="/images/viseo/viseo_logo.png" alt="warpjapan viseo" />
             </div>
             <p className="viseo__section__head__p anim_obj03 sp-text">
               ファッション、
@@ -250,8 +250,8 @@ function ViseoPage({ userID, serviceID, templateID }) {
                 <div className="viseo__section__head__img__main">
                   <img src="/images/cdgid/fv_img.png" alt="" />
                 </div>
-                <img src="/images/viseo/fv_img.png" className="viseo__section__head__img__phone pc" alt="" />
-                <img src="/images/cegid/fv_img-sp.png" className="viseo__section__head__img__phone sp" alt="" />
+                <img src="/images/viseo/fv_img.png" className="viseo__section__head__img__phone pc" alt="firstview" />
+                <img src="/images/cegid/fv_img-sp.png" className="viseo__section__head__img__phone sp" alt="firstview" />
               </div>
             </div>
             <div className="viseo__section__head__business anim_obj03">
@@ -363,8 +363,8 @@ function ViseoPage({ userID, serviceID, templateID }) {
                     </p>
                   </div>
                   <div className="expertise__card__bottom__img">
-                    <img src="/images/viseo/shopify_puls_logo.svg" />
-                    <img src="/images/viseo/sfcc_logo.svg" />
+                    <img src="/images/viseo/shopify_puls_logo.svg" alt="" />
+                    <img src="/images/viseo/sfcc_logo.svg" alt="" />
                   </div>
                 </div>
                 <div className="expertise_card anim_obj02">
@@ -388,7 +388,7 @@ function ViseoPage({ userID, serviceID, templateID }) {
                     </p>
                   </div>
                   <div className="expertise__card__bottom__img">
-                    <img src="/images/viseo/cegid_logo.svg" />
+                    <img src="/images/viseo/cegid_logo.svg" alt="" />
                   </div>
                 </div>
                 <div className="expertise_card anim_obj02">
@@ -713,7 +713,7 @@ function ViseoPage({ userID, serviceID, templateID }) {
           <footer className="viseo__footer">
             <div className="viseo__wrapper">
               <div className="viseo__footer__left">
-                <h3><img src="/images/shopify/ttl_footer.svg" alt="" /></h3>
+                <h3><img src="/images/shopify/ttl_footer.svg" alt="warpjapan viseo" /></h3>
                 <p>私たちは、デジタル領域を中心としたプランニング、デザイン、テクノロジーによって、ビジネスの成長に貢献することをミッションとするデジタルエージェンシーです。</p>
               </div>
               <div className="viseo__footer__right">
