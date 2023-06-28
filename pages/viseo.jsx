@@ -454,7 +454,7 @@ function ViseoPage({ userID, serviceID, templateID }) {
                 <h2 className="font_mont">Let’s work together</h2>
                 <p>
                   あなたのビジネス目標を教えてください。
-                  <br className="sp" />
+                  <br className="pc" />
                   一緒に素晴らしいものを作る方法を見ていきます。
                 </p>
               </div>
