@@ -575,10 +575,10 @@ function ViseoPage({ userID, serviceID, templateID }) {
             </div>
             <div className="more__btn__wrap scrl_anim">
               <div className="more_btn anim_obj02">
-                <a href="https://warpjapan.com/ja-jp/" target="_blank" rel="noopener noreferrer" className="font_mont">Warp Japan</a>
+                <a href="https://warpjapan.com/ja-jp/" target="_blank" rel="noopener noreferrer" className="font_mont">Warp Japan VISEO</a>
               </div>
               <div className="more_btn anim_obj02">
-                <a href="https://www.viseo.com/en/emea" target="_blank" rel="noopener noreferrer" className="font_mont">VISEO</a>
+                <a href="https://www.viseo.com/en/emea" target="_blank" rel="noopener noreferrer" className="font_mont">VISEO Group</a>
               </div>
             </div>
           </section>
