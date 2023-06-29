@@ -277,7 +277,7 @@ function ViseoPage({ userID, serviceID, templateID }) {
                     </h2>
                     <div className="anim_obj02">
                       <p className="bold">
-                        顧客のニーズに応え、グローバルな展開をサポートするワールドワイドな存在感
+                        私たちは、グローバルネットワークを通じてクライアントのニーズに応える体制を整えています
                       </p>
                       <p className="sub">
                         シンガポール、マレーシア、セブ、シュラバヤ、香港、上海、深セン、東京、
@@ -345,8 +345,8 @@ function ViseoPage({ userID, serviceID, templateID }) {
                     </p>
                   </div>
                   <div className="expertise__card__bottom__img">
-                    <a href="https://www.warpjapan.com/ja-jp/shopify"><img src="/images/viseo/shopify_puls_logo.svg" alt="shopify puls" /></a>
-                    <a href="https://www.warpjapan.com/ja-jp/salesforce"><img src="/images/viseo/sfcc_logo.svg" alt="salesforce commerce cloud" /></a>
+                    <a href="https://www.warpjapan.com/ja-jp/shopify" target="_blank" rel="noopener noreferrer"><img src="/images/viseo/shopify_puls_logo.svg" alt="shopify puls" /></a>
+                    <a href="https://www.warpjapan.com/ja-jp/salesforce" target="_blank" rel="noopener noreferrer"><img src="/images/viseo/sfcc_logo.svg" alt="salesforce commerce cloud" /></a>
                   </div>
                 </div>
                 <div className="expertise_card anim_obj02">
@@ -396,7 +396,7 @@ function ViseoPage({ userID, serviceID, templateID }) {
               <h2 className="scrl_anim">
                 <span className="main anim_obj02 font_mont">Partners</span>
               </h2>
-              <p className="anim_obj03">デジタルトランスフォーメーションにおけるリーディングベンダーとのパートナーシップ</p>
+              <p className="anim_obj03">私たちはお客様の重要な課題に対応できる革新的な大手ソフトウェア会社と戦略的パートナーシップを結んでいます。</p>
               <div className="partners__logo__wrap scrl_anim">
                 <div className="logo__item anim_obj02">
                   <img src="/images/sap-logo.svg" alt="SAP Gold Partner" />
@@ -575,10 +575,10 @@ function ViseoPage({ userID, serviceID, templateID }) {
             </div>
             <div className="more__btn__wrap scrl_anim">
               <div className="more_btn anim_obj02">
-                <a href="https://warpjapan.com/ja-jp/" className="font_mont">Warp Japan</a>
+                <a href="https://warpjapan.com/ja-jp/" target="_blank" rel="noopener noreferrer" className="font_mont">Warp Japan</a>
               </div>
               <div className="more_btn anim_obj02">
-                <a href="https://www.viseo.com/en/emea" className="font_mont">VISEO</a>
+                <a href="https://www.viseo.com/en/emea" target="_blank" rel="noopener noreferrer" className="font_mont">VISEO</a>
               </div>
             </div>
           </section>
