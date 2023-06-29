@@ -6,7 +6,6 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 /* eslint-disable import/first */
 import { Link as Scroll } from 'react-scroll';
-import NextLink from 'next/link';
 
 import { Client, manageLocal } from 'utils/prismicHelpers';
 /* import useShouldLoadDistortion from 'components/hooks/useShouldLoadDistortion'; */
