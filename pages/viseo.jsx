@@ -6,6 +6,7 @@ import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 /* eslint-disable import/first */
 import { Link as Scroll } from 'react-scroll';
+import NextLink from 'next/link';
 
 import { Client, manageLocal } from 'utils/prismicHelpers';
 /* import useShouldLoadDistortion from 'components/hooks/useShouldLoadDistortion'; */
@@ -209,6 +210,11 @@ function ViseoPage({ userID, serviceID, templateID }) {
       <div className="viseo__body">
         <header className="viseo__header">
           <div className="viseo__wrapper">
+            <h1 className="cegid__header__h1">
+              <NextLink href="/">
+                <img src="/images/cegid/logo.svg" alt="warpjapan viseo" />
+              </NextLink>
+            </h1>
             <Scroll to="contact" smooth className="viseo__header__btn font_outfit">
               <span>Contact Us</span>
               <svg width="33px" x="0px" y="0px" viewBox="0 0 33.8 8.7" xmlSpace="preserve"><polygon className="st0" points="29.4,0 28.7,0.7 31.8,3.9 0,3.9 0,4.9 31.8,4.9 28.7,8 29.4,8.7 33.8,4.4 " /></svg>
