@@ -365,7 +365,7 @@ function ViseoPage({ userID, serviceID, templateID }) {
                       私たちは、日本国内外の小売業者に合わせた一貫したサービスを提供しています。
                       <br />
                       VISEOは、革新的で目的にかなったビジネスソリューションにより、
-                      <br />
+                      <br className="pc" />
                       お客様の潜在能力を引き出すお手伝いをすることで、より多くのことを可能にします。
                     </p>
                   </div>
