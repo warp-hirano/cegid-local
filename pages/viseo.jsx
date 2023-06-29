@@ -247,20 +247,20 @@ function ViseoPage({ userID, serviceID, templateID }) {
               <div className="business__wrap anim_obj03">
                 <div className="business__item">
                   <h2 className="font_mont">Positive</h2>
-                  <p>私たちは、環境、クライアント、従業員、経済、そして社会全体に前向きな影響を与えたいと考えています。</p>
+                  <p>私たちは、環境、クライアント、従業員、経済、そして社会全体に良い影響を与えたいと考えています。</p>
                 </div>
                 <div className="business__item">
                   <h2 className="font_mont">Digital</h2>
                   <p>
-                    クラウドファーストの時代に、お客様にとってビジネス上重要なデジタル変革プロジェクトを提供することで、それを実現します。
-                    デジタル領域にビジネスの変革をもたらしてテクノロジー変革やイノベーションを起こします。
+                    クラウドファーストが進む中、お客様のビジネスにデジタル変革をもたらすことで、システムのクラウド化を推進します。
+                    デジタル領域にビジネスの変革をもたらすことで、テクノロジー変革やイノベーションを起こします。
                   </p>
                 </div>
                 <div className="business__item">
                   <h2 className="font_mont">Makers</h2>
                   <p>
-                    常に「クリエイター」として行動し、世界中で最高水準のデリバリーモデルに基づいて活動する
-                    最高の才能を動員することを誇りに思っています。
+                    常に「クリエイター」として、世界中で最高水準のデリバリーモデルに基づいて活動する
+                    お客様のサポートをすることを誇りに思っています。
                   </p>
                 </div>
               </div>
@@ -306,9 +306,9 @@ function ViseoPage({ userID, serviceID, templateID }) {
                 <p className="sub anim_obj03">
                   VISEO は、日本国内外でのプロセスから技術的な実装まで、
                   <br className="pc" />
-                  あなたのビジネスをサポートするグローバルな存在と専門性を持っています。
+                  あなたのビジネスをサポートするグローバルな人材と専門性を持っています。
                   <br className="pc" />
-                  さらに、プロジェクト全体にわたって最後までガイドします。
+                  さらに、プロジェクト全体にわたって最後までサポートします。
                 </p>
               </div>
               <div className="expertise__wrap scrl_anim">
@@ -444,7 +444,7 @@ function ViseoPage({ userID, serviceID, templateID }) {
                 <p>
                   あなたのビジネス目標を教えてください。
                   <br className="pc" />
-                  一緒に素晴らしいものを作る方法を見ていきます。
+                  私たちがより素晴らしいものを作るサポートをします。
                 </p>
               </div>
               <div className="viseo__section__form__btns anim_obj02">
