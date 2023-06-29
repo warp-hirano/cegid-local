@@ -345,8 +345,8 @@ function ViseoPage({ userID, serviceID, templateID }) {
                     </p>
                   </div>
                   <div className="expertise__card__bottom__img">
-                    <a href="https://www.warpjapan.com/ja-jp/shopify" target="_blank" rel="noopener noreferrer"><img src="/images/viseo/shopify_puls_logo.svg" alt="shopify puls" /></a>
-                    <a href="https://www.warpjapan.com/ja-jp/salesforce" target="_blank" rel="noopener noreferrer"><img src="/images/viseo/sfcc_logo.svg" alt="salesforce commerce cloud" /></a>
+                    <a href="https://www.warpjapan.com/ja-jp/shopify" target="_blank" rel="noopener noreferrer"><img src="/images/viseo/shopify.png" alt="shopify puls" /></a>
+                    <a href="https://www.warpjapan.com/ja-jp/salesforce" target="_blank" rel="noopener noreferrer"><img src="/images/viseo/sfcc_logo.png" alt="salesforce commerce cloud" className="bigimg" /></a>
                   </div>
                 </div>
                 <div className="expertise_card anim_obj02">
@@ -370,7 +370,7 @@ function ViseoPage({ userID, serviceID, templateID }) {
                     </p>
                   </div>
                   <div className="expertise__card__bottom__img">
-                    <img src="/images/viseo/cegid_logo.svg" alt="cegid" />
+                    <img src="/images/viseo/cegid.png" alt="cegid" />
                   </div>
                 </div>
                 <div className="expertise_card anim_obj02">
@@ -399,40 +399,40 @@ function ViseoPage({ userID, serviceID, templateID }) {
               <p className="anim_obj03">私たちはお客様の重要な課題に対応できる革新的な大手ソフトウェア会社と戦略的パートナーシップを結んでいます。</p>
               <div className="partners__logo__wrap scrl_anim">
                 <div className="logo__item anim_obj02">
-                  <img src="/images/sap-logo.svg" alt="SAP Gold Partner" />
+                  <img src="/images/viseo/sap-logo.png" alt="SAP Gold Partner" />
                 </div>
                 <div className="logo__item anim_obj02">
-                  <img src="/images/microsoft.svg" alt="Microsoft Gold Partner" />
+                  <img src="/images/viseo/microsoft.png" alt="Microsoft Gold Partner" />
                 </div>
                 <div className="logo__item anim_obj02">
-                  <img src="/images/amazon.svg" alt="AWS" />
+                  <img src="/images/viseo/aws.png" alt="AWS" />
                 </div>
                 <div className="logo__item anim_obj02">
-                  <img src="/images/azure.svg" alt="Microsoft Azure" />
+                  <img src="/images/viseo/azure.png" alt="Microsoft Azure" />
                 </div>
                 <div className="logo__item anim_obj02">
-                  <img src="/images/shopify.svg" alt="Shopify plus" />
+                  <img src="/images/viseo/shopify.png" alt="Shopify plus" />
                 </div>
                 <div className="logo__item anim_obj02">
-                  <img src="/images/google.svg" alt="Google cloud" />
+                  <img src="/images/viseo/google.png" alt="Google cloud" />
                 </div>
                 <div className="logo__item anim_obj02">
-                  <img src="/images/boomi.svg" alt="boomi" />
+                  <img src="/images/viseo/boomi.png" alt="boomi" />
                 </div>
                 <div className="logo__item anim_obj02">
-                  <img src="/images/naplan.svg" alt="Anaplan" />
+                  <img src="/images/viseo/anaplan.png" alt="Anaplan" />
                 </div>
                 <div className="logo__item anim_obj02">
-                  <img src="/images/mulesoft.svg" alt="Mulesoft" />
+                  <img src="/images/viseo/mulesoft.png" alt="Mulesoft" />
                 </div>
                 <div className="logo__item anim_obj02">
-                  <img src="/images/sf.svg" alt="salesforce partner" />
+                  <img src="/images/viseo/sfcc.png" alt="salesforce partner" />
                 </div>
                 <div className="logo__item anim_obj02">
-                  <img src="/images/fluent.svg" alt="fluentcommerce" />
+                  <img src="/images/viseo/fluent.png" alt="fluentcommerce" />
                 </div>
                 <div className="logo__item anim_obj02">
-                  <img src="/images/cegid.svg" alt="cegid" />
+                  <img src="/images/viseo/cegid.png" alt="cegid" />
                 </div>
               </div>
             </div>
