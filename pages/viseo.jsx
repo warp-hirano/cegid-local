@@ -394,7 +394,7 @@ function ViseoPage({ userID, serviceID, templateID }) {
           <section className="viseo__section viseo__section__more ">
             <div className="viseo__wrapper logo__area scrl_anim">
               <h2 className="scrl_anim">
-                <span className="main anim_obj02 font_mont">Partners</span>
+                <span className="main anim_obj02 font_mont"> Our Partners</span>
               </h2>
               <p className="anim_obj03">私たちはお客様の重要な課題に対応できる革新的な大手ソフトウェア会社と戦略的パートナーシップを結んでいます。</p>
               <div className="partners__logo__wrap scrl_anim">
